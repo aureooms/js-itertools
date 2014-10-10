@@ -21,6 +21,206 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
       },
       "depth": 1,
       "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/genius/dev/js/js-itertools/js/src/all.js",
+        "projectPath": "js/src/all.js",
+        "targetPath": "all",
+        "pageTitle": "all",
+        "title": "all"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/genius/dev/js/js-itertools/js/src/any.js",
+        "projectPath": "js/src/any.js",
+        "targetPath": "any",
+        "pageTitle": "any",
+        "title": "any"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/genius/dev/js/js-itertools/js/src/chain.js",
+        "projectPath": "js/src/chain.js",
+        "targetPath": "chain",
+        "pageTitle": "chain",
+        "title": "chain"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/genius/dev/js/js-itertools/js/src/enumerate.js",
+        "projectPath": "js/src/enumerate.js",
+        "targetPath": "enumerate",
+        "pageTitle": "enumerate",
+        "title": "enumerate"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/genius/dev/js/js-itertools/js/src/filter.js",
+        "projectPath": "js/src/filter.js",
+        "targetPath": "filter",
+        "pageTitle": "filter",
+        "title": "filter"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/genius/dev/js/js-itertools/js/src/map.js",
+        "projectPath": "js/src/map.js",
+        "targetPath": "map",
+        "pageTitle": "map",
+        "title": "map"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/genius/dev/js/js-itertools/js/src/range.js",
+        "projectPath": "js/src/range.js",
+        "targetPath": "range",
+        "pageTitle": "range",
+        "title": "range"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/genius/dev/js/js-itertools/js/src/reduce.js",
+        "projectPath": "js/src/reduce.js",
+        "targetPath": "reduce",
+        "pageTitle": "reduce",
+        "title": "reduce"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/genius/dev/js/js-itertools/js/src/reversed.js",
+        "projectPath": "js/src/reversed.js",
+        "targetPath": "reversed",
+        "pageTitle": "reversed",
+        "title": "reversed"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/genius/dev/js/js-itertools/js/src/zip.js",
+        "projectPath": "js/src/zip.js",
+        "targetPath": "zip",
+        "pageTitle": "zip",
+        "title": "zip"
+      },
+      "depth": 1,
+      "outline": []
     }
   ];
 
