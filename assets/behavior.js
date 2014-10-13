@@ -93,6 +93,46 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "foldPrefix": "^",
           "name": "JavaScript"
         },
+        "sourcePath": "/home/genius/dev/js/js-itertools/js/src/compress.js",
+        "projectPath": "js/src/compress.js",
+        "targetPath": "compress",
+        "pageTitle": "compress",
+        "title": "compress"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/genius/dev/js/js-itertools/js/src/dropwhile.js",
+        "projectPath": "js/src/dropwhile.js",
+        "targetPath": "dropwhile",
+        "pageTitle": "dropwhile",
+        "title": "dropwhile"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
         "sourcePath": "/home/genius/dev/js/js-itertools/js/src/enumerate.js",
         "projectPath": "js/src/enumerate.js",
         "targetPath": "enumerate",
@@ -133,11 +173,151 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "foldPrefix": "^",
           "name": "JavaScript"
         },
+        "sourcePath": "/home/genius/dev/js/js-itertools/js/src/filterfalse.js",
+        "projectPath": "js/src/filterfalse.js",
+        "targetPath": "filterfalse",
+        "pageTitle": "filterfalse",
+        "title": "filterfalse"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/genius/dev/js/js-itertools/js/src/filtertrue.js",
+        "projectPath": "js/src/filtertrue.js",
+        "targetPath": "filtertrue",
+        "pageTitle": "filtertrue",
+        "title": "filtertrue"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/genius/dev/js/js-itertools/js/src/group.js",
+        "projectPath": "js/src/group.js",
+        "targetPath": "group",
+        "pageTitle": "group",
+        "title": "group"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/genius/dev/js/js-itertools/js/src/iter.js",
+        "projectPath": "js/src/iter.js",
+        "targetPath": "iter",
+        "pageTitle": "iter",
+        "title": "iter"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
         "sourcePath": "/home/genius/dev/js/js-itertools/js/src/map.js",
         "projectPath": "js/src/map.js",
         "targetPath": "map",
         "pageTitle": "map",
         "title": "map"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/genius/dev/js/js-itertools/js/src/permutations.js",
+        "projectPath": "js/src/permutations.js",
+        "targetPath": "permutations",
+        "pageTitle": "permutations",
+        "title": "permutations"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/genius/dev/js/js-itertools/js/src/pick.js",
+        "projectPath": "js/src/pick.js",
+        "targetPath": "pick",
+        "pageTitle": "pick",
+        "title": "pick"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/genius/dev/js/js-itertools/js/src/product.js",
+        "projectPath": "js/src/product.js",
+        "targetPath": "product",
+        "pageTitle": "product",
+        "title": "product"
       },
       "depth": 1,
       "outline": []
@@ -193,11 +373,151 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "foldPrefix": "^",
           "name": "JavaScript"
         },
+        "sourcePath": "/home/genius/dev/js/js-itertools/js/src/repeat.js",
+        "projectPath": "js/src/repeat.js",
+        "targetPath": "repeat",
+        "pageTitle": "repeat",
+        "title": "repeat"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
         "sourcePath": "/home/genius/dev/js/js-itertools/js/src/reversed.js",
         "projectPath": "js/src/reversed.js",
         "targetPath": "reversed",
         "pageTitle": "reversed",
         "title": "reversed"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/genius/dev/js/js-itertools/js/src/slice.js",
+        "projectPath": "js/src/slice.js",
+        "targetPath": "slice",
+        "pageTitle": "slice",
+        "title": "slice"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/genius/dev/js/js-itertools/js/src/sorted.js",
+        "projectPath": "js/src/sorted.js",
+        "targetPath": "sorted",
+        "pageTitle": "sorted",
+        "title": "sorted"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/genius/dev/js/js-itertools/js/src/starmap.js",
+        "projectPath": "js/src/starmap.js",
+        "targetPath": "starmap",
+        "pageTitle": "starmap",
+        "title": "starmap"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/genius/dev/js/js-itertools/js/src/takewhile.js",
+        "projectPath": "js/src/takewhile.js",
+        "targetPath": "takewhile",
+        "pageTitle": "takewhile",
+        "title": "takewhile"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/genius/dev/js/js-itertools/js/src/tee.js",
+        "projectPath": "js/src/tee.js",
+        "targetPath": "tee",
+        "pageTitle": "tee",
+        "title": "tee"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/genius/dev/js/js-itertools/js/src/tuple.js",
+        "projectPath": "js/src/tuple.js",
+        "targetPath": "tuple",
+        "pageTitle": "tuple",
+        "title": "tuple"
       },
       "depth": 1,
       "outline": []
