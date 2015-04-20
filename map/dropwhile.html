@@ -1,34 +1,17 @@
-<!DOCTYPE html><html lang="en"><head><title>map/dropwhile</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content="../"><meta name="groc-document-path" content="map/dropwhile"><meta name="groc-project-path" content="js/src/map/dropwhile.js"><meta name="groc-github-url" content="https://github.com/aureooms/js-itertools"><link rel="stylesheet" type="text/css" media="all" href="../assets/style.css"><script type="text/javascript" src="../assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/aureooms/js-itertools/blob/master/js/src/map/dropwhile.js">js/src/map/dropwhile.js</a></div></div><div id="document"><div class="segment"><div class="code"><div class="wrapper"><span class="hljs-keyword">var</span> dropwhile = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">( predicate, iterable, out )</span> {</span>
+<!DOCTYPE html><html lang="en"><head><title>map/dropwhile</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content="../"><meta name="groc-document-path" content="map/dropwhile"><meta name="groc-project-path" content="js/src/map/dropwhile.js"><meta name="groc-github-url" content="https://github.com/aureooms/js-itertools"><link rel="stylesheet" type="text/css" media="all" href="../assets/style.css"><script type="text/javascript" src="../assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/aureooms/js-itertools/blob/master/js/src/map/dropwhile.js">js/src/map/dropwhile.js</a></div></div><div id="document"><div class="segment"><div class="code"><div class="wrapper"><span class="hljs-keyword">let</span> dropwhile = <span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-params">( predicate , iterable )</span> </span>{
 
-	<span class="hljs-keyword">var</span> i, n, e;
+	<span class="hljs-keyword">let</span> iterator = iter( iterable ) ;
 
-	n = iterable.length;
+	<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">let</span> item <span class="hljs-keyword">of</span> iterator ) {
 
-	<span class="hljs-keyword">if</span> ( n === <span class="hljs-number">0</span> ) {
-		<span class="hljs-keyword">return</span> out;
+		<span class="hljs-keyword">if</span> ( predicate( item ) ) <span class="hljs-keyword">continue</span> ;</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>equivalent to return chain( [ [ item ] , iterator ] ) ;</p></div></div><div class="code"><div class="wrapper">		<span class="hljs-keyword">yield</span> item ;
+
+		<span class="hljs-keyword">yield</span>* iterator ;
+
+		<span class="hljs-keyword">return</span> ;
+
 	}
 
-	i = <span class="hljs-number">0</span>;
-	e = iterable[i];
+} ;
 
-	<span class="hljs-keyword">while</span> ( predicate( e ) ) {
-		++i;
-
-		<span class="hljs-keyword">if</span> ( i === n ) {
-			<span class="hljs-keyword">return</span> out;
-		}
-
-		e = iterable[i];
-	}
-
-	out.push( e );
-
-	<span class="hljs-keyword">for</span> ( ++i ; i &lt; n ; ++i ) {
-		out.push( iterable[i] );
-	}
-
-	<span class="hljs-keyword">return</span> out;
-
-};
-
-exports.dropwhile = dropwhile;</div></div></div></div></body></html>
+exports.dropwhile = dropwhile ;</div></div></div></div></body></html>

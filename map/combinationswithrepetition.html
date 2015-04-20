@@ -1,36 +1,39 @@
-<!DOCTYPE html><html lang="en"><head><title>map/combinationswithrepetition</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content="../"><meta name="groc-document-path" content="map/combinationswithrepetition"><meta name="groc-project-path" content="js/src/map/combinationswithrepetition.js"><meta name="groc-github-url" content="https://github.com/aureooms/js-itertools"><link rel="stylesheet" type="text/css" media="all" href="../assets/style.css"><script type="text/javascript" src="../assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/aureooms/js-itertools/blob/master/js/src/map/combinationswithrepetition.js">js/src/map/combinationswithrepetition.js</a></div></div><div id="document"><div class="segment"><div class="code"><div class="wrapper"><span class="hljs-keyword">var</span> combinationswithrepetition = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">( iterable, r, out )</span> {</span></div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>combinationswithrepetition(&#39;ABC&#39;, 2) --&gt; AA AB AC BB BC CC</p></div></div><div class="code"><div class="wrapper">	<span class="hljs-keyword">var</span> pool, len, indices, i, next;
+<!DOCTYPE html><html lang="en"><head><title>map/combinationswithrepetition</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content="../"><meta name="groc-document-path" content="map/combinationswithrepetition"><meta name="groc-project-path" content="js/src/map/combinationswithrepetition.js"><meta name="groc-github-url" content="https://github.com/aureooms/js-itertools"><link rel="stylesheet" type="text/css" media="all" href="../assets/style.css"><script type="text/javascript" src="../assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/aureooms/js-itertools/blob/master/js/src/map/combinationswithrepetition.js">js/src/map/combinationswithrepetition.js</a></div></div><div id="document"><div class="segment"><div class="code"><div class="wrapper"><span class="hljs-keyword">let</span> combinationswithrepetition = <span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-params">( iterable , r )</span> </span>{</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>combinationswithrepetition(&#39;ABC&#39;, 1) --&gt; A B C
+combinationswithrepetition(range(3), 2) --&gt; 00 01 02 11 12 22</p></div></div><div class="code"><div class="wrapper">	<span class="hljs-keyword">let</span> pool = list( iterable ) ;
+	<span class="hljs-keyword">let</span> len = pool.length ;
 
-	pool = iterable;
-	len = pool.length;
+	<span class="hljs-keyword">if</span> ( len === <span class="hljs-number">0</span> &amp;&amp; r &gt; <span class="hljs-number">0</span> ) <span class="hljs-keyword">return</span> ;
 
-	<span class="hljs-keyword">if</span> ( len === <span class="hljs-number">0</span> &amp;&amp; r &gt; <span class="hljs-number">0</span>) {
-		<span class="hljs-keyword">return</span> out;
-	}
+	<span class="hljs-keyword">let</span> indices = list( nrepeat( <span class="hljs-number">0</span> , r ) ) ;
 
-	indices = repeat( <span class="hljs-number">0</span>, r, [] );
+	<span class="hljs-keyword">yield</span> list( pick( pool , indices ) ) ;
 
-	out.push( pick( pool, indices, [] ) );
+	<span class="hljs-keyword">while</span> ( <span class="hljs-literal">true</span> ) {
 
-	<span class="hljs-keyword">for</span> ( ; ; ) {
+		<span class="hljs-keyword">let</span> i = r - <span class="hljs-number">1</span> ;
 
-		<span class="hljs-keyword">for</span> ( i = r - <span class="hljs-number">1</span> ; i &gt;= <span class="hljs-number">0</span> ; --i ) {
+		<span class="hljs-keyword">while</span> ( <span class="hljs-literal">true</span> ) {
+
+			<span class="hljs-keyword">if</span> ( i &lt; <span class="hljs-number">0</span> ) <span class="hljs-keyword">return</span> ;
+
 			<span class="hljs-keyword">if</span> ( indices[i] !== len - <span class="hljs-number">1</span> ) {
-				next = indices[i] + <span class="hljs-number">1</span>;
-				<span class="hljs-keyword">break</span>;
+
+				<span class="hljs-keyword">let</span> pivot = ++indices[i] ;
+
+				<span class="hljs-keyword">for</span> ( ++i ; i &lt; r ; ++i ) indices[i] = pivot ;
+
+				<span class="hljs-keyword">break</span> ;
+
 			}
+
+			--i ;
+
 		}
 
-		<span class="hljs-keyword">if</span> ( i &lt; <span class="hljs-number">0</span> ) {
-			<span class="hljs-keyword">return</span> out;
-		}
+		<span class="hljs-keyword">yield</span> list( pick( pool , indices ) ) ;
 
-		<span class="hljs-keyword">for</span> ( ; i &lt; r ; ++i ) {
-			indices[i] = next;
-		}
-
-		out.push( pick( pool, indices, [] ) );
 	}
 
-};
+} ;
 
-exports.combinationswithrepetition = combinationswithrepetition;</div></div></div></div></body></html>
+exports.combinationswithrepetition = combinationswithrepetition ;</div></div></div></div></body></html>
