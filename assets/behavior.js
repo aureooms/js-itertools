@@ -621,6 +621,26 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
               "foldPrefix": "^",
               "name": "JavaScript"
             },
+            "sourcePath": "/home/aureooms/dev/js/js-itertools/js/src/utils/consume.js",
+            "projectPath": "js/src/utils/consume.js",
+            "targetPath": "utils/consume",
+            "pageTitle": "utils/consume",
+            "title": "consume"
+          },
+          "depth": 2,
+          "outline": []
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
             "sourcePath": "/home/aureooms/dev/js/js-itertools/js/src/utils/count.js",
             "projectPath": "js/src/utils/count.js",
             "targetPath": "utils/count",
@@ -646,6 +666,26 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
             "targetPath": "utils/cycle",
             "pageTitle": "utils/cycle",
             "title": "cycle"
+          },
+          "depth": 2,
+          "outline": []
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
+            "sourcePath": "/home/aureooms/dev/js/js-itertools/js/src/utils/exhaust.js",
+            "projectPath": "js/src/utils/exhaust.js",
+            "targetPath": "utils/exhaust",
+            "pageTitle": "utils/exhaust",
+            "title": "exhaust"
           },
           "depth": 2,
           "outline": []
