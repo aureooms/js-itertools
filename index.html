@@ -1,5 +1,6 @@
 <!DOCTYPE html><html lang="en"><head><title>index</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content=""><meta name="groc-document-path" content="index"><meta name="groc-project-path" content="README.md"><meta name="groc-github-url" content="https://github.com/aureooms/js-itertools"><link rel="stylesheet" type="text/css" media="all" href="assets/style.css"><script type="text/javascript" src="assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/aureooms/js-itertools/blob/master/README.md">README.md</a></div></div><div id="document"><div class="segment"><div class="comments "><div class="wrapper"><h1 id="-js-itertools-http-aureooms-github-io-js-itertools-"><a href="http://aureooms.github.io/js-itertools">js-itertools</a></h1>
-<p>Iterator code bricks for JavaScript.</p>
+<p>Iterator and iterable code bricks for JavaScript.</p>
+<pre><code class="lang-js">cycle( chain( [ [ <span class="hljs-number">0</span> , <span class="hljs-number">1</span> , <span class="hljs-number">2</span> ] , [ <span class="hljs-number">3</span> , <span class="hljs-number">4</span> , <span class="hljs-number">5</span> ] ] ) ) ; <span class="hljs-comment">// 0 1 2 3 4 5 0 1 ...</span></code></pre>
 <p><a href="https://raw.githubusercontent.com/aureooms/js-itertools/master/LICENSE"><img src="http://img.shields.io/npm/l/aureooms-js-itertools.svg?style=flat" alt="NPM license"></a>
 <a href="https://www.npmjs.org/package/aureooms-js-itertools"><img src="http://img.shields.io/npm/v/aureooms-js-itertools.svg?style=flat" alt="NPM version"></a>
 <a href="http://bower.io/search/?q=aureooms-js-itertools"><img src="http://img.shields.io/bower/v/aureooms-js-itertools.svg?style=flat" alt="Bower version"></a>
@@ -11,12 +12,52 @@
 <a href="https://www.npmjs.org/package/aureooms-js-itertools"><img src="http://img.shields.io/npm/dm/aureooms-js-itertools.svg?style=flat" alt="NPM downloads per month"></a>
 <a href="https://github.com/aureooms/js-itertools/issues"><img src="http://img.shields.io/github/issues/aureooms/js-itertools.svg?style=flat" alt="GitHub issues"></a>
 <a href="http://inch-ci.org/github/aureooms/js-itertools"><img src="http://inch-ci.org/github/aureooms/js-itertools.svg?branch=master&amp;style=shields" alt="Inline docs"></a></p>
-<p>Can be managed through <a href="https://github.com/duojs/duo">duo</a>,
+<p>Can be managed through <a href="https://github.com/jspm/jspm-cli">jspm</a>,
+<a href="https://github.com/duojs/duo">duo</a>,
 <a href="https://github.com/componentjs/component">component</a>,
-<a href="https://github.com/bower/bower">bower</a>, or
-<a href="https://github.com/npm/npm">npm</a>.</p>
+<a href="https://github.com/bower/bower">bower</a>,
+<a href="https://github.com/ender-js/Ender">ender</a>,
+<a href="https://github.com/caolan/jam">jam</a>,
+<a href="https://github.com/spmjs/spm">spm</a>,
+and <a href="https://github.com/npm/npm">npm</a>.</p>
+<h2 id="caveat">Caveat</h2>
+<p>Requires <code>regeneratorRuntime</code> to be defined, see
+<a href="http://babeljs.io/docs/usage/polyfill/">babel docs</a>.</p>
+<h2 id="install">Install</h2>
+<h3 id="jspm">jspm</h3>
+<pre><code class="lang-terminal">jspm install github:aureooms/js-itertools
+# or
+jspm install npm:aureooms-js-itertools</code></pre>
+<h3 id="duo">duo</h3>
+<p>No install step needed for duo!</p>
+<h3 id="component">component</h3>
+<pre><code class="lang-terminal">component install aureooms/js-itertools</code></pre>
+<h3 id="bower">bower</h3>
+<pre><code class="lang-terminal">bower install aureooms-js-itertools</code></pre>
+<h3 id="ender">ender</h3>
+<pre><code class="lang-terminal">ender add aureooms-js-itertools</code></pre>
+<h3 id="jam">jam</h3>
+<pre><code class="lang-terminal">jam install aureooms-js-itertools</code></pre>
+<h3 id="spm">spm</h3>
+<pre><code class="lang-terminal">spm install aureooms-js-itertools --save</code></pre>
+<h3 id="npm">npm</h3>
+<pre><code class="lang-terminal">npm install aureooms-js-itertools --save</code></pre>
+<h2 id="require">Require</h2>
+<h3 id="jspm">jspm</h3>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> itertools = <span class="hljs-built_in">require</span>( <span class="hljs-string">"github:aureooms/js-itertools"</span> ) ;
+<span class="hljs-comment">// or</span>
+<span class="hljs-keyword">import</span> itertools <span class="hljs-keyword">from</span> <span class="hljs-string">'aureooms-js-itertools'</span> ;</code></pre>
+<h3 id="duo">duo</h3>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> itertools = <span class="hljs-built_in">require</span>( <span class="hljs-string">"aureooms/js-itertools"</span> ) ;</code></pre>
+<h3 id="component-ender-spm-npm">component, ender, spm, npm</h3>
 <pre><code class="lang-js"><span class="hljs-keyword">let</span> itertools = <span class="hljs-built_in">require</span>( <span class="hljs-string">"aureooms-js-itertools"</span> ) ;</code></pre>
-<p>Example usage:</p>
+<h3 id="bower">bower</h3>
+<p>The script tag exposes the global variable <code>itertools</code>.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"bower_components/aureooms-js-itertools/js/dist/itertools.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span></code></pre>
+<p>Alternatively, you can use any tool mentioned <a href="http://bower.io/docs/tools/">here</a>.</p>
+<h3 id="jam">jam</h3>
+<pre><code class="lang-js"><span class="hljs-built_in">require</span>( [ <span class="hljs-string">"aureooms-js-itertools"</span> ] , <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">( itertools )</span> </span>{ ... } ) ;</code></pre>
+<h2 id="use">Use</h2>
 <pre><code class="lang-js">itertools.range( <span class="hljs-number">2</span> , <span class="hljs-number">5</span> , <span class="hljs-number">1</span> ) ; <span class="hljs-comment">// 2 3 4</span>
 
 itertools.range( <span class="hljs-number">5</span> , <span class="hljs-number">2</span> , -<span class="hljs-number">1</span> ) ; <span class="hljs-comment">// 5 4 3</span>
@@ -112,10 +153,10 @@ itertools.combinationswithrepetition( itertools.range( <span class="hljs-number"
 itertools.reversed( <span class="hljs-string">"ABC"</span> ) ; <span class="hljs-comment">// C B A</span>
 
 itertools.sorted( compare.increasing , [ <span class="hljs-number">3</span> , <span class="hljs-number">1</span> , <span class="hljs-number">2</span> ] ) ; <span class="hljs-comment">// 1 2 3</span></code></pre>
-<p>References in Python and JavaScript:</p>
+<h2 id="references-in-python-and-javascript">References in Python and JavaScript</h2>
 <ul>
-<li><a href="http://mochi.github.io/mochikit/doc/html/MochiKit/Iter.html">http://mochi.github.io/mochikit/doc/html/MochiKit/Iter.html</a></li>
 <li><a href="https://docs.python.org/3/library/itertools.html">https://docs.python.org/3/library/itertools.html</a></li>
+<li><a href="http://mochi.github.io/mochikit/doc/html/MochiKit/Iter.html">http://mochi.github.io/mochikit/doc/html/MochiKit/Iter.html</a></li>
 <li><a href="https://github.com/cweider/js-itertools">https://github.com/cweider/js-itertools</a></li>
 <li><a href="http://itertoolsjs.com/">http://itertoolsjs.com/</a></li>
 <li><a href="https://github.com/thegoleffect/node-itertools">https://github.com/thegoleffect/node-itertools</a></li>
