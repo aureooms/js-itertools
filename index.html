@@ -56,7 +56,7 @@ jspm install npm:aureooms-js-itertools</code></pre>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"bower_components/aureooms-js-itertools/js/dist/itertools.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span></code></pre>
 <p>Alternatively, you can use any tool mentioned <a href="http://bower.io/docs/tools/">here</a>.</p>
 <h3 id="jam">jam</h3>
-<pre><code class="lang-js"><span class="hljs-built_in">require</span>( [ <span class="hljs-string">"aureooms-js-itertools"</span> ] , <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">( itertools )</span> </span>{ ... } ) ;</code></pre>
+<pre><code class="lang-js"><span class="hljs-built_in">require</span>( [ <span class="hljs-string">"aureooms-js-itertools"</span> ] , <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> itertools </span>) </span>{ ... } ) ;</code></pre>
 <h2 id="use">Use</h2>
 <pre><code class="lang-js">itertools.range( <span class="hljs-number">2</span> , <span class="hljs-number">5</span> , <span class="hljs-number">1</span> ) ; <span class="hljs-comment">// 2 3 4</span>
 
@@ -129,6 +129,8 @@ itertools.filterfalse( predicate.divisible( <span class="hljs-number">2</span> )
 itertools.group( operator.identity , <span class="hljs-string">"AAAABBBCCAABB"</span> ) ; <span class="hljs-comment">// [ A AAAA ] [ B BBB ] [ C CC ] [ A AA ] [ B BB ]</span>
 
 itertools.slice( itertools.count( <span class="hljs-number">0</span> , <span class="hljs-number">1</span> ) , <span class="hljs-number">40</span> , <span class="hljs-number">50</span> , <span class="hljs-number">3</span> ) ; <span class="hljs-comment">// 40 43 46 49</span>
+
+itertools.roundrobin( [ <span class="hljs-string">"ABC"</span> , <span class="hljs-string">"D"</span> , <span class="hljs-string">"EF"</span> ] ) ; <span class="hljs-comment">// A D E B F C</span>
 
 itertools.map( operator.truth , [ <span class="hljs-number">0</span> , <span class="hljs-number">1</span> , <span class="hljs-literal">null</span> , <span class="hljs-literal">undefined</span> , <span class="hljs-string">"A"</span> ] ) ; <span class="hljs-comment">// F T F F T</span>
 

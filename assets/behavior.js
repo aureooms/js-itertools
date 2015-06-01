@@ -513,6 +513,26 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
               "foldPrefix": "^",
               "name": "JavaScript"
             },
+            "sourcePath": "/home/aureooms/dev/js/js-itertools/js/src/map/roundrobin.js",
+            "projectPath": "js/src/map/roundrobin.js",
+            "targetPath": "map/roundrobin",
+            "pageTitle": "map/roundrobin",
+            "title": "roundrobin"
+          },
+          "depth": 2,
+          "outline": []
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
             "sourcePath": "/home/aureooms/dev/js/js-itertools/js/src/map/slice.js",
             "projectPath": "js/src/map/slice.js",
             "targetPath": "map/slice",
@@ -878,6 +898,26 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
             "targetPath": "utils/iter",
             "pageTitle": "utils/iter",
             "title": "iter"
+          },
+          "depth": 2,
+          "outline": []
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
+            "sourcePath": "/home/aureooms/dev/js/js-itertools/js/src/utils/len.js",
+            "projectPath": "js/src/utils/len.js",
+            "targetPath": "utils/len",
+            "pageTitle": "utils/len",
+            "title": "len"
           },
           "depth": 2,
           "outline": []
