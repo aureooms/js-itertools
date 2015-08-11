@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="en"><head><title>index</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content=""><meta name="groc-document-path" content="index"><meta name="groc-project-path" content="README.md"><meta name="groc-github-url" content="https://github.com/aureooms/js-itertools"><link rel="stylesheet" type="text/css" media="all" href="assets/style.css"><script type="text/javascript" src="assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/aureooms/js-itertools/blob/master/README.md">README.md</a></div></div><div id="document"><div class="segment"><div class="comments "><div class="wrapper"><h1 id="-js-itertools-http-aureooms-github-io-js-itertools-"><a href="http://aureooms.github.io/js-itertools">js-itertools</a></h1>
-<p>Iterator and iterable code bricks for JavaScript.</p>
+<p>Iterator and iterable code bricks for JavaScript. Parent is <a href="https://github.com/aureooms/js-library">aureooms/js-library</a>.</p>
 <pre><code class="lang-js">cycle( chain( [ [ <span class="hljs-number">0</span> , <span class="hljs-number">1</span> , <span class="hljs-number">2</span> ] , [ <span class="hljs-number">3</span> , <span class="hljs-number">4</span> , <span class="hljs-number">5</span> ] ] ) ) ; <span class="hljs-comment">// 0 1 2 3 4 5 0 1 ...</span></code></pre>
 <p><a href="https://raw.githubusercontent.com/aureooms/js-itertools/master/LICENSE"><img src="http://img.shields.io/npm/l/aureooms-js-itertools.svg?style=flat" alt="NPM license"></a>
 <a href="https://www.npmjs.org/package/aureooms-js-itertools"><img src="http://img.shields.io/npm/v/aureooms-js-itertools.svg?style=flat" alt="NPM version"></a>
@@ -58,7 +58,9 @@ jspm install npm:aureooms-js-itertools</code></pre>
 <h3 id="jam">jam</h3>
 <pre><code class="lang-js"><span class="hljs-built_in">require</span>( [ <span class="hljs-string">"aureooms-js-itertools"</span> ] , <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> itertools </span>) </span>{ ... } ) ;</code></pre>
 <h2 id="use">Use</h2>
-<pre><code class="lang-js">itertools.range( <span class="hljs-number">2</span> , <span class="hljs-number">5</span> , <span class="hljs-number">1</span> ) ; <span class="hljs-comment">// 2 3 4</span>
+<pre><code class="lang-js">itertools.range( <span class="hljs-number">3</span> ) ; <span class="hljs-comment">// 0 1 2</span>
+
+itertools.range( <span class="hljs-number">2</span> , <span class="hljs-number">5</span> ) ; <span class="hljs-comment">// 2 3 4</span>
 
 itertools.range( <span class="hljs-number">5</span> , <span class="hljs-number">2</span> , -<span class="hljs-number">1</span> ) ; <span class="hljs-comment">// 5 4 3</span>
 
@@ -76,7 +78,7 @@ itertools.head( itertools.repeat( <span class="hljs-string">"A"</span> ) , <span
 
 itertools.list( itertools.nrepeat( <span class="hljs-string">"A"</span> , <span class="hljs-number">3</span> ) ) ; <span class="hljs-comment">// AAA</span>
 
-itertools.pick( <span class="hljs-string">"ABCD"</span> , itertools.range( <span class="hljs-number">0</span> , <span class="hljs-number">2</span> , <span class="hljs-number">1</span> ) ) ; <span class="hljs-comment">// A C</span>
+itertools.pick( <span class="hljs-string">"ABCD"</span> , itertools.range( <span class="hljs-number">2</span> ) ) ; <span class="hljs-comment">// A C</span>
 
 itertools.tee( <span class="hljs-string">"ABC"</span> , <span class="hljs-number">2</span> ) ; <span class="hljs-comment">// [ A B C , A B C ]</span>
 
@@ -100,11 +102,11 @@ itertools.max( compare.increasing , [ <span class="hljs-number">2</span> , <span
 
 <span class="hljs-keyword">let</span> operator = <span class="hljs-built_in">require</span>( <span class="hljs-string">"aureooms-js-operator"</span> ) ;
 
-itertools.reduce( operator.mul , itertools.range( <span class="hljs-number">2</span> , <span class="hljs-number">6</span> , <span class="hljs-number">1</span> ) , <span class="hljs-number">1</span> ) ; <span class="hljs-comment">// 120</span>
+itertools.reduce( operator.mul , itertools.range( <span class="hljs-number">2</span> , <span class="hljs-number">6</span> ) , <span class="hljs-number">1</span> ) ; <span class="hljs-comment">// 120</span>
 
-itertools.reduce( operator.add , itertools.range( <span class="hljs-number">2</span> , <span class="hljs-number">6</span> , <span class="hljs-number">1</span> ) , <span class="hljs-number">1</span> ) ; <span class="hljs-comment">// 15</span>
+itertools.reduce( operator.add , itertools.range( <span class="hljs-number">2</span> , <span class="hljs-number">6</span> ) , <span class="hljs-number">1</span> ) ; <span class="hljs-comment">// 15</span>
 
-itertools.sum( itertools.range( <span class="hljs-number">1</span> , <span class="hljs-number">6</span> , <span class="hljs-number">1</span> ) ) ; <span class="hljs-comment">// 15</span>
+itertools.sum( itertools.range( <span class="hljs-number">1</span> , <span class="hljs-number">6</span> ) ) ; <span class="hljs-comment">// 15</span>
 
 itertools.chain( [ <span class="hljs-string">"ABC"</span> , <span class="hljs-string">"XY"</span> ] ) ; <span class="hljs-comment">// A B C X Y</span>
 
@@ -138,19 +140,19 @@ itertools.starmap( operator.mul , itertools.zip( itertools.count( <span class="h
 
 itertools.product( [ <span class="hljs-string">"ABCD"</span> , <span class="hljs-string">"xy"</span> ] , <span class="hljs-number">1</span> ) ; <span class="hljs-comment">// Ax Ay Bx By Cx Cy Dx Dy</span>
 
-itertools.product( [ itertools.range( <span class="hljs-number">0</span> , <span class="hljs-number">2</span> , <span class="hljs-number">1</span> ) ] , <span class="hljs-number">3</span> ) ; <span class="hljs-comment">// 000 001 010 011 100 101 110 111</span>
+itertools.product( [ itertools.range( <span class="hljs-number">2</span> ) ] , <span class="hljs-number">3</span> ) ; <span class="hljs-comment">// 000 001 010 011 100 101 110 111</span>
 
 itertools.permutations( <span class="hljs-string">"ABCD"</span> , <span class="hljs-number">2</span> ) ; <span class="hljs-comment">// AB AC AD BA BC BD CA CB CD DA DB DC</span>
 
-itertools.permutations( itertools.range( <span class="hljs-number">0</span> , <span class="hljs-number">3</span> , <span class="hljs-number">1</span> ) , <span class="hljs-number">3</span> ) ; <span class="hljs-comment">// 012 021 102 120 201 210</span>
+itertools.permutations( itertools.range( <span class="hljs-number">3</span> ) , <span class="hljs-number">3</span> ) ; <span class="hljs-comment">// 012 021 102 120 201 210</span>
 
 itertools.combinations( <span class="hljs-string">"ABCD"</span> , <span class="hljs-number">2</span> ) ; <span class="hljs-comment">// AB AC AD BC BD CD</span>
 
-itertools.combinations( itertools.range( <span class="hljs-number">0</span> , <span class="hljs-number">4</span> , <span class="hljs-number">1</span> ) , <span class="hljs-number">3</span> ) ; <span class="hljs-comment">// 012 013 023 123</span>
+itertools.combinations( itertools.range( <span class="hljs-number">4</span> ) , <span class="hljs-number">3</span> ) ; <span class="hljs-comment">// 012 013 023 123</span>
 
 itertools.combinationswithrepetition( <span class="hljs-string">"ABC"</span> , <span class="hljs-number">1</span> ) ; <span class="hljs-comment">// A B C</span>
 
-itertools.combinationswithrepetition( itertools.range( <span class="hljs-number">0</span> , <span class="hljs-number">3</span> , <span class="hljs-number">1</span> ) , <span class="hljs-number">2</span> ) ; <span class="hljs-comment">// 00 01 02 11 12 22</span>
+itertools.combinationswithrepetition( itertools.range( <span class="hljs-number">3</span> ) , <span class="hljs-number">2</span> ) ; <span class="hljs-comment">// 00 01 02 11 12 22</span>
 
 itertools.reversed( <span class="hljs-string">"ABC"</span> ) ; <span class="hljs-comment">// C B A</span>
 

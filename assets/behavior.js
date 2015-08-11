@@ -793,6 +793,26 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
               "foldPrefix": "^",
               "name": "JavaScript"
             },
+            "sourcePath": "/home/aureooms/dev/js/js-itertools/js/src/utils/_range.js",
+            "projectPath": "js/src/utils/_range.js",
+            "targetPath": "utils/_range",
+            "pageTitle": "utils/_range",
+            "title": "_range"
+          },
+          "depth": 2,
+          "outline": []
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
             "sourcePath": "/home/aureooms/dev/js/js-itertools/js/src/utils/consume.js",
             "projectPath": "js/src/utils/consume.js",
             "targetPath": "utils/consume",
