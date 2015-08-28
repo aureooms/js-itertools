@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="en"><head><title>utils/by</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content="../"><meta name="groc-document-path" content="utils/by"><meta name="groc-project-path" content="js/src/utils/by.js"><meta name="groc-github-url" content="https://github.com/aureooms/js-itertools"><link rel="stylesheet" type="text/css" media="all" href="../assets/style.css"><script type="text/javascript" src="../assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/aureooms/js-itertools/blob/master/js/src/utils/by.js">js/src/utils/by.js</a></div></div><div id="document"><div class="segment"><div class="code"><div class="wrapper"><span class="hljs-keyword">const</span> by = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"> iterable , n </span>) </span>{
+
+	<span class="hljs-keyword">const</span> iterator = iter( iterable ) ;
+
+	<span class="hljs-keyword">while</span> ( <span class="hljs-literal">true</span> ) {
+
+		<span class="hljs-keyword">const</span> tuple = [ ] ;
+
+		<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">const</span> i <span class="hljs-keyword">of</span> range( n ) ) {
+
+			<span class="hljs-keyword">const</span> current = next( iterator ) ;
+
+			<span class="hljs-keyword">if</span> ( current.done ) {
+
+				<span class="hljs-keyword">if</span> ( i === <span class="hljs-number">0</span> ) <span class="hljs-keyword">return</span> ;
+
+				<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">const</span> j <span class="hljs-keyword">of</span> range( n - i ) ) tuple.push( <span class="hljs-literal">undefined</span> ) ;
+
+				<span class="hljs-keyword">yield</span> tuple ;
+
+				<span class="hljs-keyword">return</span> ;
+
+			}
+
+			tuple.push( current.value ) ;
+
+		}
+
+		<span class="hljs-keyword">yield</span> tuple ;
+
+	}
+
+} ;
+
+exports.by = by ;</div></div></div></div></body></html>
