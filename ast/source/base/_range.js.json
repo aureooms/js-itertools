@@ -1,0 +1,680 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "_range",
+          "range": [
+            387,
+            393
+          ],
+          "loc": {
+            "start": {
+              "line": 11,
+              "column": 17
+            },
+            "end": {
+              "line": 11,
+              "column": 23
+            }
+          }
+        },
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "start",
+            "range": [
+              396,
+              401
+            ],
+            "loc": {
+              "start": {
+                "line": 11,
+                "column": 26
+              },
+              "end": {
+                "line": 11,
+                "column": 31
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "stop",
+            "range": [
+              404,
+              408
+            ],
+            "loc": {
+              "start": {
+                "line": 11,
+                "column": 34
+              },
+              "end": {
+                "line": 11,
+                "column": 38
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "step",
+            "range": [
+              411,
+              415
+            ],
+            "loc": {
+              "start": {
+                "line": 11,
+                "column": 41
+              },
+              "end": {
+                "line": 11,
+                "column": 45
+              }
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "IfStatement",
+              "test": {
+                "type": "BinaryExpression",
+                "operator": "<",
+                "left": {
+                  "type": "Identifier",
+                  "name": "step",
+                  "range": [
+                    427,
+                    431
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 13,
+                      "column": 6
+                    },
+                    "end": {
+                      "line": 13,
+                      "column": 10
+                    }
+                  }
+                },
+                "right": {
+                  "type": "Literal",
+                  "value": 0,
+                  "raw": "0",
+                  "range": [
+                    434,
+                    435
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 13,
+                      "column": 13
+                    },
+                    "end": {
+                      "line": 13,
+                      "column": 14
+                    }
+                  }
+                },
+                "range": [
+                  427,
+                  435
+                ],
+                "loc": {
+                  "start": {
+                    "line": 13,
+                    "column": 6
+                  },
+                  "end": {
+                    "line": 13,
+                    "column": 14
+                  }
+                }
+              },
+              "consequent": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ForStatement",
+                    "init": null,
+                    "test": {
+                      "type": "BinaryExpression",
+                      "operator": ">",
+                      "left": {
+                        "type": "Identifier",
+                        "name": "start",
+                        "range": [
+                          450,
+                          455
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 14,
+                            "column": 10
+                          },
+                          "end": {
+                            "line": 14,
+                            "column": 15
+                          }
+                        }
+                      },
+                      "right": {
+                        "type": "Identifier",
+                        "name": "stop",
+                        "range": [
+                          458,
+                          462
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 14,
+                            "column": 18
+                          },
+                          "end": {
+                            "line": 14,
+                            "column": 22
+                          }
+                        }
+                      },
+                      "range": [
+                        450,
+                        462
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 14,
+                          "column": 10
+                        },
+                        "end": {
+                          "line": 14,
+                          "column": 22
+                        }
+                      }
+                    },
+                    "update": {
+                      "type": "AssignmentExpression",
+                      "operator": "+=",
+                      "left": {
+                        "type": "Identifier",
+                        "name": "start",
+                        "range": [
+                          465,
+                          470
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 14,
+                            "column": 25
+                          },
+                          "end": {
+                            "line": 14,
+                            "column": 30
+                          }
+                        }
+                      },
+                      "right": {
+                        "type": "Identifier",
+                        "name": "step",
+                        "range": [
+                          474,
+                          478
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 14,
+                            "column": 34
+                          },
+                          "end": {
+                            "line": 14,
+                            "column": 38
+                          }
+                        }
+                      },
+                      "range": [
+                        465,
+                        478
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 14,
+                          "column": 25
+                        },
+                        "end": {
+                          "line": 14,
+                          "column": 38
+                        }
+                      }
+                    },
+                    "body": {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "YieldExpression",
+                        "argument": {
+                          "type": "Identifier",
+                          "name": "start",
+                          "range": [
+                            487,
+                            492
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 14,
+                              "column": 47
+                            },
+                            "end": {
+                              "line": 14,
+                              "column": 52
+                            }
+                          }
+                        },
+                        "delegate": false,
+                        "range": [
+                          481,
+                          492
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 14,
+                            "column": 41
+                          },
+                          "end": {
+                            "line": 14,
+                            "column": 52
+                          }
+                        }
+                      },
+                      "range": [
+                        481,
+                        494
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 14,
+                          "column": 41
+                        },
+                        "end": {
+                          "line": 14,
+                          "column": 54
+                        }
+                      }
+                    },
+                    "range": [
+                      442,
+                      494
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 14,
+                        "column": 2
+                      },
+                      "end": {
+                        "line": 14,
+                        "column": 54
+                      }
+                    }
+                  }
+                ],
+                "range": [
+                  438,
+                  497
+                ],
+                "loc": {
+                  "start": {
+                    "line": 13,
+                    "column": 17
+                  },
+                  "end": {
+                    "line": 15,
+                    "column": 2
+                  }
+                }
+              },
+              "alternate": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ForStatement",
+                    "init": null,
+                    "test": {
+                      "type": "BinaryExpression",
+                      "operator": "<",
+                      "left": {
+                        "type": "Identifier",
+                        "name": "start",
+                        "range": [
+                          517,
+                          522
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 18,
+                            "column": 10
+                          },
+                          "end": {
+                            "line": 18,
+                            "column": 15
+                          }
+                        }
+                      },
+                      "right": {
+                        "type": "Identifier",
+                        "name": "stop",
+                        "range": [
+                          525,
+                          529
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 18,
+                            "column": 18
+                          },
+                          "end": {
+                            "line": 18,
+                            "column": 22
+                          }
+                        }
+                      },
+                      "range": [
+                        517,
+                        529
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 18,
+                          "column": 10
+                        },
+                        "end": {
+                          "line": 18,
+                          "column": 22
+                        }
+                      }
+                    },
+                    "update": {
+                      "type": "AssignmentExpression",
+                      "operator": "+=",
+                      "left": {
+                        "type": "Identifier",
+                        "name": "start",
+                        "range": [
+                          532,
+                          537
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 18,
+                            "column": 25
+                          },
+                          "end": {
+                            "line": 18,
+                            "column": 30
+                          }
+                        }
+                      },
+                      "right": {
+                        "type": "Identifier",
+                        "name": "step",
+                        "range": [
+                          541,
+                          545
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 18,
+                            "column": 34
+                          },
+                          "end": {
+                            "line": 18,
+                            "column": 38
+                          }
+                        }
+                      },
+                      "range": [
+                        532,
+                        545
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 18,
+                          "column": 25
+                        },
+                        "end": {
+                          "line": 18,
+                          "column": 38
+                        }
+                      }
+                    },
+                    "body": {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "YieldExpression",
+                        "argument": {
+                          "type": "Identifier",
+                          "name": "start",
+                          "range": [
+                            554,
+                            559
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 18,
+                              "column": 47
+                            },
+                            "end": {
+                              "line": 18,
+                              "column": 52
+                            }
+                          }
+                        },
+                        "delegate": false,
+                        "range": [
+                          548,
+                          559
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 18,
+                            "column": 41
+                          },
+                          "end": {
+                            "line": 18,
+                            "column": 52
+                          }
+                        }
+                      },
+                      "range": [
+                        548,
+                        561
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 18,
+                          "column": 41
+                        },
+                        "end": {
+                          "line": 18,
+                          "column": 54
+                        }
+                      }
+                    },
+                    "range": [
+                      509,
+                      561
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 18,
+                        "column": 2
+                      },
+                      "end": {
+                        "line": 18,
+                        "column": 54
+                      }
+                    }
+                  }
+                ],
+                "range": [
+                  505,
+                  564
+                ],
+                "loc": {
+                  "start": {
+                    "line": 17,
+                    "column": 6
+                  },
+                  "end": {
+                    "line": 19,
+                    "column": 2
+                  }
+                }
+              },
+              "range": [
+                422,
+                564
+              ],
+              "loc": {
+                "start": {
+                  "line": 13,
+                  "column": 1
+                },
+                "end": {
+                  "line": 19,
+                  "column": 2
+                }
+              }
+            }
+          ],
+          "range": [
+            418,
+            567
+          ],
+          "loc": {
+            "start": {
+              "line": 11,
+              "column": 48
+            },
+            "end": {
+              "line": 21,
+              "column": 1
+            }
+          }
+        },
+        "generator": true,
+        "expression": false,
+        "range": [
+          377,
+          567
+        ],
+        "loc": {
+          "start": {
+            "line": 11,
+            "column": 7
+          },
+          "end": {
+            "line": 21,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * Yields values in a range, separated by a fixed constant called step. If\n * this step is negative, the range has to be given in reverse order, that is,\n * largest value first, smallest value second.\n *\n * @param {Number} start - The starting value.\n * @param {Number} stop - The stopping value.\n * @param {Number} step - The step value.\n * @returns {Iterator}\n ",
+            "range": [
+              0,
+              369
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 0
+              },
+              "end": {
+                "line": 10,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": []
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        370,
+        567
+      ],
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 0
+        },
+        "end": {
+          "line": 21,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * Yields values in a range, separated by a fixed constant called step. If\n * this step is negative, the range has to be given in reverse order, that is,\n * largest value first, smallest value second.\n *\n * @param {Number} start - The starting value.\n * @param {Number} stop - The stopping value.\n * @param {Number} step - The step value.\n * @returns {Iterator}\n ",
+          "range": [
+            0,
+            369
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 0
+            },
+            "end": {
+              "line": 10,
+              "column": 3
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "sourceType": "module",
+  "range": [
+    370,
+    567
+  ],
+  "loc": {
+    "start": {
+      "line": 11,
+      "column": 0
+    },
+    "end": {
+      "line": 21,
+      "column": 1
+    }
+  },
+  "comments": [
+    {
+      "type": "Block",
+      "value": "*\n * Yields values in a range, separated by a fixed constant called step. If\n * this step is negative, the range has to be given in reverse order, that is,\n * largest value first, smallest value second.\n *\n * @param {Number} start - The starting value.\n * @param {Number} stop - The stopping value.\n * @param {Number} step - The step value.\n * @returns {Iterator}\n ",
+      "range": [
+        0,
+        369
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 10,
+          "column": 3
+        }
+      }
+    }
+  ]
+}

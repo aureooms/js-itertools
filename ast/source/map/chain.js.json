@@ -1,0 +1,320 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "chain",
+          "range": [
+            378,
+            383
+          ],
+          "loc": {
+            "start": {
+              "line": 13,
+              "column": 17
+            },
+            "end": {
+              "line": 13,
+              "column": 22
+            }
+          }
+        },
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "iterables",
+            "range": [
+              386,
+              395
+            ],
+            "loc": {
+              "start": {
+                "line": 13,
+                "column": 25
+              },
+              "end": {
+                "line": 13,
+                "column": 34
+              }
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ForOfStatement",
+              "left": {
+                "type": "VariableDeclaration",
+                "declarations": [
+                  {
+                    "type": "VariableDeclarator",
+                    "id": {
+                      "type": "Identifier",
+                      "name": "iterable",
+                      "range": [
+                        412,
+                        420
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 15,
+                          "column": 11
+                        },
+                        "end": {
+                          "line": 15,
+                          "column": 19
+                        }
+                      }
+                    },
+                    "init": null,
+                    "range": [
+                      412,
+                      420
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 15,
+                        "column": 11
+                      },
+                      "end": {
+                        "line": 15,
+                        "column": 19
+                      }
+                    }
+                  }
+                ],
+                "kind": "let",
+                "range": [
+                  408,
+                  420
+                ],
+                "loc": {
+                  "start": {
+                    "line": 15,
+                    "column": 7
+                  },
+                  "end": {
+                    "line": 15,
+                    "column": 19
+                  }
+                }
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "iterables",
+                "range": [
+                  424,
+                  433
+                ],
+                "loc": {
+                  "start": {
+                    "line": 15,
+                    "column": 23
+                  },
+                  "end": {
+                    "line": 15,
+                    "column": 32
+                  }
+                }
+              },
+              "body": {
+                "type": "ExpressionStatement",
+                "expression": {
+                  "type": "YieldExpression",
+                  "argument": {
+                    "type": "Identifier",
+                    "name": "iterable",
+                    "range": [
+                      443,
+                      451
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 15,
+                        "column": 42
+                      },
+                      "end": {
+                        "line": 15,
+                        "column": 50
+                      }
+                    }
+                  },
+                  "delegate": true,
+                  "range": [
+                    436,
+                    451
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 15,
+                      "column": 35
+                    },
+                    "end": {
+                      "line": 15,
+                      "column": 50
+                    }
+                  }
+                },
+                "range": [
+                  436,
+                  453
+                ],
+                "loc": {
+                  "start": {
+                    "line": 15,
+                    "column": 35
+                  },
+                  "end": {
+                    "line": 15,
+                    "column": 52
+                  }
+                }
+              },
+              "range": [
+                402,
+                453
+              ],
+              "loc": {
+                "start": {
+                  "line": 15,
+                  "column": 1
+                },
+                "end": {
+                  "line": 15,
+                  "column": 52
+                }
+              }
+            }
+          ],
+          "range": [
+            398,
+            456
+          ],
+          "loc": {
+            "start": {
+              "line": 13,
+              "column": 37
+            },
+            "end": {
+              "line": 17,
+              "column": 1
+            }
+          }
+        },
+        "generator": true,
+        "expression": false,
+        "range": [
+          368,
+          456
+        ],
+        "loc": {
+          "start": {
+            "line": 13,
+            "column": 7
+          },
+          "end": {
+            "line": 17,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * Chains input iterables one after the other. Returns an iterator that yields\n * all values of the first input iterable, then all values of the second, etc.\n *\n * @example\n * // returns [ 0 , 1 , 0 , 1 , 2 ]\n * list( chain( [ range( 2 ) , range( 3 ) ] ) ) ;\n *\n * @param {Iterable[]} iterables - The input iterables to chain.\n * @returns {Iterator}\n *\n ",
+            "range": [
+              0,
+              360
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 0
+              },
+              "end": {
+                "line": 12,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": []
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        361,
+        456
+      ],
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 0
+        },
+        "end": {
+          "line": 17,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * Chains input iterables one after the other. Returns an iterator that yields\n * all values of the first input iterable, then all values of the second, etc.\n *\n * @example\n * // returns [ 0 , 1 , 0 , 1 , 2 ]\n * list( chain( [ range( 2 ) , range( 3 ) ] ) ) ;\n *\n * @param {Iterable[]} iterables - The input iterables to chain.\n * @returns {Iterator}\n *\n ",
+          "range": [
+            0,
+            360
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 0
+            },
+            "end": {
+              "line": 12,
+              "column": 3
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "sourceType": "module",
+  "range": [
+    361,
+    456
+  ],
+  "loc": {
+    "start": {
+      "line": 13,
+      "column": 0
+    },
+    "end": {
+      "line": 17,
+      "column": 1
+    }
+  },
+  "comments": [
+    {
+      "type": "Block",
+      "value": "*\n * Chains input iterables one after the other. Returns an iterator that yields\n * all values of the first input iterable, then all values of the second, etc.\n *\n * @example\n * // returns [ 0 , 1 , 0 , 1 , 2 ]\n * list( chain( [ range( 2 ) , range( 3 ) ] ) ) ;\n *\n * @param {Iterable[]} iterables - The input iterables to chain.\n * @returns {Iterator}\n *\n ",
+      "range": [
+        0,
+        360
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 12,
+          "column": 3
+        }
+      }
+    }
+  ]
+}

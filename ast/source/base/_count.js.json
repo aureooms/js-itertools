@@ -1,0 +1,373 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "_count",
+          "range": [
+            475,
+            481
+          ],
+          "loc": {
+            "start": {
+              "line": 17,
+              "column": 17
+            },
+            "end": {
+              "line": 17,
+              "column": 23
+            }
+          }
+        },
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "start",
+            "range": [
+              484,
+              489
+            ],
+            "loc": {
+              "start": {
+                "line": 17,
+                "column": 26
+              },
+              "end": {
+                "line": 17,
+                "column": 31
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "step",
+            "range": [
+              492,
+              496
+            ],
+            "loc": {
+              "start": {
+                "line": 17,
+                "column": 34
+              },
+              "end": {
+                "line": 17,
+                "column": 38
+              }
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "WhileStatement",
+              "test": {
+                "type": "Literal",
+                "value": true,
+                "raw": "true",
+                "range": [
+                  511,
+                  515
+                ],
+                "loc": {
+                  "start": {
+                    "line": 19,
+                    "column": 9
+                  },
+                  "end": {
+                    "line": 19,
+                    "column": 13
+                  }
+                }
+              },
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "YieldExpression",
+                      "argument": {
+                        "type": "Identifier",
+                        "name": "start",
+                        "range": [
+                          529,
+                          534
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 21,
+                            "column": 8
+                          },
+                          "end": {
+                            "line": 21,
+                            "column": 13
+                          }
+                        }
+                      },
+                      "delegate": false,
+                      "range": [
+                        523,
+                        534
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 21,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 21,
+                          "column": 13
+                        }
+                      }
+                    },
+                    "range": [
+                      523,
+                      536
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 21,
+                        "column": 2
+                      },
+                      "end": {
+                        "line": 21,
+                        "column": 15
+                      }
+                    }
+                  },
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "AssignmentExpression",
+                      "operator": "+=",
+                      "left": {
+                        "type": "Identifier",
+                        "name": "start",
+                        "range": [
+                          540,
+                          545
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 23,
+                            "column": 2
+                          },
+                          "end": {
+                            "line": 23,
+                            "column": 7
+                          }
+                        }
+                      },
+                      "right": {
+                        "type": "Identifier",
+                        "name": "step",
+                        "range": [
+                          549,
+                          553
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 23,
+                            "column": 11
+                          },
+                          "end": {
+                            "line": 23,
+                            "column": 15
+                          }
+                        }
+                      },
+                      "range": [
+                        540,
+                        553
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 23,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 23,
+                          "column": 15
+                        }
+                      }
+                    },
+                    "range": [
+                      540,
+                      555
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 23,
+                        "column": 2
+                      },
+                      "end": {
+                        "line": 23,
+                        "column": 17
+                      }
+                    }
+                  }
+                ],
+                "range": [
+                  518,
+                  559
+                ],
+                "loc": {
+                  "start": {
+                    "line": 19,
+                    "column": 16
+                  },
+                  "end": {
+                    "line": 25,
+                    "column": 2
+                  }
+                }
+              },
+              "range": [
+                503,
+                559
+              ],
+              "loc": {
+                "start": {
+                  "line": 19,
+                  "column": 1
+                },
+                "end": {
+                  "line": 25,
+                  "column": 2
+                }
+              }
+            }
+          ],
+          "range": [
+            499,
+            562
+          ],
+          "loc": {
+            "start": {
+              "line": 17,
+              "column": 41
+            },
+            "end": {
+              "line": 27,
+              "column": 1
+            }
+          }
+        },
+        "generator": true,
+        "expression": false,
+        "range": [
+          465,
+          562
+        ],
+        "loc": {
+          "start": {
+            "line": 17,
+            "column": 7
+          },
+          "end": {
+            "line": 27,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * Yields increasing or decreasing sequences of numbers. The starting value\n * and the step between separating output values can be chosen.\n *\n * @example\n * // equivalent to list( range( 7 ) )\n * list( head( _count( 0 , 1 ) , 7 ) ) ;\n *\n * @example\n * // returns [0,-1,-2,-3,-4]\n * list( head( _count( 0 , -1 ) , 5 ) ) ;\n *\n * @param {Number} start - The starting value.\n * @param {Number} step - The step between the values.\n * @returns {Iterator}\n ",
+            "range": [
+              0,
+              457
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 0
+              },
+              "end": {
+                "line": 16,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": []
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        458,
+        562
+      ],
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 0
+        },
+        "end": {
+          "line": 27,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * Yields increasing or decreasing sequences of numbers. The starting value\n * and the step between separating output values can be chosen.\n *\n * @example\n * // equivalent to list( range( 7 ) )\n * list( head( _count( 0 , 1 ) , 7 ) ) ;\n *\n * @example\n * // returns [0,-1,-2,-3,-4]\n * list( head( _count( 0 , -1 ) , 5 ) ) ;\n *\n * @param {Number} start - The starting value.\n * @param {Number} step - The step between the values.\n * @returns {Iterator}\n ",
+          "range": [
+            0,
+            457
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 0
+            },
+            "end": {
+              "line": 16,
+              "column": 3
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "sourceType": "module",
+  "range": [
+    458,
+    562
+  ],
+  "loc": {
+    "start": {
+      "line": 17,
+      "column": 0
+    },
+    "end": {
+      "line": 27,
+      "column": 1
+    }
+  },
+  "comments": [
+    {
+      "type": "Block",
+      "value": "*\n * Yields increasing or decreasing sequences of numbers. The starting value\n * and the step between separating output values can be chosen.\n *\n * @example\n * // equivalent to list( range( 7 ) )\n * list( head( _count( 0 , 1 ) , 7 ) ) ;\n *\n * @example\n * // returns [0,-1,-2,-3,-4]\n * list( head( _count( 0 , -1 ) , 5 ) ) ;\n *\n * @param {Number} start - The starting value.\n * @param {Number} step - The step between the values.\n * @returns {Iterator}\n ",
+      "range": [
+        0,
+        457
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 16,
+          "column": 3
+        }
+      }
+    }
+  ]
+}

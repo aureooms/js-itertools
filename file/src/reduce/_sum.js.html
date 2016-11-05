@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl">
-  <title data-ice="title">aureooms/js-itertools API Document</title>
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/reduce/_sum.js | aureooms/js-itertools API Document</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -98,35 +98,32 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="-aureooms-js-itertools-https-aureooms-github-io-js-itertools-"><a href="https://aureooms.github.io/js-itertools">aureooms/js-itertools</a></h1>
-<p>Iterable and iterator library for JavaScript.
-Parent is <a href="https://github.com/aureooms/js-library">aureooms/js-library</a>.
-See <a href="https://aureooms.github.io/js-itertools/index.html">documentation</a>.</p>
-<pre><code class="lang-js"><code class="source-code prettyprint">cycle( chain( [ [ 0 , 1 , 2 ] , [ 3 , 4 , 5 ] ] ) ) ; // 0 1 2 3 4 5 0 1 ...</code>
+<div class="content" data-ice="content"><h1 data-ice="title">src/reduce/_sum.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * Sums the elements of the input iterable. An optional initializer parameter
+ * allows to start the sum of the elements at a chosen value.
+ *
+ * @example
+ * _sum( range( 10 ) , 0 ) ; // returns 45
+ *
+ * @example
+ * _sum( range( 10 ) , 100 ) ; // returns 145
+ *
+ * @param {Iterable} iterable - The input iterable.
+ * @param {Object} initializer - The initial value of the sum.
+ * @returns {Object} - The sum of the initializer with the elements of
+ * &lt;code&gt;iterable&lt;/code&gt;.
+ *
+ */
+export function _sum ( iterable , initializer ) {
+
+	for ( let item of iterable ) initializer += item ;
+
+	return initializer ;
+
+}
 </code></pre>
-<p><a href="https://raw.githubusercontent.com/aureooms/js-itertools/master/LICENSE"><img src="http://img.shields.io/npm/l/aureooms-js-itertools.svg?style=flat" alt="NPM license"></a>
-<a href="https://www.npmjs.org/package/aureooms-js-itertools"><img src="http://img.shields.io/npm/v/aureooms-js-itertools.svg?style=flat" alt="NPM version"></a>
-<a href="https://travis-ci.org/aureooms/js-itertools"><img src="http://img.shields.io/travis/aureooms/js-itertools.svg?style=flat" alt="Build status"></a>
-<a href="https://coveralls.io/r/aureooms/js-itertools"><img src="http://img.shields.io/coveralls/aureooms/js-itertools.svg?style=flat" alt="Coverage status"></a>
-<a href="https://david-dm.org/aureooms/js-itertools#info=dependencies"><img src="http://img.shields.io/david/aureooms/js-itertools.svg?style=flat" alt="Dependencies status"></a>
-<a href="https://david-dm.org/aureooms/js-itertools#info=devDependencies"><img src="http://img.shields.io/david/dev/aureooms/js-itertools.svg?style=flat" alt="Dev dependencies status"></a>
-<a href="https://codeclimate.com/github/aureooms/js-itertools"><img src="http://img.shields.io/codeclimate/github/aureooms/js-itertools.svg?style=flat" alt="Code Climate"></a>
-<a href="https://www.npmjs.org/package/aureooms-js-itertools"><img src="http://img.shields.io/npm/dm/aureooms-js-itertools.svg?style=flat" alt="NPM downloads per month"></a>
-<a href="https://github.com/aureooms/js-itertools/issues"><img src="http://img.shields.io/github/issues/aureooms/js-itertools.svg?style=flat" alt="GitHub issues"></a>
-<a href="https://aureooms.github.io/js-itertools/source.html"><img src="https://aureooms.github.io/js-itertools/badge.svg" alt="Documentation"></a></p>
-<h2 id="references-in-python-and-javascript">References in Python and JavaScript</h2>
-<ul>
-<li><a href="https://docs.python.org/3/library/itertools.html">https://docs.python.org/3/library/itertools.html</a></li>
-<li><a href="http://mochi.github.io/mochikit/doc/html/MochiKit/Iter.html">http://mochi.github.io/mochikit/doc/html/MochiKit/Iter.html</a></li>
-<li><a href="https://github.com/cweider/js-itertools">https://github.com/cweider/js-itertools</a></li>
-<li><a href="http://itertoolsjs.com">http://itertoolsjs.com</a></li>
-<li><a href="https://github.com/thegoleffect/node-itertools">https://github.com/thegoleffect/node-itertools</a></li>
-<li><a href="http://rfw.name/sloth.js">http://rfw.name/sloth.js</a></li>
-<li><a href="https://github.com/lodash/lodash">https://github.com/lodash/lodash</a></li>
-<li><a href="https://github.com/erikrose/more-itertools">https://github.com/erikrose/more-itertools</a></li>
-<li><a href="https://github.com/StreetStrider/aux.js">https://github.com/StreetStrider/aux.js</a></li>
-</ul>
-</div>
+
 </div>
 
 <footer class="footer">

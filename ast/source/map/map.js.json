@@ -1,0 +1,375 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "map",
+          "range": [
+            320,
+            323
+          ],
+          "loc": {
+            "start": {
+              "line": 12,
+              "column": 17
+            },
+            "end": {
+              "line": 12,
+              "column": 20
+            }
+          }
+        },
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "callable",
+            "range": [
+              326,
+              334
+            ],
+            "loc": {
+              "start": {
+                "line": 12,
+                "column": 23
+              },
+              "end": {
+                "line": 12,
+                "column": 31
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "iterable",
+            "range": [
+              337,
+              345
+            ],
+            "loc": {
+              "start": {
+                "line": 12,
+                "column": 34
+              },
+              "end": {
+                "line": 12,
+                "column": 42
+              }
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ForOfStatement",
+              "left": {
+                "type": "VariableDeclaration",
+                "declarations": [
+                  {
+                    "type": "VariableDeclarator",
+                    "id": {
+                      "type": "Identifier",
+                      "name": "item",
+                      "range": [
+                        362,
+                        366
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 14,
+                          "column": 11
+                        },
+                        "end": {
+                          "line": 14,
+                          "column": 15
+                        }
+                      }
+                    },
+                    "init": null,
+                    "range": [
+                      362,
+                      366
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 14,
+                        "column": 11
+                      },
+                      "end": {
+                        "line": 14,
+                        "column": 15
+                      }
+                    }
+                  }
+                ],
+                "kind": "let",
+                "range": [
+                  358,
+                  366
+                ],
+                "loc": {
+                  "start": {
+                    "line": 14,
+                    "column": 7
+                  },
+                  "end": {
+                    "line": 14,
+                    "column": 15
+                  }
+                }
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "iterable",
+                "range": [
+                  370,
+                  378
+                ],
+                "loc": {
+                  "start": {
+                    "line": 14,
+                    "column": 19
+                  },
+                  "end": {
+                    "line": 14,
+                    "column": 27
+                  }
+                }
+              },
+              "body": {
+                "type": "ExpressionStatement",
+                "expression": {
+                  "type": "YieldExpression",
+                  "argument": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "callable",
+                      "range": [
+                        387,
+                        395
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 14,
+                          "column": 36
+                        },
+                        "end": {
+                          "line": 14,
+                          "column": 44
+                        }
+                      }
+                    },
+                    "arguments": [
+                      {
+                        "type": "Identifier",
+                        "name": "item",
+                        "range": [
+                          397,
+                          401
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 14,
+                            "column": 46
+                          },
+                          "end": {
+                            "line": 14,
+                            "column": 50
+                          }
+                        }
+                      }
+                    ],
+                    "range": [
+                      387,
+                      403
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 14,
+                        "column": 36
+                      },
+                      "end": {
+                        "line": 14,
+                        "column": 52
+                      }
+                    }
+                  },
+                  "delegate": false,
+                  "range": [
+                    381,
+                    403
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 14,
+                      "column": 30
+                    },
+                    "end": {
+                      "line": 14,
+                      "column": 52
+                    }
+                  }
+                },
+                "range": [
+                  381,
+                  405
+                ],
+                "loc": {
+                  "start": {
+                    "line": 14,
+                    "column": 30
+                  },
+                  "end": {
+                    "line": 14,
+                    "column": 54
+                  }
+                }
+              },
+              "range": [
+                352,
+                405
+              ],
+              "loc": {
+                "start": {
+                  "line": 14,
+                  "column": 1
+                },
+                "end": {
+                  "line": 14,
+                  "column": 54
+                }
+              }
+            }
+          ],
+          "range": [
+            348,
+            408
+          ],
+          "loc": {
+            "start": {
+              "line": 12,
+              "column": 45
+            },
+            "end": {
+              "line": 16,
+              "column": 1
+            }
+          }
+        },
+        "generator": true,
+        "expression": false,
+        "range": [
+          310,
+          408
+        ],
+        "loc": {
+          "start": {
+            "line": 12,
+            "column": 7
+          },
+          "end": {
+            "line": 16,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * Applies a given callable to each of the elements of the input iterable.\n *\n * @example\n * // return [ 0 , 1 , 4 , 9 ]\n * list( map( x => x**2 , range( 4 ) ) ) ;\n *\n * @param {Function} callable - The callable to use.\n * @param {Iterable} iterable - The input iterable.\n * @returns {Iterator}\n ",
+            "range": [
+              0,
+              302
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 0
+              },
+              "end": {
+                "line": 11,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": []
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        303,
+        408
+      ],
+      "loc": {
+        "start": {
+          "line": 12,
+          "column": 0
+        },
+        "end": {
+          "line": 16,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * Applies a given callable to each of the elements of the input iterable.\n *\n * @example\n * // return [ 0 , 1 , 4 , 9 ]\n * list( map( x => x**2 , range( 4 ) ) ) ;\n *\n * @param {Function} callable - The callable to use.\n * @param {Iterable} iterable - The input iterable.\n * @returns {Iterator}\n ",
+          "range": [
+            0,
+            302
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 0
+            },
+            "end": {
+              "line": 11,
+              "column": 3
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "sourceType": "module",
+  "range": [
+    303,
+    408
+  ],
+  "loc": {
+    "start": {
+      "line": 12,
+      "column": 0
+    },
+    "end": {
+      "line": 16,
+      "column": 1
+    }
+  },
+  "comments": [
+    {
+      "type": "Block",
+      "value": "*\n * Applies a given callable to each of the elements of the input iterable.\n *\n * @example\n * // return [ 0 , 1 , 4 , 9 ]\n * list( map( x => x**2 , range( 4 ) ) ) ;\n *\n * @param {Function} callable - The callable to use.\n * @param {Iterable} iterable - The input iterable.\n * @returns {Iterator}\n ",
+      "range": [
+        0,
+        302
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 11,
+          "column": 3
+        }
+      }
+    }
+  ]
+}

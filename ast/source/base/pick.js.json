@@ -1,0 +1,374 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "pick",
+          "range": [
+            362,
+            366
+          ],
+          "loc": {
+            "start": {
+              "line": 13,
+              "column": 17
+            },
+            "end": {
+              "line": 13,
+              "column": 21
+            }
+          }
+        },
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "object",
+            "range": [
+              369,
+              375
+            ],
+            "loc": {
+              "start": {
+                "line": 13,
+                "column": 24
+              },
+              "end": {
+                "line": 13,
+                "column": 30
+              }
+            }
+          },
+          {
+            "type": "Identifier",
+            "name": "iterable",
+            "range": [
+              378,
+              386
+            ],
+            "loc": {
+              "start": {
+                "line": 13,
+                "column": 33
+              },
+              "end": {
+                "line": 13,
+                "column": 41
+              }
+            }
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ForOfStatement",
+              "left": {
+                "type": "VariableDeclaration",
+                "declarations": [
+                  {
+                    "type": "VariableDeclarator",
+                    "id": {
+                      "type": "Identifier",
+                      "name": "key",
+                      "range": [
+                        403,
+                        406
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 15,
+                          "column": 11
+                        },
+                        "end": {
+                          "line": 15,
+                          "column": 14
+                        }
+                      }
+                    },
+                    "init": null,
+                    "range": [
+                      403,
+                      406
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 15,
+                        "column": 11
+                      },
+                      "end": {
+                        "line": 15,
+                        "column": 14
+                      }
+                    }
+                  }
+                ],
+                "kind": "let",
+                "range": [
+                  399,
+                  406
+                ],
+                "loc": {
+                  "start": {
+                    "line": 15,
+                    "column": 7
+                  },
+                  "end": {
+                    "line": 15,
+                    "column": 14
+                  }
+                }
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "iterable",
+                "range": [
+                  410,
+                  418
+                ],
+                "loc": {
+                  "start": {
+                    "line": 15,
+                    "column": 18
+                  },
+                  "end": {
+                    "line": 15,
+                    "column": 26
+                  }
+                }
+              },
+              "body": {
+                "type": "ExpressionStatement",
+                "expression": {
+                  "type": "YieldExpression",
+                  "argument": {
+                    "type": "MemberExpression",
+                    "computed": true,
+                    "object": {
+                      "type": "Identifier",
+                      "name": "object",
+                      "range": [
+                        427,
+                        433
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 15,
+                          "column": 35
+                        },
+                        "end": {
+                          "line": 15,
+                          "column": 41
+                        }
+                      }
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "key",
+                      "range": [
+                        434,
+                        437
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 15,
+                          "column": 42
+                        },
+                        "end": {
+                          "line": 15,
+                          "column": 45
+                        }
+                      }
+                    },
+                    "range": [
+                      427,
+                      438
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 15,
+                        "column": 35
+                      },
+                      "end": {
+                        "line": 15,
+                        "column": 46
+                      }
+                    }
+                  },
+                  "delegate": false,
+                  "range": [
+                    421,
+                    438
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 15,
+                      "column": 29
+                    },
+                    "end": {
+                      "line": 15,
+                      "column": 46
+                    }
+                  }
+                },
+                "range": [
+                  421,
+                  440
+                ],
+                "loc": {
+                  "start": {
+                    "line": 15,
+                    "column": 29
+                  },
+                  "end": {
+                    "line": 15,
+                    "column": 48
+                  }
+                }
+              },
+              "range": [
+                393,
+                440
+              ],
+              "loc": {
+                "start": {
+                  "line": 15,
+                  "column": 1
+                },
+                "end": {
+                  "line": 15,
+                  "column": 48
+                }
+              }
+            }
+          ],
+          "range": [
+            389,
+            443
+          ],
+          "loc": {
+            "start": {
+              "line": 13,
+              "column": 44
+            },
+            "end": {
+              "line": 17,
+              "column": 1
+            }
+          }
+        },
+        "generator": true,
+        "expression": false,
+        "range": [
+          352,
+          443
+        ],
+        "loc": {
+          "start": {
+            "line": 13,
+            "column": 7
+          },
+          "end": {
+            "line": 17,
+            "column": 1
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * Yields some of the properties of the input object. The properties to yield\n * are designated by the input iterable.\n *\n * @example\n * // returns [ 'a' , 'e' , 'c' ]\n * list( pick( 'abcde' , [ 0 , 4 , 2 ] ) ) ;\n *\n * @param {Object} object - The input object.\n * @param {Iterable} iterable - The input iterable.\n * @returns {Iterator}\n ",
+            "range": [
+              0,
+              344
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 0
+              },
+              "end": {
+                "line": 12,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": []
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        345,
+        443
+      ],
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 0
+        },
+        "end": {
+          "line": 17,
+          "column": 1
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * Yields some of the properties of the input object. The properties to yield\n * are designated by the input iterable.\n *\n * @example\n * // returns [ 'a' , 'e' , 'c' ]\n * list( pick( 'abcde' , [ 0 , 4 , 2 ] ) ) ;\n *\n * @param {Object} object - The input object.\n * @param {Iterable} iterable - The input iterable.\n * @returns {Iterator}\n ",
+          "range": [
+            0,
+            344
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 0
+            },
+            "end": {
+              "line": 12,
+              "column": 3
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "sourceType": "module",
+  "range": [
+    345,
+    443
+  ],
+  "loc": {
+    "start": {
+      "line": 13,
+      "column": 0
+    },
+    "end": {
+      "line": 17,
+      "column": 1
+    }
+  },
+  "comments": [
+    {
+      "type": "Block",
+      "value": "*\n * Yields some of the properties of the input object. The properties to yield\n * are designated by the input iterable.\n *\n * @example\n * // returns [ 'a' , 'e' , 'c' ]\n * list( pick( 'abcde' , [ 0 , 4 , 2 ] ) ) ;\n *\n * @param {Object} object - The input object.\n * @param {Iterable} iterable - The input iterable.\n * @returns {Iterator}\n ",
+      "range": [
+        0,
+        344
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 12,
+          "column": 3
+        }
+      }
+    }
+  ]
+}
