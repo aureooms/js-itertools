@@ -5,81 +5,63 @@
       "type": "ImportDeclaration",
       "specifiers": [
         {
-          "type": "ImportSpecifier",
+          "type": "ImportDefaultSpecifier",
           "local": {
             "type": "Identifier",
             "name": "deque",
             "range": [
-              9,
-              14
+              7,
+              12
             ],
             "loc": {
               "start": {
                 "line": 1,
-                "column": 9
+                "column": 7
               },
               "end": {
                 "line": 1,
-                "column": 14
-              }
-            }
-          },
-          "imported": {
-            "type": "Identifier",
-            "name": "deque",
-            "range": [
-              9,
-              14
-            ],
-            "loc": {
-              "start": {
-                "line": 1,
-                "column": 9
-              },
-              "end": {
-                "line": 1,
-                "column": 14
+                "column": 12
               }
             }
           },
           "range": [
-            9,
-            14
+            7,
+            12
           ],
           "loc": {
             "start": {
               "line": 1,
-              "column": 9
+              "column": 7
             },
             "end": {
               "line": 1,
-              "column": 14
+              "column": 12
             }
           }
         }
       ],
       "source": {
         "type": "Literal",
-        "value": "aureooms-js-collections",
-        "raw": "'aureooms-js-collections'",
+        "value": "aureooms-js-collections-deque",
+        "raw": "'aureooms-js-collections-deque'",
         "range": [
-          22,
-          47
+          18,
+          49
         ],
         "loc": {
           "start": {
             "line": 1,
-            "column": 22
+            "column": 18
           },
           "end": {
             "line": 1,
-            "column": 47
+            "column": 49
           }
         }
       },
       "range": [
         0,
-        49
+        51
       ],
       "loc": {
         "start": {
@@ -88,7 +70,7 @@
         },
         "end": {
           "line": 1,
-          "column": 49
+          "column": 51
         }
       }
     },
@@ -101,8 +83,8 @@
             "type": "Identifier",
             "name": "iter",
             "range": [
-              60,
-              64
+              62,
+              66
             ],
             "loc": {
               "start": {
@@ -119,8 +101,8 @@
             "type": "Identifier",
             "name": "iter",
             "range": [
-              60,
-              64
+              62,
+              66
             ],
             "loc": {
               "start": {
@@ -134,8 +116,8 @@
             }
           },
           "range": [
-            60,
-            64
+            62,
+            66
           ],
           "loc": {
             "start": {
@@ -154,8 +136,8 @@
         "value": "./iter",
         "raw": "'./iter'",
         "range": [
-          72,
-          80
+          74,
+          82
         ],
         "loc": {
           "start": {
@@ -169,8 +151,8 @@
         }
       },
       "range": [
-        51,
-        82
+        53,
+        84
       ],
       "loc": {
         "start": {
@@ -192,8 +174,8 @@
             "type": "Identifier",
             "name": "drop",
             "range": [
-              92,
-              96
+              94,
+              98
             ],
             "loc": {
               "start": {
@@ -210,8 +192,8 @@
             "type": "Identifier",
             "name": "drop",
             "range": [
-              92,
-              96
+              94,
+              98
             ],
             "loc": {
               "start": {
@@ -225,8 +207,8 @@
             }
           },
           "range": [
-            92,
-            96
+            94,
+            98
           ],
           "loc": {
             "start": {
@@ -245,8 +227,8 @@
         "value": "./drop",
         "raw": "'./drop'",
         "range": [
-          104,
-          112
+          106,
+          114
         ],
         "loc": {
           "start": {
@@ -260,8 +242,8 @@
         }
       },
       "range": [
-        83,
-        114
+        85,
+        116
       ],
       "loc": {
         "start": {
@@ -278,8 +260,8 @@
           "type": "Block",
           "value": "*\n * Returns the last <code>n</code> elements of the input iterable in an array.\n * If <code>n</code> is negative, behaves like <code>{@link drop}( iterable,\n * -n)</code>.\n *\n * @example\n * // returns [ 3 , 4 ]\n * list( tail( range( 5 ) , 2 ) ) ;\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} n - The number of elements to include in the output.\n * @returns {Array} - The last <code>n</code> elements of the input iterable.\n ",
           "range": [
-            116,
-            574
+            118,
+            576
           ],
           "loc": {
             "start": {
@@ -302,8 +284,8 @@
           "type": "Identifier",
           "name": "tail",
           "range": [
-            592,
-            596
+            594,
+            598
           ],
           "loc": {
             "start": {
@@ -321,8 +303,8 @@
             "type": "Identifier",
             "name": "iterable",
             "range": [
-              599,
-              607
+              601,
+              609
             ],
             "loc": {
               "start": {
@@ -339,8 +321,8 @@
             "type": "Identifier",
             "name": "n",
             "range": [
-              610,
-              611
+              612,
+              613
             ],
             "loc": {
               "start": {
@@ -366,8 +348,8 @@
                   "type": "Identifier",
                   "name": "n",
                   "range": [
-                    623,
-                    624
+                    625,
+                    626
                   ],
                   "loc": {
                     "start": {
@@ -385,8 +367,8 @@
                   "value": 0,
                   "raw": "0",
                   "range": [
-                    627,
-                    628
+                    629,
+                    630
                   ],
                   "loc": {
                     "start": {
@@ -400,8 +382,8 @@
                   }
                 },
                 "range": [
-                  623,
-                  628
+                  625,
+                  630
                 ],
                 "loc": {
                   "start": {
@@ -427,8 +409,8 @@
                           "type": "Identifier",
                           "name": "drop",
                           "range": [
-                            642,
-                            646
+                            644,
+                            648
                           ],
                           "loc": {
                             "start": {
@@ -446,8 +428,8 @@
                             "type": "Identifier",
                             "name": "iterable",
                             "range": [
-                              648,
-                              656
+                              650,
+                              658
                             ],
                             "loc": {
                               "start": {
@@ -467,8 +449,8 @@
                               "type": "Identifier",
                               "name": "n",
                               "range": [
-                                660,
-                                661
+                                662,
+                                663
                               ],
                               "loc": {
                                 "start": {
@@ -483,8 +465,8 @@
                             },
                             "prefix": true,
                             "range": [
-                              659,
-                              661
+                              661,
+                              663
                             ],
                             "loc": {
                               "start": {
@@ -499,8 +481,8 @@
                           }
                         ],
                         "range": [
-                          642,
-                          663
+                          644,
+                          665
                         ],
                         "loc": {
                           "start": {
@@ -515,8 +497,8 @@
                       },
                       "delegate": true,
                       "range": [
-                        635,
-                        663
+                        637,
+                        665
                       ],
                       "loc": {
                         "start": {
@@ -530,8 +512,8 @@
                       }
                     },
                     "range": [
-                      635,
-                      665
+                      637,
+                      667
                     ],
                     "loc": {
                       "start": {
@@ -548,8 +530,8 @@
                     "type": "ReturnStatement",
                     "argument": null,
                     "range": [
-                      668,
-                      676
+                      670,
+                      678
                     ],
                     "loc": {
                       "start": {
@@ -564,8 +546,8 @@
                   }
                 ],
                 "range": [
-                  631,
-                  679
+                  633,
+                  681
                 ],
                 "loc": {
                   "start": {
@@ -580,8 +562,8 @@
               },
               "alternate": null,
               "range": [
-                618,
-                679
+                620,
+                681
               ],
               "loc": {
                 "start": {
@@ -604,8 +586,8 @@
                     "type": "Identifier",
                     "name": "deque",
                     "range": [
-                      689,
-                      694
+                      691,
+                      696
                     ],
                     "loc": {
                       "start": {
@@ -623,8 +605,8 @@
                       "type": "Identifier",
                       "name": "iterable",
                       "range": [
-                        696,
-                        704
+                        698,
+                        706
                       ],
                       "loc": {
                         "start": {
@@ -641,8 +623,8 @@
                       "type": "Identifier",
                       "name": "n",
                       "range": [
-                        707,
-                        708
+                        709,
+                        710
                       ],
                       "loc": {
                         "start": {
@@ -657,8 +639,8 @@
                     }
                   ],
                   "range": [
-                    689,
-                    710
+                    691,
+                    712
                   ],
                   "loc": {
                     "start": {
@@ -673,8 +655,8 @@
                 },
                 "delegate": true,
                 "range": [
-                  682,
-                  710
+                  684,
+                  712
                 ],
                 "loc": {
                   "start": {
@@ -688,8 +670,8 @@
                 }
               },
               "range": [
-                682,
-                712
+                684,
+                714
               ],
               "loc": {
                 "start": {
@@ -704,8 +686,8 @@
             }
           ],
           "range": [
-            614,
-            715
+            616,
+            717
           ],
           "loc": {
             "start": {
@@ -721,8 +703,8 @@
         "generator": true,
         "expression": false,
         "range": [
-          582,
-          715
+          584,
+          717
         ],
         "loc": {
           "start": {
@@ -739,8 +721,8 @@
             "type": "Block",
             "value": "*\n * Returns the last <code>n</code> elements of the input iterable in an array.\n * If <code>n</code> is negative, behaves like <code>{@link drop}( iterable,\n * -n)</code>.\n *\n * @example\n * // returns [ 3 , 4 ]\n * list( tail( range( 5 ) , 2 ) ) ;\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} n - The number of elements to include in the output.\n * @returns {Array} - The last <code>n</code> elements of the input iterable.\n ",
             "range": [
-              116,
-              574
+              118,
+              576
             ],
             "loc": {
               "start": {
@@ -759,8 +741,8 @@
       "specifiers": [],
       "source": null,
       "range": [
-        575,
-        715
+        577,
+        717
       ],
       "loc": {
         "start": {
@@ -777,8 +759,8 @@
           "type": "Block",
           "value": "*\n * Returns the last <code>n</code> elements of the input iterable in an array.\n * If <code>n</code> is negative, behaves like <code>{@link drop}( iterable,\n * -n)</code>.\n *\n * @example\n * // returns [ 3 , 4 ]\n * list( tail( range( 5 ) , 2 ) ) ;\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} n - The number of elements to include in the output.\n * @returns {Array} - The last <code>n</code> elements of the input iterable.\n ",
           "range": [
-            116,
-            574
+            118,
+            576
           ],
           "loc": {
             "start": {
@@ -797,7 +779,7 @@
   "sourceType": "module",
   "range": [
     0,
-    715
+    717
   ],
   "loc": {
     "start": {
@@ -814,8 +796,8 @@
       "type": "Block",
       "value": "*\n * Returns the last <code>n</code> elements of the input iterable in an array.\n * If <code>n</code> is negative, behaves like <code>{@link drop}( iterable,\n * -n)</code>.\n *\n * @example\n * // returns [ 3 , 4 ]\n * list( tail( range( 5 ) , 2 ) ) ;\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} n - The number of elements to include in the output.\n * @returns {Array} - The last <code>n</code> elements of the input iterable.\n ",
       "range": [
-        116,
-        574
+        118,
+        576
       ],
       "loc": {
         "start": {

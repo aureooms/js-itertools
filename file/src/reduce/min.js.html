@@ -119,13 +119,13 @@
  * @returns {Object} The smallest element of &lt;code&gt;iterable&lt;/code&gt; according to
  * &lt;code&gt;compare&lt;/code&gt;.
  */
-export function min ( compare , iterable ) {
+export function min ( compare , iterable , dflt = undefined ) {
 
 	let iterator = iter( iterable ) ;
 
 	let first = iterator.next( ) ;
 
-	if ( first.done ) return undefined ;
+	if ( first.done ) return dflt ;
 
 	let smallest = first.value ;
 
