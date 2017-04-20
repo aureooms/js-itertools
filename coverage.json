@@ -1,7 +1,7 @@
 {
   "coverage": "100%",
-  "expectCount": 60,
-  "actualCount": 60,
+  "expectCount": 62,
+  "actualCount": 62,
   "files": {
     "src/base/StopIteration.js": {
       "expectCount": 1,
@@ -133,6 +133,11 @@
       "actualCount": 1,
       "undocumentLines": []
     },
+    "src/base/first.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
     "src/base/frame.js": {
       "expectCount": 1,
       "actualCount": 1,
@@ -149,6 +154,11 @@
       "undocumentLines": []
     },
     "src/base/iter.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/base/last.js": {
       "expectCount": 1,
       "actualCount": 1,
       "undocumentLines": []

@@ -1,5 +1,5 @@
 {
-  "name": "aureooms-js-itertools",
+  "name": "@aureooms/js-itertools",
   "description": "Iterable and iterator library for JavaScript",
   "version": "3.1.1",
   "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
@@ -23,20 +23,20 @@
     "url": "https://github.com/aureooms/js-itertools/issues"
   },
   "dependencies": {
-    "aureooms-js-collections-deque": "^3.1.0"
+    "@aureooms/js-collections-deque": "^3.1.0"
   },
   "devDependencies": {
-    "aureooms-js-compare": "^1.4.5",
-    "aureooms-js-operator": "^1.0.2",
-    "aureooms-js-predicate": "^2.0.2",
-    "ava": "^0.16.0",
-    "babel-cli": "^6.18.0",
-    "babel-polyfill": "^6.16.0",
-    "babel-preset-latest": "^6.16.0",
-    "codeclimate-test-reporter": "^0.4.0",
-    "coveralls": "^2.11.15",
-    "esdoc": "^0.4.8",
-    "nyc": "^9.0.1"
+    "@aureooms/js-compare": "^1.4.5",
+    "@aureooms/js-operator": "^1.0.2",
+    "@aureooms/js-predicate": "^2.0.2",
+    "ava": "^0.19.1",
+    "babel-cli": "^6.24.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-latest": "^6.24.1",
+    "codeclimate-test-reporter": "^0.4.1",
+    "coveralls": "^2.13.0",
+    "esdoc": "^0.5.2",
+    "nyc": "^10.2.0"
   },
   "homepage": "https://aureooms.github.io/js-itertools",
   "keywords": [

@@ -46,6 +46,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-exhaust">exhaust</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-frame">frame</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-iter">iter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-last">last</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-len">len</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-list">list</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-ncycle">ncycle</a></span></span></li>
@@ -56,6 +57,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-take">take</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-tee">tee</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-trunc">trunc</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-first">first</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-head">head</a></span></span></li>
 <li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">map</div><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_product">_product</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_zip">_zip</a></span></span></li>
@@ -98,21 +100,22 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="-aureooms-js-itertools-https-aureooms-github-io-js-itertools-"><a href="https://aureooms.github.io/js-itertools">aureooms/js-itertools</a></h1>
-<p>Iterable and iterator library for JavaScript.
-Parent is <a href="https://github.com/aureooms/js-library">aureooms/js-library</a>.
-See <a href="https://aureooms.github.io/js-itertools/index.html">documentation</a>.</p>
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="-aureooms-js-itertools-https-aureooms-github-io-js-itertools-"><a href="https://aureooms.github.io/js-itertools">@aureooms/js-itertools</a></h1>
+<p><img src="http://www.explainxkcd.com//wiki/images/f/fd/python.png" width="864"></p>
+<p>Python&apos;s iterable and iterator library for JavaScript.
+See <a href="https://aureooms.github.io/js-itertools">docs</a>.
+Parent is <a href="https://github.com/aureooms/js-library">@aureooms/js-library</a>.</p>
 <pre><code class="lang-js"><code class="source-code prettyprint">cycle( chain( [ [ 0 , 1 , 2 ] , [ 3 , 4 , 5 ] ] ) ) ; // 0 1 2 3 4 5 0 1 ...</code>
 </code></pre>
-<p><a href="https://raw.githubusercontent.com/aureooms/js-itertools/master/LICENSE"><img src="http://img.shields.io/npm/l/aureooms-js-itertools.svg?style=flat" alt="NPM license"></a>
-<a href="https://www.npmjs.org/package/aureooms-js-itertools"><img src="http://img.shields.io/npm/v/aureooms-js-itertools.svg?style=flat" alt="NPM version"></a>
-<a href="https://travis-ci.org/aureooms/js-itertools"><img src="http://img.shields.io/travis/aureooms/js-itertools.svg?style=flat" alt="Build status"></a>
-<a href="https://coveralls.io/r/aureooms/js-itertools"><img src="http://img.shields.io/coveralls/aureooms/js-itertools.svg?style=flat" alt="Coverage status"></a>
-<a href="https://david-dm.org/aureooms/js-itertools#info=dependencies"><img src="http://img.shields.io/david/aureooms/js-itertools.svg?style=flat" alt="Dependencies status"></a>
-<a href="https://david-dm.org/aureooms/js-itertools#info=devDependencies"><img src="http://img.shields.io/david/dev/aureooms/js-itertools.svg?style=flat" alt="Dev dependencies status"></a>
-<a href="https://codeclimate.com/github/aureooms/js-itertools"><img src="http://img.shields.io/codeclimate/github/aureooms/js-itertools.svg?style=flat" alt="Code Climate"></a>
-<a href="https://www.npmjs.org/package/aureooms-js-itertools"><img src="http://img.shields.io/npm/dm/aureooms-js-itertools.svg?style=flat" alt="NPM downloads per month"></a>
-<a href="https://github.com/aureooms/js-itertools/issues"><img src="http://img.shields.io/github/issues/aureooms/js-itertools.svg?style=flat" alt="GitHub issues"></a>
+<p><a href="https://raw.githubusercontent.com/aureooms/js-itertools/master/LICENSE"><img src="https://img.shields.io/github/license/aureooms/js-itertools.svg?style=flat" alt="License"></a>
+<a href="https://www.npmjs.org/package/@aureooms/js-itertools"><img src="https://img.shields.io/npm/v/@aureooms/js-itertools.svg?style=flat" alt="NPM version"></a>
+<a href="https://travis-ci.org/aureooms/js-itertools"><img src="https://img.shields.io/travis/aureooms/js-itertools.svg?style=flat" alt="Build status"></a>
+<a href="https://coveralls.io/r/aureooms/js-itertools"><img src="https://img.shields.io/coveralls/aureooms/js-itertools.svg?style=flat" alt="Coverage status"></a>
+<a href="https://david-dm.org/aureooms/js-itertools#info=dependencies"><img src="https://img.shields.io/david/aureooms/js-itertools.svg?style=flat" alt="Dependencies status"></a>
+<a href="https://david-dm.org/aureooms/js-itertools#info=devDependencies"><img src="https://img.shields.io/david/dev/aureooms/js-itertools.svg?style=flat" alt="Dev dependencies status"></a>
+<a href="https://codeclimate.com/github/aureooms/js-itertools"><img src="https://img.shields.io/codeclimate/github/aureooms/js-itertools.svg?style=flat" alt="Code Climate"></a>
+<a href="https://www.npmjs.org/package/@aureooms/js-itertools"><img src="https://img.shields.io/npm/dm/@aureooms/js-itertools.svg?style=flat" alt="NPM downloads per month"></a>
+<a href="https://github.com/aureooms/js-itertools/issues"><img src="https://img.shields.io/github/issues/aureooms/js-itertools.svg?style=flat" alt="GitHub issues"></a>
 <a href="https://aureooms.github.io/js-itertools/source.html"><img src="https://aureooms.github.io/js-itertools/badge.svg" alt="Documentation"></a></p>
 <h2 id="references-in-python-and-javascript">References in Python and JavaScript</h2>
 <ul>
@@ -130,7 +133,7 @@ See <a href="https://aureooms.github.io/js-itertools/index.html">documentation</
 </div>
 
 <footer class="footer">
-  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.4.8)</span></a>
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.5.2)</span><img src="./image/esdoc-logo-mini-black.png"></a>
 </footer>
 
 <script src="script/search_index.js"></script>

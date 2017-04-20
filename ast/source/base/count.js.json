@@ -1,382 +1,124 @@
 {
-  "type": "Program",
-  "body": [
-    {
-      "type": "ImportDeclaration",
-      "specifiers": [
-        {
-          "type": "ImportSpecifier",
-          "local": {
-            "type": "Identifier",
-            "name": "_count",
-            "range": [
-              9,
-              15
-            ],
-            "loc": {
-              "start": {
-                "line": 1,
-                "column": 9
-              },
-              "end": {
-                "line": 1,
-                "column": 15
-              }
-            }
-          },
-          "imported": {
-            "type": "Identifier",
-            "name": "_count",
-            "range": [
-              9,
-              15
-            ],
-            "loc": {
-              "start": {
-                "line": 1,
-                "column": 9
-              },
-              "end": {
-                "line": 1,
-                "column": 15
-              }
-            }
-          },
-          "range": [
-            9,
-            15
-          ],
-          "loc": {
-            "start": {
-              "line": 1,
-              "column": 9
-            },
-            "end": {
-              "line": 1,
-              "column": 15
-            }
-          }
-        }
-      ],
-      "source": {
-        "type": "Literal",
-        "value": "./_count",
-        "raw": "'./_count'",
-        "range": [
-          23,
-          33
-        ],
-        "loc": {
-          "start": {
-            "line": 1,
-            "column": 23
-          },
-          "end": {
-            "line": 1,
-            "column": 33
-          }
-        }
-      },
-      "range": [
-        0,
-        35
-      ],
-      "loc": {
-        "start": {
-          "line": 1,
-          "column": 0
-        },
-        "end": {
-          "line": 1,
-          "column": 35
-        }
-      },
-      "trailingComments": [
-        {
-          "type": "Block",
-          "value": "*\n * Yields increasing or decreasing sequences of numbers. The starting value\n * and the step between separating output values can be chosen. Both parameters are\n * optional. The default for the starting value is <code>0</code>. The default\n * for the step between separating output values is <code>1</code>.\n *\n * @example\n * // equivalent to list( range( 7 ) )\n * list( head( count( ) , 7 ) ) ;\n *\n * @example\n * // returns [0,-1,-2,-3,-4]\n * list( head( count( 0 , -1 ) , 5 ) ) ;\n *\n * @param {Number} [start=0] - The starting value.\n * @param {Number} [step=1] - The step between the values.\n * @returns {Iterator}\n ",
-          "range": [
-            37,
-            661
-          ],
-          "loc": {
-            "start": {
-              "line": 3,
-              "column": 0
-            },
-            "end": {
-              "line": 20,
-              "column": 3
-            }
-          }
-        }
-      ]
+  "type": "File",
+  "start": 0,
+  "end": 748,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
     },
-    {
-      "type": "ExportNamedDeclaration",
-      "declaration": {
-        "type": "FunctionDeclaration",
-        "id": {
-          "type": "Identifier",
-          "name": "count",
-          "range": [
-            678,
-            683
-          ],
-          "loc": {
-            "start": {
-              "line": 21,
-              "column": 16
-            },
-            "end": {
-              "line": 21,
-              "column": 21
-            }
-          }
-        },
-        "params": [
-          {
-            "type": "AssignmentPattern",
-            "left": {
-              "type": "Identifier",
-              "name": "start",
-              "range": [
-                686,
-                691
-              ],
-              "loc": {
-                "start": {
-                  "line": 21,
-                  "column": 24
-                },
-                "end": {
-                  "line": 21,
-                  "column": 29
-                }
-              }
-            },
-            "right": {
-              "type": "Literal",
-              "value": 0,
-              "raw": "0",
-              "range": [
-                694,
-                695
-              ],
-              "loc": {
-                "start": {
-                  "line": 21,
-                  "column": 32
-                },
-                "end": {
-                  "line": 21,
-                  "column": 33
-                }
-              }
-            },
-            "range": [
-              686,
-              695
-            ],
-            "loc": {
-              "start": {
-                "line": 21,
-                "column": 24
-              },
-              "end": {
-                "line": 21,
-                "column": 33
-              }
-            }
-          },
-          {
-            "type": "AssignmentPattern",
-            "left": {
-              "type": "Identifier",
-              "name": "step",
-              "range": [
-                698,
-                702
-              ],
-              "loc": {
-                "start": {
-                  "line": 21,
-                  "column": 36
-                },
-                "end": {
-                  "line": 21,
-                  "column": 40
-                }
-              }
-            },
-            "right": {
-              "type": "Literal",
-              "value": 1,
-              "raw": "1",
-              "range": [
-                705,
-                706
-              ],
-              "loc": {
-                "start": {
-                  "line": 21,
-                  "column": 43
-                },
-                "end": {
-                  "line": 21,
-                  "column": 44
-                }
-              }
-            },
-            "range": [
-              698,
-              706
-            ],
-            "loc": {
-              "start": {
-                "line": 21,
-                "column": 36
-              },
-              "end": {
-                "line": 21,
-                "column": 44
-              }
-            }
-          }
-        ],
-        "body": {
-          "type": "BlockStatement",
-          "body": [
-            {
-              "type": "ReturnStatement",
-              "argument": {
-                "type": "CallExpression",
-                "callee": {
-                  "type": "Identifier",
-                  "name": "_count",
-                  "range": [
-                    720,
-                    726
-                  ],
-                  "loc": {
-                    "start": {
-                      "line": 23,
-                      "column": 8
-                    },
-                    "end": {
-                      "line": 23,
-                      "column": 14
-                    }
-                  }
-                },
-                "arguments": [
-                  {
-                    "type": "Identifier",
-                    "name": "start",
-                    "range": [
-                      728,
-                      733
-                    ],
-                    "loc": {
-                      "start": {
-                        "line": 23,
-                        "column": 16
-                      },
-                      "end": {
-                        "line": 23,
-                        "column": 21
-                      }
-                    }
-                  },
-                  {
-                    "type": "Identifier",
-                    "name": "step",
-                    "range": [
-                      736,
-                      740
-                    ],
-                    "loc": {
-                      "start": {
-                        "line": 23,
-                        "column": 24
-                      },
-                      "end": {
-                        "line": 23,
-                        "column": 28
-                      }
-                    }
-                  }
-                ],
-                "range": [
-                  720,
-                  742
-                ],
-                "loc": {
-                  "start": {
-                    "line": 23,
-                    "column": 8
-                  },
-                  "end": {
-                    "line": 23,
-                    "column": 30
-                  }
-                }
-              },
-              "range": [
-                713,
-                744
-              ],
-              "loc": {
-                "start": {
-                  "line": 23,
-                  "column": 1
-                },
-                "end": {
-                  "line": 23,
-                  "column": 32
-                }
-              }
-            }
-          ],
-          "range": [
-            709,
-            747
-          ],
-          "loc": {
-            "start": {
-              "line": 21,
-              "column": 47
-            },
-            "end": {
-              "line": 25,
-              "column": 1
-            }
-          }
-        },
-        "generator": false,
-        "expression": false,
-        "range": [
-          669,
-          747
-        ],
+    "end": {
+      "line": 26,
+      "column": 0
+    }
+  },
+  "program": {
+    "type": "Program",
+    "start": 0,
+    "end": 748,
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 0
+      },
+      "end": {
+        "line": 26,
+        "column": 0
+      }
+    },
+    "sourceType": "module",
+    "body": [
+      {
+        "type": "ImportDeclaration",
+        "start": 0,
+        "end": 35,
         "loc": {
           "start": {
-            "line": 21,
-            "column": 7
+            "line": 1,
+            "column": 0
           },
           "end": {
-            "line": 25,
-            "column": 1
+            "line": 1,
+            "column": 35
           }
         },
-        "leadingComments": [
+        "specifiers": [
           {
-            "type": "Block",
+            "type": "ImportSpecifier",
+            "start": 9,
+            "end": 15,
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 9
+              },
+              "end": {
+                "line": 1,
+                "column": 15
+              }
+            },
+            "imported": {
+              "type": "Identifier",
+              "start": 9,
+              "end": 15,
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 9
+                },
+                "end": {
+                  "line": 1,
+                  "column": 15
+                },
+                "identifierName": "_count"
+              },
+              "name": "_count"
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 9,
+              "end": 15,
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 9
+                },
+                "end": {
+                  "line": 1,
+                  "column": 15
+                },
+                "identifierName": "_count"
+              },
+              "name": "_count"
+            }
+          }
+        ],
+        "source": {
+          "type": "StringLiteral",
+          "start": 23,
+          "end": 33,
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 23
+            },
+            "end": {
+              "line": 1,
+              "column": 33
+            }
+          },
+          "extra": {
+            "rawValue": "./_count",
+            "raw": "'./_count'"
+          },
+          "value": "./_count"
+        },
+        "trailingComments": [
+          {
+            "type": "CommentBlock",
             "value": "*\n * Yields increasing or decreasing sequences of numbers. The starting value\n * and the step between separating output values can be chosen. Both parameters are\n * optional. The default for the starting value is <code>0</code>. The default\n * for the step between separating output values is <code>1</code>.\n *\n * @example\n * // equivalent to list( range( 7 ) )\n * list( head( count( ) , 7 ) ) ;\n *\n * @example\n * // returns [0,-1,-2,-3,-4]\n * list( head( count( 0 , -1 ) , 5 ) ) ;\n *\n * @param {Number} [start=0] - The starting value.\n * @param {Number} [step=1] - The step between the values.\n * @returns {Iterator}\n ",
-            "range": [
-              37,
-              661
-            ],
+            "start": 37,
+            "end": 661,
             "loc": {
               "start": {
                 "line": 3,
@@ -388,70 +130,314 @@
               }
             }
           }
-        ],
-        "trailingComments": []
+        ]
       },
-      "specifiers": [],
-      "source": null,
-      "range": [
-        662,
-        747
-      ],
-      "loc": {
-        "start": {
-          "line": 21,
-          "column": 0
+      {
+        "type": "ExportNamedDeclaration",
+        "start": 662,
+        "end": 747,
+        "loc": {
+          "start": {
+            "line": 21,
+            "column": 0
+          },
+          "end": {
+            "line": 25,
+            "column": 1
+          }
         },
-        "end": {
-          "line": 25,
-          "column": 1
-        }
-      },
-      "leadingComments": [
-        {
-          "type": "Block",
-          "value": "*\n * Yields increasing or decreasing sequences of numbers. The starting value\n * and the step between separating output values can be chosen. Both parameters are\n * optional. The default for the starting value is <code>0</code>. The default\n * for the step between separating output values is <code>1</code>.\n *\n * @example\n * // equivalent to list( range( 7 ) )\n * list( head( count( ) , 7 ) ) ;\n *\n * @example\n * // returns [0,-1,-2,-3,-4]\n * list( head( count( 0 , -1 ) , 5 ) ) ;\n *\n * @param {Number} [start=0] - The starting value.\n * @param {Number} [step=1] - The step between the values.\n * @returns {Iterator}\n ",
-          "range": [
-            37,
-            661
-          ],
+        "specifiers": [],
+        "source": null,
+        "declaration": {
+          "type": "FunctionDeclaration",
+          "start": 669,
+          "end": 747,
           "loc": {
             "start": {
-              "line": 3,
-              "column": 0
+              "line": 21,
+              "column": 7
             },
             "end": {
-              "line": 20,
-              "column": 3
+              "line": 25,
+              "column": 1
+            }
+          },
+          "id": {
+            "type": "Identifier",
+            "start": 678,
+            "end": 683,
+            "loc": {
+              "start": {
+                "line": 21,
+                "column": 16
+              },
+              "end": {
+                "line": 21,
+                "column": 21
+              },
+              "identifierName": "count"
+            },
+            "name": "count",
+            "leadingComments": null
+          },
+          "generator": false,
+          "expression": false,
+          "async": false,
+          "params": [
+            {
+              "type": "AssignmentPattern",
+              "start": 686,
+              "end": 695,
+              "loc": {
+                "start": {
+                  "line": 21,
+                  "column": 24
+                },
+                "end": {
+                  "line": 21,
+                  "column": 33
+                }
+              },
+              "left": {
+                "type": "Identifier",
+                "start": 686,
+                "end": 691,
+                "loc": {
+                  "start": {
+                    "line": 21,
+                    "column": 24
+                  },
+                  "end": {
+                    "line": 21,
+                    "column": 29
+                  },
+                  "identifierName": "start"
+                },
+                "name": "start"
+              },
+              "right": {
+                "type": "NumericLiteral",
+                "start": 694,
+                "end": 695,
+                "loc": {
+                  "start": {
+                    "line": 21,
+                    "column": 32
+                  },
+                  "end": {
+                    "line": 21,
+                    "column": 33
+                  }
+                },
+                "extra": {
+                  "rawValue": 0,
+                  "raw": "0"
+                },
+                "value": 0
+              }
+            },
+            {
+              "type": "AssignmentPattern",
+              "start": 698,
+              "end": 706,
+              "loc": {
+                "start": {
+                  "line": 21,
+                  "column": 36
+                },
+                "end": {
+                  "line": 21,
+                  "column": 44
+                }
+              },
+              "left": {
+                "type": "Identifier",
+                "start": 698,
+                "end": 702,
+                "loc": {
+                  "start": {
+                    "line": 21,
+                    "column": 36
+                  },
+                  "end": {
+                    "line": 21,
+                    "column": 40
+                  },
+                  "identifierName": "step"
+                },
+                "name": "step"
+              },
+              "right": {
+                "type": "NumericLiteral",
+                "start": 705,
+                "end": 706,
+                "loc": {
+                  "start": {
+                    "line": 21,
+                    "column": 43
+                  },
+                  "end": {
+                    "line": 21,
+                    "column": 44
+                  }
+                },
+                "extra": {
+                  "rawValue": 1,
+                  "raw": "1"
+                },
+                "value": 1
+              }
+            }
+          ],
+          "body": {
+            "type": "BlockStatement",
+            "start": 709,
+            "end": 747,
+            "loc": {
+              "start": {
+                "line": 21,
+                "column": 47
+              },
+              "end": {
+                "line": 25,
+                "column": 1
+              }
+            },
+            "body": [
+              {
+                "type": "ReturnStatement",
+                "start": 713,
+                "end": 744,
+                "loc": {
+                  "start": {
+                    "line": 23,
+                    "column": 1
+                  },
+                  "end": {
+                    "line": 23,
+                    "column": 32
+                  }
+                },
+                "argument": {
+                  "type": "CallExpression",
+                  "start": 720,
+                  "end": 742,
+                  "loc": {
+                    "start": {
+                      "line": 23,
+                      "column": 8
+                    },
+                    "end": {
+                      "line": 23,
+                      "column": 30
+                    }
+                  },
+                  "callee": {
+                    "type": "Identifier",
+                    "start": 720,
+                    "end": 726,
+                    "loc": {
+                      "start": {
+                        "line": 23,
+                        "column": 8
+                      },
+                      "end": {
+                        "line": 23,
+                        "column": 14
+                      },
+                      "identifierName": "_count"
+                    },
+                    "name": "_count"
+                  },
+                  "arguments": [
+                    {
+                      "type": "Identifier",
+                      "start": 728,
+                      "end": 733,
+                      "loc": {
+                        "start": {
+                          "line": 23,
+                          "column": 16
+                        },
+                        "end": {
+                          "line": 23,
+                          "column": 21
+                        },
+                        "identifierName": "start"
+                      },
+                      "name": "start"
+                    },
+                    {
+                      "type": "Identifier",
+                      "start": 736,
+                      "end": 740,
+                      "loc": {
+                        "start": {
+                          "line": 23,
+                          "column": 24
+                        },
+                        "end": {
+                          "line": 23,
+                          "column": 28
+                        },
+                        "identifierName": "step"
+                      },
+                      "name": "step"
+                    }
+                  ]
+                }
+              }
+            ],
+            "directives": []
+          },
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * Yields increasing or decreasing sequences of numbers. The starting value\n * and the step between separating output values can be chosen. Both parameters are\n * optional. The default for the starting value is <code>0</code>. The default\n * for the step between separating output values is <code>1</code>.\n *\n * @example\n * // equivalent to list( range( 7 ) )\n * list( head( count( ) , 7 ) ) ;\n *\n * @example\n * // returns [0,-1,-2,-3,-4]\n * list( head( count( 0 , -1 ) , 5 ) ) ;\n *\n * @param {Number} [start=0] - The starting value.\n * @param {Number} [step=1] - The step between the values.\n * @returns {Iterator}\n ",
+              "start": 37,
+              "end": 661,
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 0
+                },
+                "end": {
+                  "line": 20,
+                  "column": 3
+                }
+              }
+            }
+          ],
+          "trailingComments": []
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * Yields increasing or decreasing sequences of numbers. The starting value\n * and the step between separating output values can be chosen. Both parameters are\n * optional. The default for the starting value is <code>0</code>. The default\n * for the step between separating output values is <code>1</code>.\n *\n * @example\n * // equivalent to list( range( 7 ) )\n * list( head( count( ) , 7 ) ) ;\n *\n * @example\n * // returns [0,-1,-2,-3,-4]\n * list( head( count( 0 , -1 ) , 5 ) ) ;\n *\n * @param {Number} [start=0] - The starting value.\n * @param {Number} [step=1] - The step between the values.\n * @returns {Iterator}\n ",
+            "start": 37,
+            "end": 661,
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 0
+              },
+              "end": {
+                "line": 20,
+                "column": 3
+              }
             }
           }
-        }
-      ]
-    }
-  ],
-  "sourceType": "module",
-  "range": [
-    0,
-    747
-  ],
-  "loc": {
-    "start": {
-      "line": 1,
-      "column": 0
-    },
-    "end": {
-      "line": 25,
-      "column": 1
-    }
+        ]
+      }
+    ],
+    "directives": []
   },
   "comments": [
     {
-      "type": "Block",
+      "type": "CommentBlock",
       "value": "*\n * Yields increasing or decreasing sequences of numbers. The starting value\n * and the step between separating output values can be chosen. Both parameters are\n * optional. The default for the starting value is <code>0</code>. The default\n * for the step between separating output values is <code>1</code>.\n *\n * @example\n * // equivalent to list( range( 7 ) )\n * list( head( count( ) , 7 ) ) ;\n *\n * @example\n * // returns [0,-1,-2,-3,-4]\n * list( head( count( 0 , -1 ) , 5 ) ) ;\n *\n * @param {Number} [start=0] - The starting value.\n * @param {Number} [step=1] - The step between the values.\n * @returns {Iterator}\n ",
-      "range": [
-        37,
-        661
-      ],
+      "start": 37,
+      "end": 661,
       "loc": {
         "start": {
           "line": 3,
@@ -460,6 +446,808 @@
         "end": {
           "line": 20,
           "column": 3
+        }
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "type": {
+        "label": "import",
+        "keyword": "import",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "import",
+      "start": 0,
+      "end": 6,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 7,
+      "end": 8,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 7
+        },
+        "end": {
+          "line": 1,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "_count",
+      "start": 9,
+      "end": 15,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 9
+        },
+        "end": {
+          "line": 1,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 16,
+      "end": 17,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 16
+        },
+        "end": {
+          "line": 1,
+          "column": 17
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "from",
+      "start": 18,
+      "end": 22,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 18
+        },
+        "end": {
+          "line": 1,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "./_count",
+      "start": 23,
+      "end": 33,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 23
+        },
+        "end": {
+          "line": 1,
+          "column": 33
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 34,
+      "end": 35,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 34
+        },
+        "end": {
+          "line": 1,
+          "column": 35
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * Yields increasing or decreasing sequences of numbers. The starting value\n * and the step between separating output values can be chosen. Both parameters are\n * optional. The default for the starting value is <code>0</code>. The default\n * for the step between separating output values is <code>1</code>.\n *\n * @example\n * // equivalent to list( range( 7 ) )\n * list( head( count( ) , 7 ) ) ;\n *\n * @example\n * // returns [0,-1,-2,-3,-4]\n * list( head( count( 0 , -1 ) , 5 ) ) ;\n *\n * @param {Number} [start=0] - The starting value.\n * @param {Number} [step=1] - The step between the values.\n * @returns {Iterator}\n ",
+      "start": 37,
+      "end": 661,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 20,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "export",
+        "keyword": "export",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "export",
+      "start": 662,
+      "end": 668,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 0
+        },
+        "end": {
+          "line": 21,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "function",
+        "keyword": "function",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "function",
+      "start": 669,
+      "end": 677,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 7
+        },
+        "end": {
+          "line": 21,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "count",
+      "start": 678,
+      "end": 683,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 16
+        },
+        "end": {
+          "line": 21,
+          "column": 21
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 684,
+      "end": 685,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 22
+        },
+        "end": {
+          "line": 21,
+          "column": 23
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "start",
+      "start": 686,
+      "end": 691,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 24
+        },
+        "end": {
+          "line": 21,
+          "column": 29
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 692,
+      "end": 693,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 30
+        },
+        "end": {
+          "line": 21,
+          "column": 31
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "num",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": 0,
+      "start": 694,
+      "end": 695,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 32
+        },
+        "end": {
+          "line": 21,
+          "column": 33
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 696,
+      "end": 697,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 34
+        },
+        "end": {
+          "line": 21,
+          "column": 35
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "step",
+      "start": 698,
+      "end": 702,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 36
+        },
+        "end": {
+          "line": 21,
+          "column": 40
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 703,
+      "end": 704,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 41
+        },
+        "end": {
+          "line": 21,
+          "column": 42
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "num",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": 1,
+      "start": 705,
+      "end": 706,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 43
+        },
+        "end": {
+          "line": 21,
+          "column": 44
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 707,
+      "end": 708,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 45
+        },
+        "end": {
+          "line": 21,
+          "column": 46
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 709,
+      "end": 710,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 47
+        },
+        "end": {
+          "line": 21,
+          "column": 48
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "return",
+        "keyword": "return",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "return",
+      "start": 713,
+      "end": 719,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 1
+        },
+        "end": {
+          "line": 23,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "_count",
+      "start": 720,
+      "end": 726,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 8
+        },
+        "end": {
+          "line": 23,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 726,
+      "end": 727,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 14
+        },
+        "end": {
+          "line": 23,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "start",
+      "start": 728,
+      "end": 733,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 16
+        },
+        "end": {
+          "line": 23,
+          "column": 21
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 734,
+      "end": 735,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 22
+        },
+        "end": {
+          "line": 23,
+          "column": 23
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "step",
+      "start": 736,
+      "end": 740,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 24
+        },
+        "end": {
+          "line": 23,
+          "column": 28
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 741,
+      "end": 742,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 29
+        },
+        "end": {
+          "line": 23,
+          "column": 30
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 743,
+      "end": 744,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 31
+        },
+        "end": {
+          "line": 23,
+          "column": 32
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 746,
+      "end": 747,
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 0
+        },
+        "end": {
+          "line": 25,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "eof",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 748,
+      "end": 748,
+      "loc": {
+        "start": {
+          "line": 26,
+          "column": 0
+        },
+        "end": {
+          "line": 26,
+          "column": 0
         }
       }
     }
