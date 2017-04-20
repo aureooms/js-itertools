@@ -3481,7 +3481,7 @@
     "__docId__": 116,
     "kind": "file",
     "name": "src/reduce/max.js",
-    "content": "import { iter } from '../base/iter' ;\n\n/**\n * Returns the largest element of the input iterable according\n * to some comparison function.\n *\n * @example\n * max( ( a , b ) => a - b , range( 10 ) ) ; // returns 9\n *\n * @example\n * max( ( a , b ) => a - b , range( 0 ) ) ; // returns undefined\n *\n * @param {Function} compare - The comparison function to use. This function\n * must be 2-ary. It must return -1, 0, or 1 depending whether the first\n * parameter is, respectively, less than, equal to, or greater than the second\n * parameter.\n * @param {Iterable} iterable - The input iterable.\n * @returns {Object} The largest element of <code>iterable</code> according to\n * <code>compare</code>.\n */\nexport function max ( compare , iterable , dflt = undefined ) {\n\n\tlet iterator = iter( iterable ) ;\n\n\tlet first = iterator.next() ;\n\n\tif ( first.done ) return dflt ;\n\n\tlet largest = first.value ;\n\n\tfor ( let candidate of iterator ) {\n\n\t\tif ( compare( candidate , largest ) > 0 ) {\n\n\t\t\tlargest = candidate ;\n\n\t\t}\n\n\t}\n\n\treturn largest ;\n\n}\n",
+    "content": "import { iter } from '../base/iter' ;\n\n/**\n * Returns the largest element of the input iterable according\n * to some comparison function.\n *\n * @example\n * max( ( a , b ) => a - b , range( 10 ) ) ; // returns 9\n *\n * @example\n * max( ( a , b ) => a - b , range( 0 ) ) ; // returns undefined\n *\n * @param {Function} compare - The comparison function to use. This function\n * must be 2-ary. It must return -1, 0, or 1 depending whether the first\n * parameter is, respectively, less than, equal to, or greater than the second\n * parameter.\n * @param {Iterable} iterable - The input iterable.\n * @param {Object} [dflt=undefined] - The default value to return in the case\n * that the input iterable is empty.\n * @returns {Object} The largest element of <code>iterable</code> according to\n * <code>compare</code>.\n */\nexport function max ( compare , iterable , dflt = undefined ) {\n\n\tlet iterator = iter( iterable ) ;\n\n\tlet first = iterator.next() ;\n\n\tif ( first.done ) return dflt ;\n\n\tlet largest = first.value ;\n\n\tfor ( let candidate of iterator ) {\n\n\t\tif ( compare( candidate , largest ) > 0 ) {\n\n\t\t\tlargest = candidate ;\n\n\t\t}\n\n\t}\n\n\treturn largest ;\n\n}\n",
     "static": true,
     "longname": "src/reduce/max.js",
     "access": null,
@@ -3506,7 +3506,7 @@
       "max( ( a , b ) => a - b , range( 10 ) ) ; // returns 9",
       "max( ( a , b ) => a - b , range( 0 ) ) ; // returns undefined"
     ],
-    "lineNumber": 21,
+    "lineNumber": 23,
     "unknown": [
       {
         "tagName": "@returns",
@@ -3533,6 +3533,18 @@
         "optional": false,
         "name": "iterable",
         "description": "The input iterable."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "undefined",
+        "defaultRaw": "undefined",
+        "name": "dflt",
+        "description": "The default value to return in the case\nthat the input iterable is empty."
       }
     ],
     "return": {
@@ -3548,7 +3560,7 @@
     "__docId__": 118,
     "kind": "file",
     "name": "src/reduce/min.js",
-    "content": "import { iter } from '../base/iter' ;\n\n/**\n * Returns the smallest element of the input iterable according\n * to some comparison function.\n *\n * @example\n * min( ( a , b ) => a - b , range( 10 ) ) ; // returns 0\n *\n * @example\n * min( ( a , b ) => a - b , range( 0 ) ) ; // returns undefined\n *\n * @param {Function} compare - The comparison function to use. This function\n * must be 2-ary. It must return -1, 0, or 1 depending whether the first\n * parameter is, respectively, less than, equal to, or greater than the second\n * parameter.\n * @param {Iterable} iterable - The input iterable.\n * @returns {Object} The smallest element of <code>iterable</code> according to\n * <code>compare</code>.\n */\nexport function min ( compare , iterable , dflt = undefined ) {\n\n\tlet iterator = iter( iterable ) ;\n\n\tlet first = iterator.next( ) ;\n\n\tif ( first.done ) return dflt ;\n\n\tlet smallest = first.value ;\n\n\tfor ( let candidate of iterator ) {\n\n\t\tif ( compare( candidate , smallest ) < 0 ) {\n\n\t\t\tsmallest = candidate ;\n\n\t\t}\n\n\t}\n\n\treturn smallest ;\n\n}\n",
+    "content": "import { iter } from '../base/iter' ;\n\n/**\n * Returns the smallest element of the input iterable according\n * to some comparison function.\n *\n * @example\n * min( ( a , b ) => a - b , range( 10 ) ) ; // returns 0\n *\n * @example\n * min( ( a , b ) => a - b , range( 0 ) ) ; // returns undefined\n *\n * @param {Function} compare - The comparison function to use. This function\n * must be 2-ary. It must return -1, 0, or 1 depending whether the first\n * parameter is, respectively, less than, equal to, or greater than the second\n * parameter.\n * @param {Iterable} iterable - The input iterable.\n * @param {Object} [dflt=undefined] - The default value to return in the case\n * that the input iterable is empty.\n * @returns {Object} The smallest element of <code>iterable</code> according to\n * <code>compare</code>.\n */\nexport function min ( compare , iterable , dflt = undefined ) {\n\n\tlet iterator = iter( iterable ) ;\n\n\tlet first = iterator.next( ) ;\n\n\tif ( first.done ) return dflt ;\n\n\tlet smallest = first.value ;\n\n\tfor ( let candidate of iterator ) {\n\n\t\tif ( compare( candidate , smallest ) < 0 ) {\n\n\t\t\tsmallest = candidate ;\n\n\t\t}\n\n\t}\n\n\treturn smallest ;\n\n}\n",
     "static": true,
     "longname": "src/reduce/min.js",
     "access": null,
@@ -3573,7 +3585,7 @@
       "min( ( a , b ) => a - b , range( 10 ) ) ; // returns 0",
       "min( ( a , b ) => a - b , range( 0 ) ) ; // returns undefined"
     ],
-    "lineNumber": 21,
+    "lineNumber": 23,
     "unknown": [
       {
         "tagName": "@returns",
@@ -3600,6 +3612,18 @@
         "optional": false,
         "name": "iterable",
         "description": "The input iterable."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "undefined",
+        "defaultRaw": "undefined",
+        "name": "dflt",
+        "description": "The default value to return in the case\nthat the input iterable is empty."
       }
     ],
     "return": {
