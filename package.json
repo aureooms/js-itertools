@@ -1,7 +1,7 @@
 {
   "name": "@aureooms/js-itertools",
   "description": "Iterable and iterator library for JavaScript",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
   "ava": {
     "require": [
@@ -34,9 +34,9 @@
     "babel-polyfill": "^6.23.0",
     "babel-preset-latest": "^6.24.1",
     "codeclimate-test-reporter": "^0.4.1",
-    "coveralls": "^2.13.0",
-    "esdoc": "^0.5.2",
-    "nyc": "^10.2.0"
+    "coveralls": "^2.13.1",
+    "esdoc": "^1.0.0-alpha.1",
+    "nyc": "^10.3.0"
   },
   "homepage": "https://aureooms.github.io/js-itertools",
   "keywords": [

@@ -33,29 +33,25 @@
 
 <nav class="navigation" data-ice="nav"><div class="manual-toc-root">
   
-<div data-ice="manual" data-toc-name="overview">
-    <ul class="manual-toc">
-      
-    </ul>
-  </div>
 <div data-ice="manual" data-toc-name="installation">
     <ul class="manual-toc">
       
-    <li data-ice="manualNav" class="indent-h3" data-link="manual/installation/installation.html"><a href="manual/installation/installation.html#jspm" data-ice="link">jspm</a></li>
+    <li data-ice="manualNav" class="indent-h1 manual-color manual-color-installation" data-section-count="&#x25A0;" data-link="manual/installation/installation.html"><a href="manual/installation/installation.html" data-ice="link">Installation</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/installation/installation.html"><a href="manual/installation/installation.html#jspm" data-ice="link">jspm</a></li>
 <li data-ice="manualNav" class="indent-h3" data-link="manual/installation/installation.html"><a href="manual/installation/installation.html#npm" data-ice="link">npm</a></li>
 </ul>
   </div>
 <div data-ice="manual" data-toc-name="usage">
     <ul class="manual-toc">
       
-    <li data-ice="manualNav" class="indent-h3" data-link="manual/usage/usage.html"><a href="manual/usage/usage.html#jspm" data-ice="link">jspm</a></li>
-<li data-ice="manualNav" class="indent-h3" data-link="manual/usage/usage.html"><a href="manual/usage/usage.html#npm" data-ice="link">npm</a></li>
+    <li data-ice="manualNav" class="indent-h1 manual-color manual-color-usage" data-section-count="&#x25A0;" data-link="manual/usage/usage.html"><a href="manual/usage/usage.html" data-ice="link">Usage</a></li>
 </ul>
   </div>
 <div data-ice="manual" data-toc-name="example">
     <ul class="manual-toc">
       
-    </ul>
+    <li data-ice="manualNav" class="indent-h1 manual-color manual-color-example" data-section-count="&#x25A0;" data-link="manual/example/example.html"><a href="manual/example/example.html" data-ice="link">Example</a></li>
+</ul>
   </div>
 <div data-ice="manual" data-toc-name="reference">
     <ul class="manual-toc">
@@ -76,6 +72,141 @@
   <div class="manual-cards">
     
   <div class="manual-card-wrap" data-ice="cards">
+      <h1 data-ice="label" class="manual-color manual-color-installation" data-section-count="&#x25A0;"><span data-ice="label-inner">Installation</span></h1>
+      <div class="manual-card">
+        <div data-ice="card"><h1>Installation</h1><p>Can be managed through
+<a href="http://jspm.io">jspm</a>
+or <a href="https://github.com/npm/npm">npm</a>.</p><h3>jspm</h3><pre><code class="lang-terminal"><code class="source-code prettyprint">jspm install github:aureooms/js-itertools
+# or
+jspm install npm:@aureooms/js-itertools</code>
+</code></pre><h3>npm</h3><pre><code class="lang-terminal"><code class="source-code prettyprint">npm install @aureooms/js-itertools --save</code>
+</code></pre></div>
+        <a data-ice="link" href="manual/installation/installation.html"></a>
+      </div>
+    </div>
+<div class="manual-card-wrap" data-ice="cards">
+      <h1 data-ice="label" class="manual-color manual-color-usage" data-section-count="&#x25A0;"><span data-ice="label-inner">Usage</span></h1>
+      <div class="manual-card">
+        <div data-ice="card"><h1>Usage</h1><p>The code needs a ES2015+ polyfill to work, for example
+<a href="https://babeljs.io/docs/usage/polyfill">babel-polyfill</a>.</p><pre><code class="lang-js"><code class="source-code prettyprint">require( &apos;babel-polyfill&apos; ) ;
+// or
+import &apos;babel-polyfill&apos; ;</code>
+</code></pre><p>Then</p><pre><code class="lang-js"><code class="source-code prettyprint">const itertools = require( &apos;@aureooms/js-itertools&apos; ) ;
+// or
+import * as itertools from &apos;@aureooms/js-itertools&apos; ;</code>
+</code></pre></div>
+        <a data-ice="link" href="manual/usage/usage.html"></a>
+      </div>
+    </div>
+<div class="manual-card-wrap" data-ice="cards">
+      <h1 data-ice="label" class="manual-color manual-color-example" data-section-count="&#x25A0;"><span data-ice="label-inner">Example</span></h1>
+      <div class="manual-card">
+        <div data-ice="card"><h1>Example</h1><pre><code class="lang-js"><code class="source-code prettyprint">range( 3 ) ; // 0 1 2
+
+range( 2 , 5 ) ; // 2 3 4
+
+range( 5 , 2 , -1 ) ; // 5 4 3
+
+count( 2 , 3 ) ; // 2 5 8 11 14 ...
+
+repeat( &quot;A&quot; ) ; // A A A ...
+
+nrepeat( &quot;A&quot; , 3 ) ; // A A A
+
+cycle( &quot;AB&quot; ) ; // A B A B A B ...
+
+ncycle( &quot;AB&quot; , 3 ) ; // A B A B A B
+
+head( repeat( &quot;A&quot; ) , 3 ) : // A A A
+
+list( nrepeat( &quot;A&quot; , 3 ) ) ; // AAA
+
+pick( &quot;ABCD&quot; , range( 2 ) ) ; // A C
+
+tee( &quot;ABC&quot; , 2 ) ; // [ A B C , A B C ]
+
+any( [ false* , true , ... ] ) ; // T
+
+any( [ false* ] ) ; // F
+
+all( [ true* , false , ... ] ) ; // F
+
+all( [ true* ] ) ; // T
+
+some( [ true , true , false , true , ... ] , 3 ) ; // T
+
+some( [ true , false , true , false* ] , 3 ) ; // F
+
+import compare from &quot;@aureooms/js-compare&quot; ;
+
+min( compare.increasing , [ 2 , 1 , 3 ] ) ; // 1
+
+max( compare.increasing , [ 2 , 1 , 3 ] ) ; // 3
+
+import operator from &quot;@aureooms/js-operator&quot; ;
+
+reduce( operator.mul , range( 2 , 6 ) , 1 ) ; // 120
+
+reduce( operator.add , range( 2 , 6 ) , 1 ) ; // 15
+
+sum( range( 1 , 6 ) ) ; // 15
+
+chain( [ &quot;ABC&quot; , &quot;XY&quot; ] ) ; // A B C X Y
+
+zip( [ &quot;ABC&quot; , &quot;XY&quot; ] ) ; // AX BY
+
+compress( count( 0 , 1 ) , cycle( [ true , false ] ) ) ; // 0 2 4 6 ...
+
+import predicate from &quot;@aureooms/js-predicate&quot; ;
+
+takewhile( predicate.le( 5 ) , count( 0 , 1 ) ) ; // 0 1 2 3 4 5
+
+dropwhile( predicate.le( 5 ) , count( 0 , 1 ) ) ; // 6 7 8 ...
+
+zip( [ count( 0 , 1 ) , &quot;ABC&quot; ] ) ; // 0A 1B 2C
+
+enumerate( &quot;ABC&quot; ) ; // 0A 1B 2C
+
+filter( predicate.divisible( 2 ) , count( 0 , 1 ) ) ; // 0 2 4 8 ...
+
+filterfalse( predicate.divisible( 2 ) , count( 0 , 1 ) ) ; // 1 3 5 7 ...
+
+group( operator.identity , &quot;AAAABBBCCAABB&quot; ) ; // [ A AAAA ] [ B BBB ] [ C CC ] [ A AA ] [ B BB ]
+
+slice( count( 0 , 1 ) , 40 , 50 , 3 ) ; // 40 43 46 49
+
+roundrobin( [ &quot;ABC&quot; , &quot;D&quot; , &quot;EF&quot; ] ) ; // A D E B F C
+
+map( operator.truth , [ 0 , 1 , null , undefined , &quot;A&quot; ] ) ; // F T F F T
+
+starmap( operator.mul , zip( count( 0 , 1 ) , count( 0 , 1 ) ) ) ; // 0 1 4 9 16 25 36 ...
+
+product( [ &quot;ABCD&quot; , &quot;xy&quot; ] , 1 ) ; // Ax Ay Bx By Cx Cy Dx Dy
+
+product( [ range( 2 ) ] , 3 ) ; // 000 001 010 011 100 101 110 111
+
+permutations( &quot;ABCD&quot; , 2 ) ; // AB AC AD BA BC BD CA CB CD DA DB DC
+
+permutations( range( 3 ) , 3 ) ; // 012 021 102 120 201 210
+
+combinations( &quot;ABCD&quot; , 2 ) ; // AB AC AD BC BD CD
+
+combinations( range( 4 ) , 3 ) ; // 012 013 023 123
+
+combinationswithrepetition( &quot;ABC&quot; , 1 ) ; // A B C
+
+combinationswithrepetition( range( 3 ) , 2 ) ; // 00 01 02 11 12 22
+
+reversed( &quot;ABC&quot; ) ; // C B A
+
+sorted( compare.increasing , [ 3 , 1 , 2 ] ) ; // 1 2 3
+
+closure( x =&gt; x + 1 , 0 ) ; // 0 1 2 3 ...</code>
+</code></pre></div>
+        <a data-ice="link" href="manual/example/example.html"></a>
+      </div>
+    </div>
+<div class="manual-card-wrap" data-ice="cards">
       <h1 data-ice="label" class="manual-color manual-color-reference" data-section-count="&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;"><span data-ice="label-inner">References</span></h1>
       <div class="manual-card">
         <div data-ice="card"><h1>References</h1>
@@ -218,6 +349,36 @@ given size.</p>
         
         
         <div data-ice="description"><p>Chains input iterables one after the other.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          <span data-ice="generator">*</span>
+          <span data-ice="name"><span><a href="function/index.html#static-function-closure">closure</a></span></span><span data-ice="signature">(operator: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">Function</a></span>, start: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>): <span>Iterator</span></span>
+        </p>
+      </div>
+      <div>
+        
+        <div class="experimental" data-ice="experimental">this function is experimental. Should handle d-ary operators in the future. Not sure the name
+is well chosen. An actual closure function would keep track of encountered
+elements to stop when all elements have been found.</div>
+        <div data-ice="description"><p>Computes the closure of a unary operator, starting from a single element.</p>
 </div>
       </div>
     </td>

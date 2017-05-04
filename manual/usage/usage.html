@@ -33,29 +33,25 @@
 
 <nav class="navigation" data-ice="nav"><div class="manual-toc-root">
   
-<div data-ice="manual" data-toc-name="overview">
-    <ul class="manual-toc">
-      
-    </ul>
-  </div>
 <div data-ice="manual" data-toc-name="installation">
     <ul class="manual-toc">
       
-    <li data-ice="manualNav" class="indent-h3" data-link="manual/installation/installation.html"><a href="manual/installation/installation.html#jspm" data-ice="link">jspm</a></li>
+    <li data-ice="manualNav" class="indent-h1 manual-color manual-color-installation" data-section-count="&#x25A0;" data-link="manual/installation/installation.html"><a href="manual/installation/installation.html" data-ice="link">Installation</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/installation/installation.html"><a href="manual/installation/installation.html#jspm" data-ice="link">jspm</a></li>
 <li data-ice="manualNav" class="indent-h3" data-link="manual/installation/installation.html"><a href="manual/installation/installation.html#npm" data-ice="link">npm</a></li>
 </ul>
   </div>
 <div data-ice="manual" data-toc-name="usage">
     <ul class="manual-toc">
       
-    <li data-ice="manualNav" class="indent-h3" data-link="manual/usage/usage.html"><a href="manual/usage/usage.html#jspm" data-ice="link">jspm</a></li>
-<li data-ice="manualNav" class="indent-h3" data-link="manual/usage/usage.html"><a href="manual/usage/usage.html#npm" data-ice="link">npm</a></li>
+    <li data-ice="manualNav" class="indent-h1 manual-color manual-color-usage" data-section-count="&#x25A0;" data-link="manual/usage/usage.html"><a href="manual/usage/usage.html" data-ice="link">Usage</a></li>
 </ul>
   </div>
 <div data-ice="manual" data-toc-name="example">
     <ul class="manual-toc">
       
-    </ul>
+    <li data-ice="manualNav" class="indent-h1 manual-color manual-color-example" data-section-count="&#x25A0;" data-link="manual/example/example.html"><a href="manual/example/example.html" data-ice="link">Example</a></li>
+</ul>
   </div>
 <div data-ice="manual" data-toc-name="reference">
     <ul class="manual-toc">
@@ -74,24 +70,18 @@
     <span>&#xBB;</span>
     <span data-ice="title">Usage</span>
   </div>
-  <div data-ice="content"><p>Depending on the syntax used by this code you will need to pass the source
-through a transpiler, for example <a href="https://babeljs.io">babel</a>.</p>
-<h3 id="jspm">jspm</h3>
-<p>Configure <a href="http://jspm.io">jspm</a> to transpile all the code. Then</p>
-<pre><code class="lang-js"><code class="source-code prettyprint">let itertools = require( &apos;github:aureooms/js-itertools&apos; ) ;
+  <div data-ice="content"><h1 id="usage">Usage</h1>
+<p>The code needs a ES2015+ polyfill to work, for example
+<a href="https://babeljs.io/docs/usage/polyfill">babel-polyfill</a>.</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">require( &apos;babel-polyfill&apos; ) ;
 // or
-import itertools from &apos;@aureooms/js-itertools&apos; ;</code>
+import &apos;babel-polyfill&apos; ;</code>
 </code></pre>
-<h3 id="npm">npm</h3>
-<p>Configure your code to transpile dependencies on the fly (for example with
-<a href="https://babeljs.io/docs/usage/require">babel-register</a>). Then you can</p>
-<pre><code class="lang-js"><code class="source-code prettyprint">import itertools from &apos;@aureooms/js-itertools&apos; ;</code>
+<p>Then</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">const itertools = require( &apos;@aureooms/js-itertools&apos; ) ;
+// or
+import * as itertools from &apos;@aureooms/js-itertools&apos; ;</code>
 </code></pre>
-<p>Additionally, for the browser, you can configure
-<a href="http://rollupjs.org">rollup</a>,
-<a href="http://browserify.org">browserify</a>,
-or <a href="https://webpack.github.io">webpack</a> to transpile and package the
-dependencies with your code.</p>
 </div>
 </div>
 </div>

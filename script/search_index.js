@@ -84,6 +84,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "@aureooms/js-itertools/src/extra/closure.js~closure",
+    "function/index.html#static-function-closure",
+    "<span>closure</span> <span class=\"search-result-import-path\">@aureooms/js-itertools/src/extra/closure.js</span>",
+    "function"
+  ],
+  [
     "@aureooms/js-itertools/src/map/combinations.js~combinations",
     "function/index.html#static-function-combinations",
     "<span>combinations</span> <span class=\"search-result-import-path\">@aureooms/js-itertools/src/map/combinations.js</span>",
@@ -855,6 +861,18 @@ window.esdocSearchIndex = [
     "src/base/trunc.js",
     "file/src/base/trunc.js.html",
     "src/base/trunc.js",
+    "file"
+  ],
+  [
+    "src/extra/closure.js",
+    "file/src/extra/closure.js.html",
+    "src/extra/closure.js",
+    "file"
+  ],
+  [
+    "src/extra/index.js",
+    "file/src/extra/index.js.html",
+    "src/extra/index.js",
     "file"
   ],
   [
