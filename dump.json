@@ -1010,7 +1010,7 @@
     "__docId__": 37,
     "kind": "file",
     "name": "src/base/next.js",
-    "content": "import { StopIteration } from './StopIteration' ;\n\n/**\n * Returns the next value of the input iterator. If there the iterator is\n * exhausted, throws a {@link StopIteration}.\n *\n * @param {Iterator} iterator - The input iterator.\n * @returns {Object}\n */\nexport function next ( iterator ) {\n\n\tconst x = iterator.next( ) ;\n\n\tif ( x.done ) throw new StopIteration();\n\n\treturn x.value ;\n\n}\n",
+    "content": "import { StopIteration } from './StopIteration' ;\n\n/**\n * Returns the next value of the input iterator. If the iterator is exhausted,\n * throws a {@link StopIteration}, unless a <code>dflt</code> argument has been\n * specified, in which case the <code>dflt</code> argument is returned.\n *\n * @param {Iterator} iterator - The input iterator.\n * @param {Object} [dflt=undefined] - The default value to return in the case\n * that the input iterator is exhausted.\n * @returns {Object}\n */\nexport function next ( iterator , dflt = undefined ) {\n\n\tconst x = iterator.next( ) ;\n\n\tif ( x.done ) {\n\t\tif ( dflt === undefined ) throw new StopIteration() ;\n\t\telse return dflt ;\n\t}\n\n\treturn x.value ;\n\n}\n",
     "static": true,
     "longname": "src/base/next.js",
     "access": null,
@@ -1030,8 +1030,8 @@
     "export": true,
     "importPath": "@aureooms/js-itertools/src/base/next.js",
     "importStyle": "{next}",
-    "description": "Returns the next value of the input iterator. If there the iterator is\nexhausted, throws a {@link StopIteration}.",
-    "lineNumber": 10,
+    "description": "Returns the next value of the input iterator. If the iterator is exhausted,\nthrows a {@link StopIteration}, unless a <code>dflt</code> argument has been\nspecified, in which case the <code>dflt</code> argument is returned.",
+    "lineNumber": 13,
     "unknown": [
       {
         "tagName": "@returns",
@@ -1048,6 +1048,18 @@
         "optional": false,
         "name": "iterator",
         "description": "The input iterator."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "undefined",
+        "defaultRaw": "undefined",
+        "name": "dflt",
+        "description": "The default value to return in the case\nthat the input iterator is exhausted."
       }
     ],
     "return": {
