@@ -1,0 +1,4545 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/base/StopIteration.js",
+    "content": "/**\n * Error thrown by {@link next} when the input iterator is exhausted.\n * @class\n */\nexport {StopIteration} from '@aureooms/js-error';\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/base/StopIteration.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "file",
+    "name": "src/base/_count.js",
+    "content": "/**\n * Yields increasing or decreasing sequences of numbers. The starting value\n * and the step between separating output values can be chosen.\n *\n * @example\n * // equivalent to list( range( 7 ) )\n * list( head( _count( 0 , 1 ) , 7 ) ) ;\n *\n * @example\n * // returns [0,-1,-2,-3,-4]\n * list( head( _count( 0 , -1 ) , 5 ) ) ;\n *\n * @param {Number} start - The starting value.\n * @param {Number} step - The step between the values.\n * @returns {Iterator}\n */\nexport function* _count(start, step) {\n\twhile (true) {\n\t\tyield start;\n\n\t\tstart += step;\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/base/_count.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 50,
+    "kind": "function",
+    "name": "_count",
+    "memberof": "src/base/_count.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/base/_count.js~_count",
+    "access": "private",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/base/_count.js",
+    "importStyle": "{_count}",
+    "description": "Yields increasing or decreasing sequences of numbers. The starting value\nand the step between separating output values can be chosen.",
+    "examples": [
+      "// equivalent to list( range( 7 ) )\nlist( head( _count( 0 , 1 ) , 7 ) ) ;",
+      "// returns [0,-1,-2,-3,-4]\nlist( head( _count( 0 , -1 ) , 5 ) ) ;"
+    ],
+    "lineNumber": 17,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "start",
+        "description": "The starting value."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "step",
+        "description": "The step between the values."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 51,
+    "kind": "file",
+    "name": "src/base/_next.js",
+    "content": "/**\n * Returns the next event of the input iterator.\n *\n * @param {Iterator} iterator - The input iterator.\n * @returns {{done: Boolean, value: Object}}\n */\nexport function _next(iterator) {\n\treturn iterator.next();\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/base/_next.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 52,
+    "kind": "function",
+    "name": "_next",
+    "memberof": "src/base/_next.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/base/_next.js~_next",
+    "access": "private",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/base/_next.js",
+    "importStyle": "{_next}",
+    "description": "Returns the next event of the input iterator.",
+    "lineNumber": 7,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{{done: Boolean, value: Object}}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterator"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterator",
+        "description": "The input iterator."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "{done: Boolean, value: Object}"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 53,
+    "kind": "file",
+    "name": "src/base/_range.js",
+    "content": "/**\n * Yields values in a range, separated by a fixed constant called step. If\n * this step is negative, the range has to be given in reverse order, that is,\n * largest value first, smallest value second.\n *\n * @param {Number} start - The starting value.\n * @param {Number} stop - The stopping value.\n * @param {Number} step - The step value.\n * @returns {Iterator}\n */\nexport function* _range(start, stop, step) {\n\tif (step < 0) {\n\t\tfor (; start > stop; start += step) {\n\t\t\tyield start;\n\t\t}\n\t} else {\n\t\tfor (; start < stop; start += step) {\n\t\t\tyield start;\n\t\t}\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/base/_range.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 54,
+    "kind": "function",
+    "name": "_range",
+    "memberof": "src/base/_range.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/base/_range.js~_range",
+    "access": "private",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/base/_range.js",
+    "importStyle": "{_range}",
+    "description": "Yields values in a range, separated by a fixed constant called step. If\nthis step is negative, the range has to be given in reverse order, that is,\nlargest value first, smallest value second.",
+    "lineNumber": 11,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "start",
+        "description": "The starting value."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "stop",
+        "description": "The stopping value."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "step",
+        "description": "The step value."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "file",
+    "name": "src/base/by.js",
+    "content": "import {iter} from './iter';\nimport {range} from './range';\n\n/**\n * Yields elements of the input iterable by grouping them into tuples of a\n * given size.\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} n - The size of the yielded tuples.\n * @returns {Iterator}\n */\nexport function* by(iterable, n) {\n\tconst iterator = iter(iterable);\n\n\twhile (true) {\n\t\tconst tuple = [];\n\n\t\tfor (const i of range(n)) {\n\t\t\tconst current = iterator.next();\n\n\t\t\tif (current.done) {\n\t\t\t\tif (i === 0) {\n\t\t\t\t\treturn;\n\t\t\t\t}\n\n\t\t\t\t// eslint-disable-next-line no-unused-vars\n\t\t\t\tfor (const j of range(n - i)) {\n\t\t\t\t\ttuple.push(undefined);\n\t\t\t\t}\n\n\t\t\t\tyield tuple;\n\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\ttuple.push(current.value);\n\t\t}\n\n\t\tyield tuple;\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/base/by.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 56,
+    "kind": "function",
+    "name": "by",
+    "memberof": "src/base/by.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/base/by.js~by",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/base/by.js",
+    "importStyle": "{by}",
+    "description": "Yields elements of the input iterable by grouping them into tuples of a\ngiven size.",
+    "lineNumber": 12,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The size of the yielded tuples."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 57,
+    "kind": "file",
+    "name": "src/base/consume.js",
+    "content": "/**\n * Consumes a given number of iterations of the input iterator.\n *\n * @param {Iterator} iterator - The input iterator.\n * @param {Number} n - The number of iterations to consume.\n *\n */\nexport function consume(iterator, n) {\n\t// eslint-disable-next-line no-empty\n\twhile (n-- > 0 && !iterator.next().done) {}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/base/consume.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 58,
+    "kind": "function",
+    "name": "consume",
+    "memberof": "src/base/consume.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/base/consume.js~consume",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/base/consume.js",
+    "importStyle": "{consume}",
+    "description": "Consumes a given number of iterations of the input iterator.",
+    "lineNumber": 8,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterator"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterator",
+        "description": "The input iterator."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The number of iterations to consume."
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 59,
+    "kind": "file",
+    "name": "src/base/count.js",
+    "content": "import {_count} from './_count';\n\n/**\n * Yields increasing or decreasing sequences of numbers. The starting value\n * and the step between separating output values can be chosen. Both parameters are\n * optional. The default for the starting value is <code>0</code>. The default\n * for the step between separating output values is <code>1</code>.\n *\n * @example\n * // equivalent to list( range( 7 ) )\n * list( head( count( ) , 7 ) ) ;\n *\n * @example\n * // returns [0,-1,-2,-3,-4]\n * list( head( count( 0 , -1 ) , 5 ) ) ;\n *\n * @param {Number} [start=0] - The starting value.\n * @param {Number} [step=1] - The step between the values.\n * @returns {Iterator}\n */\nexport function count(start = 0, step = 1) {\n\treturn _count(start, step);\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/base/count.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 60,
+    "kind": "function",
+    "name": "count",
+    "memberof": "src/base/count.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/base/count.js~count",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/base/count.js",
+    "importStyle": "{count}",
+    "description": "Yields increasing or decreasing sequences of numbers. The starting value\nand the step between separating output values can be chosen. Both parameters are\noptional. The default for the starting value is <code>0</code>. The default\nfor the step between separating output values is <code>1</code>.",
+    "examples": [
+      "// equivalent to list( range( 7 ) )\nlist( head( count( ) , 7 ) ) ;",
+      "// returns [0,-1,-2,-3,-4]\nlist( head( count( 0 , -1 ) , 5 ) ) ;"
+    ],
+    "lineNumber": 21,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "0",
+        "defaultRaw": 0,
+        "name": "start",
+        "description": "The starting value."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "1",
+        "defaultRaw": 1,
+        "name": "step",
+        "description": "The step between the values."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 61,
+    "kind": "file",
+    "name": "src/base/cycle.js",
+    "content": "/**\n * Cycles through the input iterable.\n *\n * @example\n * // returns [0,1,0,1,0,1,0]\n * list(head(cycle(range(2)),7)) ;\n *\n * @param {Iterable} iterable - The input iterable.\n * @returns {Iterator}\n *\n */\nexport function* cycle(iterable) {\n\tconst buffer = [];\n\n\tfor (const item of iterable) {\n\t\tyield item;\n\t\tbuffer.push(item);\n\t}\n\n\tif (buffer.length === 0) {\n\t\treturn;\n\t}\n\n\twhile (true) {\n\t\tyield* buffer;\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/base/cycle.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 62,
+    "kind": "function",
+    "name": "cycle",
+    "memberof": "src/base/cycle.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/base/cycle.js~cycle",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/base/cycle.js",
+    "importStyle": "{cycle}",
+    "description": "Cycles through the input iterable.",
+    "examples": [
+      "// returns [0,1,0,1,0,1,0]\nlist(head(cycle(range(2)),7)) ;"
+    ],
+    "lineNumber": 12,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 63,
+    "kind": "file",
+    "name": "src/base/drop.js",
+    "content": "import {iter} from './iter';\nimport {consume} from './consume';\nimport {tail} from './tail';\n\n/**\n * Drops the first <code>n</code> elements of the input iterable.\n * If <code>n</code> is negative, behaves like <code>{@link tail}( iterable,\n * -n)</code>.\n *\n * @example\n * // returns [ 3 , 4 ]\n * list( drop( range( 5 ) , 3 ) ) ;\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} n - The number of elements to drop.\n * @returns {Iterator}\n */\nexport function* drop(iterable, n) {\n\tif (n < 0) {\n\t\tyield* tail(iterable, -n);\n\t\treturn;\n\t}\n\n\tconst iterator = iter(iterable);\n\tconsume(iterator, n);\n\tyield* iterator;\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/base/drop.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 64,
+    "kind": "function",
+    "name": "drop",
+    "memberof": "src/base/drop.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/base/drop.js~drop",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/base/drop.js",
+    "importStyle": "{drop}",
+    "description": "Drops the first <code>n</code> elements of the input iterable.\nIf <code>n</code> is negative, behaves like <code>{@link tail}( iterable,\n-n)</code>.",
+    "examples": [
+      "// returns [ 3 , 4 ]\nlist( drop( range( 5 ) , 3 ) ) ;"
+    ],
+    "lineNumber": 18,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The number of elements to drop."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 65,
+    "kind": "file",
+    "name": "src/base/exhaust.js",
+    "content": "/**\n * Exhausts the input iterator.\n *\n * @example\n * let it = range( 1000 ) ;\n * exhaust( it ) ;\n * list( it ) ; // returns []\n *\n * @param {Iterator} iterator - The input iterator.\n *\n */\nexport function exhaust(iterator) {\n\t// eslint-disable-next-line no-empty,no-unused-vars,prettier/prettier\n\tfor (const item of iterator) {}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/base/exhaust.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 66,
+    "kind": "function",
+    "name": "exhaust",
+    "memberof": "src/base/exhaust.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/base/exhaust.js~exhaust",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/base/exhaust.js",
+    "importStyle": "{exhaust}",
+    "description": "Exhausts the input iterator.",
+    "examples": [
+      "let it = range( 1000 ) ;\nexhaust( it ) ;\nlist( it ) ; // returns []"
+    ],
+    "lineNumber": 12,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterator"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterator",
+        "description": "The input iterator."
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 67,
+    "kind": "file",
+    "name": "src/base/first.js",
+    "content": "import {next} from './next';\n\n/**\n * Same as {@link next}.\n * @function first\n */\nexport const first = next;\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/base/first.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 68,
+    "kind": "variable",
+    "name": "first",
+    "memberof": "src/base/first.js",
+    "static": true,
+    "longname": "src/base/first.js~first",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/base/first.js",
+    "importStyle": "{first}",
+    "description": "Same as {@link next}.",
+    "lineNumber": 7,
+    "unknown": [
+      {
+        "tagName": "@function",
+        "tagValue": "first"
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 69,
+    "kind": "file",
+    "name": "src/base/frame.js",
+    "content": "import {iter} from './iter';\nimport {range} from './range';\n\n/**\n * Yields tuples that contain the current element of the input iterable and the\n * next <code>n-1</code> elements of the input iterable.\n *\n * @example\n * frame( range( 100 ) , 2 ) ;\n * // is equivalent to\n * zip( range( 100 ) , range( 1 , 100 ) ) ;\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} n - The frame size.\n * @returns {Iterator}\n *\n */\nexport function* frame(iterable, n) {\n\t// Could have an implementation using a deque\n\t// that doesn't slice (and thus allocate a new\n\t// vector everytime). Though the yield object\n\t// could not be modified by the caller in that case.\n\n\tconst iterator = iter(iterable);\n\n\tlet tuple = [];\n\n\t// eslint-disable-next-line no-unused-vars\n\tfor (const i of range(n)) {\n\t\tconst current = iterator.next();\n\n\t\tif (current.done) {\n\t\t\treturn;\n\t\t}\n\n\t\ttuple.push(current.value);\n\t}\n\n\tyield tuple;\n\n\tfor (const value of iterator) {\n\t\ttuple = tuple.slice(1);\n\t\ttuple.push(value);\n\t\tyield tuple;\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/base/frame.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 70,
+    "kind": "function",
+    "name": "frame",
+    "memberof": "src/base/frame.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/base/frame.js~frame",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/base/frame.js",
+    "importStyle": "{frame}",
+    "description": "Yields tuples that contain the current element of the input iterable and the\nnext <code>n-1</code> elements of the input iterable.",
+    "examples": [
+      "frame( range( 100 ) , 2 ) ;\n// is equivalent to\nzip( range( 100 ) , range( 1 , 100 ) ) ;"
+    ],
+    "lineNumber": 18,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The frame size."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 71,
+    "kind": "file",
+    "name": "src/base/head.js",
+    "content": "import {take} from './take';\n\n/**\n * Same as {@link take}.\n * @function head\n */\nexport const head = take;\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/base/head.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 72,
+    "kind": "variable",
+    "name": "head",
+    "memberof": "src/base/head.js",
+    "static": true,
+    "longname": "src/base/head.js~head",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/base/head.js",
+    "importStyle": "{head}",
+    "description": "Same as {@link take}.",
+    "lineNumber": 7,
+    "unknown": [
+      {
+        "tagName": "@function",
+        "tagValue": "head"
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 73,
+    "kind": "file",
+    "name": "src/base/index.js",
+    "content": "export * from './StopIteration';\nexport * from './_count';\nexport * from './_next';\nexport * from './_range';\nexport * from './by';\nexport * from './consume';\nexport * from './count';\nexport * from './cycle';\nexport * from './drop';\nexport * from './exhaust';\nexport * from './first';\nexport * from './frame';\nexport * from './head';\nexport * from './iter';\nexport * from './len';\nexport * from './last';\nexport * from './list';\nexport * from './ncycle';\nexport * from './next';\nexport * from './pick';\nexport * from './range';\nexport * from './tail';\nexport * from './take';\nexport * from './tee';\nexport * from './trunc';\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/base/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 74,
+    "kind": "file",
+    "name": "src/base/iter.js",
+    "content": "/**\n * Returns the iterator for the input iterable.\n *\n * @param {Iterable} iterable - The input iterable.\n * @returns {Iterator}\n *\n */\nexport function iter(iterable) {\n\treturn iterable[Symbol.iterator]();\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/base/iter.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 75,
+    "kind": "function",
+    "name": "iter",
+    "memberof": "src/base/iter.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/base/iter.js~iter",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/base/iter.js",
+    "importStyle": "{iter}",
+    "description": "Returns the iterator for the input iterable.",
+    "lineNumber": 8,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 76,
+    "kind": "file",
+    "name": "src/base/last.js",
+    "content": "import {next} from './next';\nimport {tail} from './tail';\n\n/**\n * Returns the last value of the input iterator. If there the iterator is\n * exhausted, throws a {@link StopIteration}.\n *\n * @param {Iterator} iterator - The input iterator.\n * @returns {Object}\n */\nexport function last(iterator) {\n\treturn next(tail(iterator, 1));\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/base/last.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 77,
+    "kind": "function",
+    "name": "last",
+    "memberof": "src/base/last.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/base/last.js~last",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/base/last.js",
+    "importStyle": "{last}",
+    "description": "Returns the last value of the input iterator. If there the iterator is\nexhausted, throws a {@link StopIteration}.",
+    "lineNumber": 11,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterator"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterator",
+        "description": "The input iterator."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 78,
+    "kind": "file",
+    "name": "src/base/len.js",
+    "content": "/**\n * Returns the length of the input array.\n *\n * @example\n * // returns 7\n * len( list( range( 7 ) ) ) ;\n *\n * @param {Array} array - The input array.\n * @returns {Number}\n *\n */\nexport function len(array) {\n\treturn array.length;\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/base/len.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 79,
+    "kind": "function",
+    "name": "len",
+    "memberof": "src/base/len.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/base/len.js~len",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/base/len.js",
+    "importStyle": "{len}",
+    "description": "Returns the length of the input array.",
+    "examples": [
+      "// returns 7\nlen( list( range( 7 ) ) ) ;"
+    ],
+    "lineNumber": 12,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Number}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "array",
+        "description": "The input array."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Number"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 80,
+    "kind": "file",
+    "name": "src/base/list.js",
+    "content": "/**\n * Returns an array containing all elements of the input iterable.\n *\n * @example\n * // return [0,1,2]\n * list( range( 3 ) ) ;\n *\n * @param {Iterable} iterable - The input iterable.\n * @returns {Array}\n *\n */\nexport function list(iterable) {\n\treturn Array.from(iterable);\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/base/list.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 81,
+    "kind": "function",
+    "name": "list",
+    "memberof": "src/base/list.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/base/list.js~list",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/base/list.js",
+    "importStyle": "{list}",
+    "description": "Returns an array containing all elements of the input iterable.",
+    "examples": [
+      "// return [0,1,2]\nlist( range( 3 ) ) ;"
+    ],
+    "lineNumber": 12,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 82,
+    "kind": "file",
+    "name": "src/base/ncycle.js",
+    "content": "/**\n * Same as {@link cycle} but only cycles a limited number of times.\n *\n * @example\n * // returns [0,1,0,1,0,1,0,1]\n * list(ncycle(range(2),4)) ;\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} n - The number of times to cycle through the input iterable.\n * @returns {Iterator}\n *\n */\nexport function* ncycle(iterable, n) {\n\tconst buffer = [];\n\n\tfor (const item of iterable) {\n\t\tyield item;\n\t\tbuffer.push(item);\n\t}\n\n\tif (buffer.length === 0) {\n\t\treturn;\n\t}\n\n\twhile (--n > 0) {\n\t\tyield* buffer;\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/base/ncycle.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 83,
+    "kind": "function",
+    "name": "ncycle",
+    "memberof": "src/base/ncycle.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/base/ncycle.js~ncycle",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/base/ncycle.js",
+    "importStyle": "{ncycle}",
+    "description": "Same as {@link cycle} but only cycles a limited number of times.",
+    "examples": [
+      "// returns [0,1,0,1,0,1,0,1]\nlist(ncycle(range(2),4)) ;"
+    ],
+    "lineNumber": 13,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The number of times to cycle through the input iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 84,
+    "kind": "file",
+    "name": "src/base/next.js",
+    "content": "import {StopIteration} from './StopIteration';\n\n/**\n * Returns the next value of the input iterator. If the iterator is exhausted,\n * throws a {@link StopIteration}, unless a <code>dflt</code> argument has been\n * specified, in which case the <code>dflt</code> argument is returned.\n *\n * @param {Iterator} iterator - The input iterator.\n * @param {Object} [dflt=undefined] - The default value to return in the case\n * that the input iterator is exhausted.\n * @returns {Object}\n */\nexport function next(iterator, dflt = undefined) {\n\tconst x = iterator.next();\n\n\tif (x.done) {\n\t\tif (dflt === undefined) {\n\t\t\tthrow new StopIteration();\n\t\t} else {\n\t\t\treturn dflt;\n\t\t}\n\t}\n\n\treturn x.value;\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/base/next.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 85,
+    "kind": "function",
+    "name": "next",
+    "memberof": "src/base/next.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/base/next.js~next",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/base/next.js",
+    "importStyle": "{next}",
+    "description": "Returns the next value of the input iterator. If the iterator is exhausted,\nthrows a {@link StopIteration}, unless a <code>dflt</code> argument has been\nspecified, in which case the <code>dflt</code> argument is returned.",
+    "lineNumber": 13,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterator"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterator",
+        "description": "The input iterator."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "undefined",
+        "defaultRaw": "undefined",
+        "name": "dflt",
+        "description": "The default value to return in the case\nthat the input iterator is exhausted."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 86,
+    "kind": "file",
+    "name": "src/base/pick.js",
+    "content": "/**\n * Yields some of the properties of the input object. The properties to yield\n * are designated by the input iterable.\n *\n * @example\n * // returns [ 'a' , 'e' , 'c' ]\n * list( pick( 'abcde' , [ 0 , 4 , 2 ] ) ) ;\n *\n * @param {Object} object - The input object.\n * @param {Iterable} iterable - The input iterable.\n * @returns {Iterator}\n */\nexport function* pick(object, iterable) {\n\tfor (const key of iterable) {\n\t\tyield object[key];\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/base/pick.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 87,
+    "kind": "function",
+    "name": "pick",
+    "memberof": "src/base/pick.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/base/pick.js~pick",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/base/pick.js",
+    "importStyle": "{pick}",
+    "description": "Yields some of the properties of the input object. The properties to yield\nare designated by the input iterable.",
+    "examples": [
+      "// returns [ 'a' , 'e' , 'c' ]\nlist( pick( 'abcde' , [ 0 , 4 , 2 ] ) ) ;"
+    ],
+    "lineNumber": 13,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "object",
+        "description": "The input object."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 88,
+    "kind": "file",
+    "name": "src/base/range.js",
+    "content": "import {_range} from './_range';\n\n/**\n * Yields values in a range, separated by a fixed constant called step. If this\n * step is negative, the range has to be given in reverse order, that is,\n * largest value first, smallest value second. Both the starting value and the\n * step value are optional. By default the starting value is <code>0</code>.\n * The default for the step value is <code>1</code>.\n *\n * @param {Number} [start=0] - The starting value.\n * @param {Number} stop - The stopping value.\n * @param {Number} [step=1] - The step value.\n * @returns {Iterator}\n */\nexport function range(start, stop, step) {\n\tif (stop === undefined) {\n\t\treturn _range(0, start, 1);\n\t}\n\n\tif (step === undefined) {\n\t\treturn _range(start, stop, 1);\n\t}\n\n\treturn _range(start, stop, step);\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/base/range.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 89,
+    "kind": "function",
+    "name": "range",
+    "memberof": "src/base/range.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/base/range.js~range",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/base/range.js",
+    "importStyle": "{range}",
+    "description": "Yields values in a range, separated by a fixed constant called step. If this\nstep is negative, the range has to be given in reverse order, that is,\nlargest value first, smallest value second. Both the starting value and the\nstep value are optional. By default the starting value is <code>0</code>.\nThe default for the step value is <code>1</code>.",
+    "lineNumber": 15,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "0",
+        "defaultRaw": 0,
+        "name": "start",
+        "description": "The starting value."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "stop",
+        "description": "The stopping value."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "1",
+        "defaultRaw": 1,
+        "name": "step",
+        "description": "The step value."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 90,
+    "kind": "file",
+    "name": "src/base/tail.js",
+    "content": "import deque from '@aureooms/js-collections-deque';\n\nimport {drop} from './drop';\n\n/**\n * Returns the last <code>n</code> elements of the input iterable in an array.\n * If <code>n</code> is negative, behaves like <code>{@link drop}( iterable,\n * -n)</code>.\n *\n * @example\n * // returns [ 3 , 4 ]\n * list( tail( range( 5 ) , 2 ) ) ;\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} n - The number of elements to include in the output.\n * @returns {Array} - The last <code>n</code> elements of the input iterable.\n */\nexport function* tail(iterable, n) {\n\tif (n < 0) {\n\t\tyield* drop(iterable, -n);\n\t\treturn;\n\t}\n\n\tyield* deque(iterable, n);\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/base/tail.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 91,
+    "kind": "function",
+    "name": "tail",
+    "memberof": "src/base/tail.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/base/tail.js~tail",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/base/tail.js",
+    "importStyle": "{tail}",
+    "description": "Returns the last <code>n</code> elements of the input iterable in an array.\nIf <code>n</code> is negative, behaves like <code>{@link drop}( iterable,\n-n)</code>.",
+    "examples": [
+      "// returns [ 3 , 4 ]\nlist( tail( range( 5 ) , 2 ) ) ;"
+    ],
+    "lineNumber": 18,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} - The last <code>n</code> elements of the input iterable."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The number of elements to include in the output."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "The last <code>n</code> elements of the input iterable."
+    }
+  },
+  {
+    "__docId__": 92,
+    "kind": "file",
+    "name": "src/base/take.js",
+    "content": "import {iter} from './iter';\nimport {trunc} from './trunc';\n\n/**\n * Yields the first <code>n</code> elements of the input iterable. If\n * <code>n</code> is negative, behaves like <code>{@link trunc}( iterable,\n * -n)</code>.\n *\n * @example\n * // returns [ 0 , 1 , 2 ]\n * list( take( range( 5 ) , 3 ) ) ;\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} n - The number of elements to include in the output.\n * @returns {Iterator} - The first <code>n</code> elements of the input iterable.\n */\nexport function* take(iterable, n) {\n\tif (n < 0) {\n\t\tyield* trunc(iterable, -n);\n\t\treturn;\n\t}\n\n\tconst iterator = iter(iterable);\n\n\twhile (n-- > 0) {\n\t\tconst current = iterator.next();\n\n\t\tif (current.done) {\n\t\t\treturn;\n\t\t}\n\n\t\tyield current.value;\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/base/take.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 93,
+    "kind": "function",
+    "name": "take",
+    "memberof": "src/base/take.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/base/take.js~take",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/base/take.js",
+    "importStyle": "{take}",
+    "description": "Yields the first <code>n</code> elements of the input iterable. If\n<code>n</code> is negative, behaves like <code>{@link trunc}( iterable,\n-n)</code>.",
+    "examples": [
+      "// returns [ 0 , 1 , 2 ]\nlist( take( range( 5 ) , 3 ) ) ;"
+    ],
+    "lineNumber": 17,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator} - The first <code>n</code> elements of the input iterable."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The number of elements to include in the output."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": "The first <code>n</code> elements of the input iterable."
+    }
+  },
+  {
+    "__docId__": 94,
+    "kind": "file",
+    "name": "src/base/tee.js",
+    "content": "import {iter} from './iter';\nimport {list} from './list';\nimport {map} from '../map/map';\n\nimport deque from '@aureooms/js-collections-deque';\n\n/**\n * Returns <code>n</code> copies of the input iterable. Note that if the input\n * iterable is an iterator, then it must be discarded by the caller after\n * calling tee.\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} n - The number of copies to make.\n * @returns {Iterator[]}\n */\nexport function tee(iterable, n) {\n\tconst iterator = iter(iterable);\n\n\tconst copies = [];\n\n\twhile (n-- > 0) {\n\t\tcopies.push(deque());\n\t}\n\n\tconst gen = function* (mycopy) {\n\t\twhile (true) {\n\t\t\tif (mycopy.length === 0) {\n\t\t\t\tconst current = iterator.next();\n\n\t\t\t\tif (current.done) {\n\t\t\t\t\treturn;\n\t\t\t\t}\n\n\t\t\t\tfor (const copy of copies) {\n\t\t\t\t\tcopy.append(current.value);\n\t\t\t\t}\n\t\t\t}\n\n\t\t\tyield mycopy.popleft();\n\t\t}\n\t};\n\n\treturn list(map(gen, copies));\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/base/tee.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 95,
+    "kind": "function",
+    "name": "tee",
+    "memberof": "src/base/tee.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/base/tee.js~tee",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/base/tee.js",
+    "importStyle": "{tee}",
+    "description": "Returns <code>n</code> copies of the input iterable. Note that if the input\niterable is an iterator, then it must be discarded by the caller after\ncalling tee.",
+    "lineNumber": 16,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator[]}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The number of copies to make."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator[]"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 96,
+    "kind": "file",
+    "name": "src/base/trunc.js",
+    "content": "import deque from '@aureooms/js-collections-deque';\n\nimport {iter} from './iter';\nimport {take} from './take';\n\n/**\n * Yields all elements of the iterable except the last <code>n</code> ones. If\n * <code>n</code> is negative, behaves like <code>{@link take}( iterable, -n\n * )</code>.\n *\n * @example\n * // returns [ 0 , 1 , 2 ]\n * list( trunc( range( 5 ) , 2 ) ) ;\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} n - The number of elements to exclude from the output.\n * @returns {Iterator}\n */\nexport function* trunc(iterable, n) {\n\tif (n < 0) {\n\t\tyield* take(iterable, -n);\n\t\treturn;\n\t}\n\n\tif (n === 0) {\n\t\tyield* iterable;\n\t\treturn;\n\t}\n\n\tconst iterator = iter(iterable);\n\n\tconst buffer = deque(null, n);\n\n\twhile (n-- > 0) {\n\t\tconst event = iterator.next();\n\t\tif (event.done) {\n\t\t\treturn;\n\t\t}\n\n\t\tbuffer.append(event.value);\n\t}\n\n\tfor (const value of iterator) {\n\t\tyield buffer.popleft();\n\t\tbuffer.append(value);\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/base/trunc.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 97,
+    "kind": "function",
+    "name": "trunc",
+    "memberof": "src/base/trunc.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/base/trunc.js~trunc",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/base/trunc.js",
+    "importStyle": "{trunc}",
+    "description": "Yields all elements of the iterable except the last <code>n</code> ones. If\n<code>n</code> is negative, behaves like <code>{@link take}( iterable, -n\n)</code>.",
+    "examples": [
+      "// returns [ 0 , 1 , 2 ]\nlist( trunc( range( 5 ) , 2 ) ) ;"
+    ],
+    "lineNumber": 19,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The number of elements to exclude from the output."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 98,
+    "kind": "file",
+    "name": "src/extra/closure.js",
+    "content": "/**\n * Computes the closure of a unary operator, starting from a single element.\n *\n * @experimental Should handle d-ary operators in the future. Not sure the name\n * is well chosen. An actual closure function would keep track of encountered\n * elements to stop when all elements have been found.\n *\n * @example\n * closure( x => x + 1 , 0 ) ; // 0 1 2 3 ...\n *\n * @example\n * closure( x => x * 2 , 1 ) ; // 1 2 4 8 ...\n *\n * @param {Function} operator The operator.\n * @param {Object} start The starting element.\n * @returns {Iterator} Iterator over the closure.\n */\nexport function* closure(operator, start) {\n\tyield start;\n\n\tlet element = start;\n\n\twhile (true) {\n\t\telement = operator(element);\n\n\t\tyield element;\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/extra/closure.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 99,
+    "kind": "function",
+    "name": "closure",
+    "memberof": "src/extra/closure.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/extra/closure.js~closure",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/extra/closure.js",
+    "importStyle": "{closure}",
+    "description": "Computes the closure of a unary operator, starting from a single element.",
+    "examples": [
+      "closure( x => x + 1 , 0 ) ; // 0 1 2 3 ...",
+      "closure( x => x * 2 , 1 ) ; // 1 2 4 8 ..."
+    ],
+    "lineNumber": 18,
+    "experimental": "Should handle d-ary operators in the future. Not sure the name\nis well chosen. An actual closure function would keep track of encountered\nelements to stop when all elements have been found.",
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator} Iterator over the closure."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "operator",
+        "description": "The operator."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "start",
+        "description": "The starting element."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": "Iterator over the closure."
+    }
+  },
+  {
+    "__docId__": 100,
+    "kind": "file",
+    "name": "src/extra/index.js",
+    "content": "export * from './closure';\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/extra/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 101,
+    "kind": "file",
+    "name": "src/index.js",
+    "content": "export * from './base';\nexport * from './extra';\nexport * from './map';\nexport * from './reduce';\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 102,
+    "kind": "file",
+    "name": "src/map/_product.js",
+    "content": "/**\n * Algorithm used by {@link product} to compute the product of one or more\n * iterables from pools of symbols.\n *\n * @example\n * // Ax Ay Bx By Cx Cy Dx Dy\n * _product(['xy', 'ABCD'], 0 , 2) ;\n *\n * @example\n * // 000 001 010 011 100 101 110 111\n * _product([[0,1],[0,1],[0,1]], 0 , 3) ;\n *\n * @param {Array[]} pools - The pools of symbols in reverse order.\n * @param {Number} i - Index of the pool to draw the next symbol from\n * @param {Number} n - Number of pools in total.\n * @returns {Iterator}\n */\nexport function* _product(pools, i, n) {\n\tif (i === n) {\n\t\tyield [];\n\t\treturn;\n\t}\n\n\tconst iterable = pools[i];\n\n\tfor (const buffer of _product(pools, i + 1, n)) {\n\t\tfor (const item of iterable) {\n\t\t\tbuffer.push(item);\n\n\t\t\tyield buffer;\n\n\t\t\tbuffer.pop(item);\n\t\t}\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/map/_product.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 103,
+    "kind": "function",
+    "name": "_product",
+    "memberof": "src/map/_product.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/map/_product.js~_product",
+    "access": "private",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/map/_product.js",
+    "importStyle": "{_product}",
+    "description": "Algorithm used by {@link product} to compute the product of one or more\niterables from pools of symbols.",
+    "examples": [
+      "// Ax Ay Bx By Cx Cy Dx Dy\n_product(['xy', 'ABCD'], 0 , 2) ;",
+      "// 000 001 010 011 100 101 110 111\n_product([[0,1],[0,1],[0,1]], 0 , 3) ;"
+    ],
+    "lineNumber": 18,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "pools",
+        "description": "The pools of symbols in reverse order."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "i",
+        "description": "Index of the pool to draw the next symbol from"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "Number of pools in total."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 104,
+    "kind": "file",
+    "name": "src/map/_zip.js",
+    "content": "import {list, map, iter, _next} from '..';\n\n/**\n * Zips iterables together. Yields a tuple containing the first element of each\n * iterable, then a tupe containing the second element of each iterable, etc.\n * Stops when one of the iterables runs out of elements.\n *\n * @example\n * // returns [ [ 'a' , 1 ] , [ 'b' , 2 ] , [ 'c' , 3 ] ]\n * list( _zip( [ 'abcd' , range(3) ] ) ) ;\n *\n * @param {Iterable[]} iterables - The iterables to zip.\n * @returns {Iterator}\n *\n */\nexport function* _zip(iterables) {\n\tconst iterators = list(map(iter, iterables));\n\n\tif (iterators.length === 0) {\n\t\treturn;\n\t}\n\n\twhile (true) {\n\t\tconst buffer = [];\n\n\t\tfor (const result of map(_next, iterators)) {\n\t\t\tif (result.done) {\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\tbuffer.push(result.value);\n\t\t}\n\n\t\tyield buffer;\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/map/_zip.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 105,
+    "kind": "function",
+    "name": "_zip",
+    "memberof": "src/map/_zip.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/map/_zip.js~_zip",
+    "access": "private",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/map/_zip.js",
+    "importStyle": "{_zip}",
+    "description": "Zips iterables together. Yields a tuple containing the first element of each\niterable, then a tupe containing the second element of each iterable, etc.\nStops when one of the iterables runs out of elements.",
+    "examples": [
+      "// returns [ [ 'a' , 1 ] , [ 'b' , 2 ] , [ 'c' , 3 ] ]\nlist( _zip( [ 'abcd' , range(3) ] ) ) ;"
+    ],
+    "lineNumber": 16,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterables",
+        "description": "The iterables to zip."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 106,
+    "kind": "file",
+    "name": "src/map/_zip2.js",
+    "content": "import {iter} from '..';\n\n/**\n * Zips exactly two iterables together. Yields a tuple containing the first\n * element of each iterable, then a tupe containing the second element of each\n * iterable, etc.  Stops when one of the two iterables runs out of elements.\n *\n * @example\n * // returns [ [ 'a' , 1 ] , [ 'b' , 2 ] , [ 'c' , 3 ] ]\n * list( _zip2( 'abcd' , range(3) ) ) ;\n *\n * @param {Iterable} A - The first iterable.\n * @param {Iterable} B - The second iterable.\n * @returns {Iterator}\n *\n */\nexport function* _zip2(A, B) {\n\tA = iter(A);\n\tB = iter(B);\n\n\twhile (true) {\n\t\tconst a = A.next();\n\t\tif (a.done) {\n\t\t\treturn;\n\t\t}\n\n\t\tconst b = B.next();\n\t\tif (b.done) {\n\t\t\treturn;\n\t\t}\n\n\t\tyield [a.value, b.value];\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/map/_zip2.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 107,
+    "kind": "function",
+    "name": "_zip2",
+    "memberof": "src/map/_zip2.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/map/_zip2.js~_zip2",
+    "access": "private",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/map/_zip2.js",
+    "importStyle": "{_zip2}",
+    "description": "Zips exactly two iterables together. Yields a tuple containing the first\nelement of each iterable, then a tupe containing the second element of each\niterable, etc.  Stops when one of the two iterables runs out of elements.",
+    "examples": [
+      "// returns [ [ 'a' , 1 ] , [ 'b' , 2 ] , [ 'c' , 3 ] ]\nlist( _zip2( 'abcd' , range(3) ) ) ;"
+    ],
+    "lineNumber": 17,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "A",
+        "description": "The first iterable."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "B",
+        "description": "The second iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 108,
+    "kind": "file",
+    "name": "src/map/_ziplongest.js",
+    "content": "import {list, map, iter, _next, repeat, enumerate} from '..';\n\n/**\n * Same as _zip, but continues to yield zipped tuples until the last iterable is\n * exhausted.\n *\n * @example\n * // returns [['A','x'],['B','y'],['C','-'],['D','-']]\n * list( _ziplongest( '-' , [ 'ABCD', 'xy' ] ) ) ;\n *\n * @param fillvalue - The value to yield for iterators that are exhausted.\n * @param {Iterable[]} iterables - The iterables to zip.\n * @returns {Iterator}\n *\n */\nexport function* _ziplongest(fillvalue, iterables) {\n\tlet counter = iterables.length;\n\n\tif (counter === 0) {\n\t\treturn;\n\t}\n\n\tconst filler = repeat(fillvalue);\n\n\tconst iterators = list(map(iter, iterables));\n\n\twhile (true) {\n\t\tconst buffer = [];\n\n\t\tfor (const [i, event] of enumerate(map(_next, iterators))) {\n\t\t\tif (event.done) {\n\t\t\t\t--counter;\n\t\t\t\tif (counter === 0) {\n\t\t\t\t\treturn;\n\t\t\t\t}\n\n\t\t\t\titerators[i] = filler;\n\t\t\t\tbuffer.push(fillvalue);\n\t\t\t} else {\n\t\t\t\tbuffer.push(event.value);\n\t\t\t}\n\t\t}\n\n\t\tyield buffer;\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/map/_ziplongest.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 109,
+    "kind": "function",
+    "name": "_ziplongest",
+    "memberof": "src/map/_ziplongest.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/map/_ziplongest.js~_ziplongest",
+    "access": "private",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/map/_ziplongest.js",
+    "importStyle": "{_ziplongest}",
+    "description": "Same as _zip, but continues to yield zipped tuples until the last iterable is\nexhausted.",
+    "examples": [
+      "// returns [['A','x'],['B','y'],['C','-'],['D','-']]\nlist( _ziplongest( '-' , [ 'ABCD', 'xy' ] ) ) ;"
+    ],
+    "lineNumber": 16,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "fillvalue",
+        "description": "The value to yield for iterators that are exhausted."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Iterable[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterables",
+        "description": "The iterables to zip."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 110,
+    "kind": "file",
+    "name": "src/map/chain.js",
+    "content": "/**\n * Chains input iterables one after the other. Returns an iterator that yields\n * all values of the first input iterable, then all values of the second, etc.\n *\n * @example\n * // returns [ 0 , 1 , 0 , 1 , 2 ]\n * list( chain( [ range( 2 ) , range( 3 ) ] ) ) ;\n *\n * @param {Iterable[]} iterables - The input iterables to chain.\n * @returns {Iterator}\n *\n */\nexport function* chain(iterables) {\n\tfor (const iterable of iterables) {\n\t\tyield* iterable;\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/map/chain.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 111,
+    "kind": "function",
+    "name": "chain",
+    "memberof": "src/map/chain.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/map/chain.js~chain",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/map/chain.js",
+    "importStyle": "{chain}",
+    "description": "Chains input iterables one after the other. Returns an iterator that yields\nall values of the first input iterable, then all values of the second, etc.",
+    "examples": [
+      "// returns [ 0 , 1 , 0 , 1 , 2 ]\nlist( chain( [ range( 2 ) , range( 3 ) ] ) ) ;"
+    ],
+    "lineNumber": 13,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterables",
+        "description": "The input iterables to chain."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 112,
+    "kind": "file",
+    "name": "src/map/combinations.js",
+    "content": "import {list, range, pick} from '..';\n\n/**\n * Yields all combinations of each possible choice of <code>r</code> elements\n * of the input iterable.\n *\n * @example\n * // AB AC AD BC BD CD\n * combinations('ABCD', 2)\n *\n * @example\n * // 012 013 023 123\n * combinations(range(4), 3)\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} r - The size of the combinations to generate.\n * @returns {Iterator}\n */\nexport function* combinations(iterable, r) {\n\tconst pool = list(iterable);\n\tconst length = pool.length;\n\n\tif (r > length) {\n\t\treturn;\n\t}\n\n\tconst indices = list(range(0, r, 1));\n\n\tyield list(pick(pool, indices));\n\n\twhile (true) {\n\t\tlet i = r - 1;\n\n\t\t// eslint-disable-next-line no-constant-condition\n\t\twhile (true) {\n\t\t\tif (i < 0) {\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\tif (indices[i] !== i + length - r) {\n\t\t\t\tlet pivot = ++indices[i];\n\n\t\t\t\tfor (++i; i < r; ++i) {\n\t\t\t\t\tindices[i] = ++pivot;\n\t\t\t\t}\n\n\t\t\t\tbreak;\n\t\t\t}\n\n\t\t\t--i;\n\t\t}\n\n\t\tyield list(pick(pool, indices));\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/map/combinations.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 113,
+    "kind": "function",
+    "name": "combinations",
+    "memberof": "src/map/combinations.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/map/combinations.js~combinations",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/map/combinations.js",
+    "importStyle": "{combinations}",
+    "description": "Yields all combinations of each possible choice of <code>r</code> elements\nof the input iterable.",
+    "examples": [
+      "// AB AC AD BC BD CD\ncombinations('ABCD', 2)",
+      "// 012 013 023 123\ncombinations(range(4), 3)"
+    ],
+    "lineNumber": 19,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "r",
+        "description": "The size of the combinations to generate."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 114,
+    "kind": "file",
+    "name": "src/map/combinationswithrepetition.js",
+    "content": "import {list, nrepeat, pick} from '..';\n\n/**\n * Yields all combinations, with repetitions, of each possible choice of\n * <code>r</code> elements of the input iterable.\n *\n * @example\n * // A B C\n * combinationswithrepetition('ABC', 1)\n *\n * @example\n * // 00 01 02 11 12 22\n * combinationswithrepetition(range(3), 2)\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} r - The size of the combinations to generate.\n * @returns {Iterator}\n */\n\nexport function* combinationswithrepetition(iterable, r) {\n\tconst pool = list(iterable);\n\tconst length = pool.length;\n\n\tif (length === 0 && r > 0) {\n\t\treturn;\n\t}\n\n\tconst indices = list(nrepeat(0, r));\n\n\tyield list(pick(pool, indices));\n\n\twhile (true) {\n\t\tlet i = r - 1;\n\n\t\t// eslint-disable-next-line no-constant-condition\n\t\twhile (true) {\n\t\t\tif (i < 0) {\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\tif (indices[i] !== length - 1) {\n\t\t\t\tconst pivot = ++indices[i];\n\n\t\t\t\tfor (++i; i < r; ++i) {\n\t\t\t\t\tindices[i] = pivot;\n\t\t\t\t}\n\n\t\t\t\tbreak;\n\t\t\t}\n\n\t\t\t--i;\n\t\t}\n\n\t\tyield list(pick(pool, indices));\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/map/combinationswithrepetition.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 115,
+    "kind": "function",
+    "name": "combinationswithrepetition",
+    "memberof": "src/map/combinationswithrepetition.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/map/combinationswithrepetition.js~combinationswithrepetition",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/map/combinationswithrepetition.js",
+    "importStyle": "{combinationswithrepetition}",
+    "description": "Yields all combinations, with repetitions, of each possible choice of\n<code>r</code> elements of the input iterable.",
+    "examples": [
+      "// A B C\ncombinationswithrepetition('ABC', 1)",
+      "// 00 01 02 11 12 22\ncombinationswithrepetition(range(3), 2)"
+    ],
+    "lineNumber": 20,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "r",
+        "description": "The size of the combinations to generate."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 116,
+    "kind": "file",
+    "name": "src/map/compress.js",
+    "content": "import {_zip2} from '..';\n\n/**\n * Filters the first input iterable according to truthy and flasy values from a\n * second input iterable. The ith element of the first input iterable is output\n * if and only if the ith element of the second input iterable is truthy.\n *\n * @param {Iterable} iterable - The first input iterable to filter.\n * @param {Iterable} selector - The second input iterable containing the truthy and falsy\n * values.\n * @returns {Iterator}\n */\nexport function* compress(iterable, selector) {\n\tfor (const [take, item] of _zip2(selector, iterable)) {\n\t\tif (take) {\n\t\t\tyield item;\n\t\t}\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/map/compress.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 117,
+    "kind": "function",
+    "name": "compress",
+    "memberof": "src/map/compress.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/map/compress.js~compress",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/map/compress.js",
+    "importStyle": "{compress}",
+    "description": "Filters the first input iterable according to truthy and flasy values from a\nsecond input iterable. The ith element of the first input iterable is output\nif and only if the ith element of the second input iterable is truthy.",
+    "lineNumber": 13,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The first input iterable to filter."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "selector",
+        "description": "The second input iterable containing the truthy and falsy\nvalues."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 118,
+    "kind": "file",
+    "name": "src/map/dropwhile.js",
+    "content": "import {iter} from '..';\n\n/**\n * Drop elements of the input iterable while the current element satisfies the\n * input predicate.\n *\n * @param {Function} predicate - The input predicate.\n * @param {Iterable} iterable - The input iterable.\n * @returns {Iterator}\n */\nexport function* dropwhile(predicate, iterable) {\n\tconst iterator = iter(iterable);\n\n\tfor (const item of iterator) {\n\t\tif (predicate(item)) {\n\t\t\tcontinue;\n\t\t}\n\n\t\t// Equivalent to return chain( [ [ item ] , iterator ] ) ;\n\n\t\tyield item;\n\n\t\tyield* iterator;\n\n\t\treturn;\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/map/dropwhile.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 119,
+    "kind": "function",
+    "name": "dropwhile",
+    "memberof": "src/map/dropwhile.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/map/dropwhile.js~dropwhile",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/map/dropwhile.js",
+    "importStyle": "{dropwhile}",
+    "description": "Drop elements of the input iterable while the current element satisfies the\ninput predicate.",
+    "lineNumber": 11,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "predicate",
+        "description": "The input predicate."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 120,
+    "kind": "file",
+    "name": "src/map/enumerate.js",
+    "content": "import {_zip2, _count} from '..';\n\n/**\n * Yields (index,element) tuples where the elements are taken from the input\n * iterable. You can choose the starting index. The starting index is\n * <code>0</code> by default.\n *\n * @example\n * // returns [ [ 0 , 'a' ] , [ 1 , 'b' ] , [ 2 , 'c' ] ]\n * list( enumerate( 'abc' ) ) ;\n *\n * @example\n * // returns [ [ 1 , 'a' ] , [ 2 , 'b' ] , [ 3 , 'c' ] ]\n * list( enumerate( 'abc' , 1 ) ) ;\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} [start=0] - The starting index.\n * @returns {Iterator}\n */\nexport function enumerate(iterable, start = 0) {\n\treturn _zip2(_count(start, 1), iterable);\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/map/enumerate.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 121,
+    "kind": "function",
+    "name": "enumerate",
+    "memberof": "src/map/enumerate.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/map/enumerate.js~enumerate",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/map/enumerate.js",
+    "importStyle": "{enumerate}",
+    "description": "Yields (index,element) tuples where the elements are taken from the input\niterable. You can choose the starting index. The starting index is\n<code>0</code> by default.",
+    "examples": [
+      "// returns [ [ 0 , 'a' ] , [ 1 , 'b' ] , [ 2 , 'c' ] ]\nlist( enumerate( 'abc' ) ) ;",
+      "// returns [ [ 1 , 'a' ] , [ 2 , 'b' ] , [ 3 , 'c' ] ]\nlist( enumerate( 'abc' , 1 ) ) ;"
+    ],
+    "lineNumber": 20,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "0",
+        "defaultRaw": 0,
+        "name": "start",
+        "description": "The starting index."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 122,
+    "kind": "file",
+    "name": "src/map/filter.js",
+    "content": "/**\n * Yields all elements from input iterable that verify a given predicate.\n *\n * @example\n * // returns [ 1 , 3 , 5 , 7 , 9 ]\n * list( filter( x => x % 2 , range( 10 ) ) ) ;\n *\n * @param {Function} predicate - A unary function that returns a truthy or\n * falsy value.\n * @param {Iterable} iterable - The input iterable.\n * @returns {Iterator}\n *\n */\nexport function* filter(predicate, iterable) {\n\tfor (const item of iterable) {\n\t\tif (predicate(item)) {\n\t\t\tyield item;\n\t\t}\n\t}\n}\n\n/**\n * Same as {@link filter}.\n * @function filtertrue\n */\nexport const filtertrue = filter;\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/map/filter.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 123,
+    "kind": "function",
+    "name": "filter",
+    "memberof": "src/map/filter.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/map/filter.js~filter",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/map/filter.js",
+    "importStyle": "{filter}",
+    "description": "Yields all elements from input iterable that verify a given predicate.",
+    "examples": [
+      "// returns [ 1 , 3 , 5 , 7 , 9 ]\nlist( filter( x => x % 2 , range( 10 ) ) ) ;"
+    ],
+    "lineNumber": 14,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "predicate",
+        "description": "A unary function that returns a truthy or\nfalsy value."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 124,
+    "kind": "variable",
+    "name": "filtertrue",
+    "memberof": "src/map/filter.js",
+    "static": true,
+    "longname": "src/map/filter.js~filtertrue",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/map/filter.js",
+    "importStyle": "{filtertrue}",
+    "description": "Same as {@link filter}.",
+    "lineNumber": 26,
+    "unknown": [
+      {
+        "tagName": "@function",
+        "tagValue": "filtertrue"
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 125,
+    "kind": "file",
+    "name": "src/map/filterfalse.js",
+    "content": "/**\n * Yields all elements from input iterable that do not verify a given predicate.\n *\n * @example\n * // returns [ 0 , 2 , 4 , 6 , 8 ]\n * list( filter( x => x % 2 , range( 10 ) ) ) ;\n *\n * @param {Function} predicate - A unary function that returns a truthy or\n * falsy value.\n * @param {Iterable} iterable - The input iterable.\n * @returns {Iterator}\n *\n */\nexport function* filterfalse(predicate, iterable) {\n\tfor (const item of iterable) {\n\t\tif (!predicate(item)) {\n\t\t\tyield item;\n\t\t}\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/map/filterfalse.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 126,
+    "kind": "function",
+    "name": "filterfalse",
+    "memberof": "src/map/filterfalse.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/map/filterfalse.js~filterfalse",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/map/filterfalse.js",
+    "importStyle": "{filterfalse}",
+    "description": "Yields all elements from input iterable that do not verify a given predicate.",
+    "examples": [
+      "// returns [ 0 , 2 , 4 , 6 , 8 ]\nlist( filter( x => x % 2 , range( 10 ) ) ) ;"
+    ],
+    "lineNumber": 14,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "predicate",
+        "description": "A unary function that returns a truthy or\nfalsy value."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 127,
+    "kind": "file",
+    "name": "src/map/group.js",
+    "content": "import {iter} from '..';\n\n/**\n * Yields elements of the input iterable by grouping them into tuples\n * consecutive elements from the same equivalence class.\n *\n * @example\n * // A B C D A B\n * list( map( ( k , g ) => k , groupby('AAAABBBCCDAABBB') ) )\n *\n * @example\n * // AAAA BBB CC D\n * list( map( ( k , g ) => list( g ) , groupby('AAAABBBCCD') ) )\n *\n * @param {Function} key - The function used to determine the equivalence class\n * of an element.\n * @param {Iterable} iterable - The input iterable.\n * @returns {Iterator}\n */\nexport function* group(key, iterable) {\n\tconst iterator = iter(iterable);\n\n\tconst first = iterator.next();\n\n\tif (first.done) {\n\t\treturn;\n\t}\n\n\tlet currval = first.value;\n\tlet currkey = key(currval);\n\n\tconst grouper = function* (tgtkey) {\n\t\twhile (true) {\n\t\t\tyield currval;\n\n\t\t\tconst event = iterator.next();\n\t\t\tif (event.done) {\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\tcurrval = event.value;\n\t\t\tcurrkey = key(currval);\n\n\t\t\tif (currkey !== tgtkey) {\n\t\t\t\treturn;\n\t\t\t}\n\t\t}\n\t};\n\n\twhile (true) {\n\t\tconst tgtkey = currkey;\n\n\t\tconst g = grouper(tgtkey);\n\n\t\tyield [tgtkey, g];\n\n\t\twhile (currkey === tgtkey) {\n\t\t\tconst event = iterator.next();\n\t\t\tif (event.done) {\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\tcurrval = event.value;\n\t\t\tcurrkey = key(currval);\n\t\t}\n\t}\n}\n\n/**\n * Same as {@link group}.\n * @function groupby\n */\nexport const groupby = group;\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/map/group.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 128,
+    "kind": "function",
+    "name": "group",
+    "memberof": "src/map/group.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/map/group.js~group",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/map/group.js",
+    "importStyle": "{group}",
+    "description": "Yields elements of the input iterable by grouping them into tuples\nconsecutive elements from the same equivalence class.",
+    "examples": [
+      "// A B C D A B\nlist( map( ( k , g ) => k , groupby('AAAABBBCCDAABBB') ) )",
+      "// AAAA BBB CC D\nlist( map( ( k , g ) => list( g ) , groupby('AAAABBBCCD') ) )"
+    ],
+    "lineNumber": 20,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "key",
+        "description": "The function used to determine the equivalence class\nof an element."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 129,
+    "kind": "variable",
+    "name": "groupby",
+    "memberof": "src/map/group.js",
+    "static": true,
+    "longname": "src/map/group.js~groupby",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/map/group.js",
+    "importStyle": "{groupby}",
+    "description": "Same as {@link group}.",
+    "lineNumber": 73,
+    "unknown": [
+      {
+        "tagName": "@function",
+        "tagValue": "groupby"
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 130,
+    "kind": "file",
+    "name": "src/map/index.js",
+    "content": "export * from './_product';\nexport * from './_zip';\nexport * from './_zip2';\nexport * from './_ziplongest';\nexport * from './chain';\nexport * from './combinations';\nexport * from './combinationswithrepetition';\nexport * from './compress';\nexport * from './dropwhile';\nexport * from './enumerate';\nexport * from './filter';\nexport * from './filterfalse';\nexport * from './group';\nexport * from './map';\nexport * from './nrepeat';\nexport * from './permutations';\nexport * from './product';\nexport * from './repeat';\nexport * from './reversed';\nexport * from './roundrobin';\nexport * from './slice';\nexport * from './sorted';\nexport * from './starmap';\nexport * from './takewhile';\nexport * from './zip';\nexport * from './ziplongest';\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/map/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 131,
+    "kind": "file",
+    "name": "src/map/map.js",
+    "content": "/**\n * Applies a given callable to each of the elements of the input iterable.\n *\n * @example\n * // return [ 0 , 1 , 4 , 9 ]\n * list( map( x => x**2 , range( 4 ) ) ) ;\n *\n * @param {Function} callable - The callable to use.\n * @param {Iterable} iterable - The input iterable.\n * @returns {Iterator}\n */\nexport function* map(callable, iterable) {\n\tfor (const item of iterable) {\n\t\tyield callable(item);\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/map/map.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 132,
+    "kind": "function",
+    "name": "map",
+    "memberof": "src/map/map.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/map/map.js~map",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/map/map.js",
+    "importStyle": "{map}",
+    "description": "Applies a given callable to each of the elements of the input iterable.",
+    "examples": [
+      "// return [ 0 , 1 , 4 , 9 ]\nlist( map( x => x**2 , range( 4 ) ) ) ;"
+    ],
+    "lineNumber": 12,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "callable",
+        "description": "The callable to use."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 133,
+    "kind": "file",
+    "name": "src/map/nrepeat.js",
+    "content": "/**\n * Repeats the input item a few times. Returns an iterator that yields the input\n * item a fixed number of times.\n *\n * @example\n * list( nrepeat( 6 , 3 ) ) ; // returns [ 6 , 6 , 6 ]\n *\n * @param {Object} item - The input item.\n * @param {Number} times - The number of times to yield <code>item</code>.\n * @returns {Iterator}\n */\nexport function* nrepeat(item, times) {\n\twhile (times-- > 0) {\n\t\tyield item;\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/map/nrepeat.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 134,
+    "kind": "function",
+    "name": "nrepeat",
+    "memberof": "src/map/nrepeat.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/map/nrepeat.js~nrepeat",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/map/nrepeat.js",
+    "importStyle": "{nrepeat}",
+    "description": "Repeats the input item a few times. Returns an iterator that yields the input\nitem a fixed number of times.",
+    "examples": [
+      "list( nrepeat( 6 , 3 ) ) ; // returns [ 6 , 6 , 6 ]"
+    ],
+    "lineNumber": 12,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "item",
+        "description": "The input item."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "times",
+        "description": "The number of times to yield <code>item</code>."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 135,
+    "kind": "file",
+    "name": "src/map/permutations.js",
+    "content": "import {list, range, head, pick} from '..';\n\n/**\n * Yields all permutations of each possible choice of <code>r</code> elements\n * of the input iterable.\n *\n * @example\n * // AB AC AD BA BC BD CA CB CD DA DB DC\n * permutations('ABCD', 2) ;\n *\n * @example\n * // 012 021 102 120 201 210\n * permutations(range(3), 3) ;\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} r - The size of the permutations to generate.\n * @returns {Iterator}\n */\nexport function* permutations(iterable, r) {\n\tconst pool = list(iterable);\n\n\tconst length = pool.length;\n\n\tif (r > length) {\n\t\treturn;\n\t}\n\n\tconst indices = list(range(0, length, 1));\n\tconst cycles = list(range(length, length - r, -1));\n\n\tyield list(pick(pool, head(indices, r)));\n\n\tif (r === 0 || length === 0) {\n\t\treturn;\n\t}\n\n\twhile (true) {\n\t\tlet i = r;\n\n\t\twhile (i--) {\n\t\t\t--cycles[i];\n\n\t\t\tif (cycles[i] === 0) {\n\t\t\t\t// Could be costly\n\t\t\t\tindices.push(indices.splice(i, 1)[0]);\n\n\t\t\t\tcycles[i] = length - i;\n\t\t\t} else {\n\t\t\t\tconst j = cycles[i];\n\n\t\t\t\t[indices[i], indices[length - j]] = [indices[length - j], indices[i]];\n\n\t\t\t\tyield list(pick(pool, head(indices, r)));\n\t\t\t\tbreak;\n\t\t\t}\n\t\t}\n\n\t\tif (i === -1) {\n\t\t\treturn;\n\t\t}\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/map/permutations.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 136,
+    "kind": "function",
+    "name": "permutations",
+    "memberof": "src/map/permutations.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/map/permutations.js~permutations",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/map/permutations.js",
+    "importStyle": "{permutations}",
+    "description": "Yields all permutations of each possible choice of <code>r</code> elements\nof the input iterable.",
+    "examples": [
+      "// AB AC AD BA BC BD CA CB CD DA DB DC\npermutations('ABCD', 2) ;",
+      "// 012 021 102 120 201 210\npermutations(range(3), 3) ;"
+    ],
+    "lineNumber": 19,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "r",
+        "description": "The size of the permutations to generate."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 137,
+    "kind": "file",
+    "name": "src/map/product.js",
+    "content": "import {list, map, _product, ncycle, reversed} from '..';\n\n/**\n * Computes the product of the iterables given as first parameter. The second\n * parameter is an integer that tells how many times the list of iterables\n * given as input should be concatenated to itself before computing the\n * product. This second parameter is optional and its default value is\n * <code>1</code>.\n *\n * @example\n * // Ax Ay Bx By Cx Cy Dx Dy\n * product(['ABCD', 'xy']) ;\n *\n * @example\n * // 000 001 010 011 100 101 110 111\n * product([range(2)], 3) ;\n *\n * @param {Iterable} iterables - The input iterables.\n * @param {Number} repeat - The number of times to cycle through the input iterables.\n * @return {Iterator}\n */\n\nexport function product(iterables, repeat = 1) {\n\tconst pools = list(ncycle(reversed(map(list, iterables)), repeat));\n\n\treturn map(list, _product(pools, 0, pools.length));\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/map/product.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 138,
+    "kind": "function",
+    "name": "product",
+    "memberof": "src/map/product.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/map/product.js~product",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/map/product.js",
+    "importStyle": "{product}",
+    "description": "Computes the product of the iterables given as first parameter. The second\nparameter is an integer that tells how many times the list of iterables\ngiven as input should be concatenated to itself before computing the\nproduct. This second parameter is optional and its default value is\n<code>1</code>.",
+    "examples": [
+      "// Ax Ay Bx By Cx Cy Dx Dy\nproduct(['ABCD', 'xy']) ;",
+      "// 000 001 010 011 100 101 110 111\nproduct([range(2)], 3) ;"
+    ],
+    "lineNumber": 23,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterables",
+        "description": "The input iterables."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "repeat",
+        "description": "The number of times to cycle through the input iterables."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 139,
+    "kind": "file",
+    "name": "src/map/repeat.js",
+    "content": "/**\n * Repeats the input item endlessly. Returns an iterator that yields the input\n * item over and over again.\n *\n * @example\n * list( take( repeat( 6 ) , 3 ) ) ; // returns [ 6 , 6 , 6 ]\n *\n * @param {Object} item - The input item.\n * @returns {Iterator}\n */\nexport function* repeat(item) {\n\twhile (true) {\n\t\tyield item;\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/map/repeat.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 140,
+    "kind": "function",
+    "name": "repeat",
+    "memberof": "src/map/repeat.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/map/repeat.js~repeat",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/map/repeat.js",
+    "importStyle": "{repeat}",
+    "description": "Repeats the input item endlessly. Returns an iterator that yields the input\nitem over and over again.",
+    "examples": [
+      "list( take( repeat( 6 ) , 3 ) ) ; // returns [ 6 , 6 , 6 ]"
+    ],
+    "lineNumber": 11,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "item",
+        "description": "The input item."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 141,
+    "kind": "file",
+    "name": "src/map/reversed.js",
+    "content": "/**\n * Yields elements of the input iterable in reverse order.\n *\n * @param {Iterable} iterable - The input iterable.\n * @returns {Iterator} - The input iterable, reversed.\n */\nexport function* reversed(iterable) {\n\tconst buffer = [];\n\n\tfor (const item of iterable) {\n\t\tbuffer.push(item);\n\t}\n\n\t// Caching length is believed to be faster\n\n\tlet jz = buffer.length;\n\n\tfor (; jz; --jz) {\n\t\tyield buffer.pop();\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/map/reversed.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 142,
+    "kind": "function",
+    "name": "reversed",
+    "memberof": "src/map/reversed.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/map/reversed.js~reversed",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/map/reversed.js",
+    "importStyle": "{reversed}",
+    "description": "Yields elements of the input iterable in reverse order.",
+    "lineNumber": 7,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator} - The input iterable, reversed."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": "The input iterable, reversed."
+    }
+  },
+  {
+    "__docId__": 143,
+    "kind": "file",
+    "name": "src/map/roundrobin.js",
+    "content": "import {iter, len, cycle, map, slice} from '..';\n\n/**\n * Yields the first item of the first input iterable, then the first item of\n * the second input iterable, etc., until the last input iterable. Then start\n * again with the second item of the first input iterable, etc. If one of the\n * input iterable is exhausted, it is removed from the list of input iterables\n * and the algorithm continues until all input iterables have been exhausted.\n *\n * @example\n * // returns ['A','D','E','B','F','C]\n * list( roundrobin(['ABC', 'D', 'EF']) )\n *\n * @param {Iterable[]} iterables - The input iterables.\n * @returns {Iterator}\n *\n */\nexport function* roundrobin(iterables) {\n\tlet pending = len(iterables);\n\n\tlet iterators = cycle(map(iter, iterables));\n\n\twhile (pending) {\n\t\twhile (true) {\n\t\t\tconst iterator = iterators.next().value;\n\n\t\t\tconst it = iterator.next();\n\n\t\t\tif (it.done) {\n\t\t\t\tbreak;\n\t\t\t}\n\n\t\t\tyield it.value;\n\t\t}\n\n\t\t--pending;\n\n\t\titerators = cycle(slice(iterators, 0, pending, 1));\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/map/roundrobin.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 144,
+    "kind": "function",
+    "name": "roundrobin",
+    "memberof": "src/map/roundrobin.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/map/roundrobin.js~roundrobin",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/map/roundrobin.js",
+    "importStyle": "{roundrobin}",
+    "description": "Yields the first item of the first input iterable, then the first item of\nthe second input iterable, etc., until the last input iterable. Then start\nagain with the second item of the first input iterable, etc. If one of the\ninput iterable is exhausted, it is removed from the list of input iterables\nand the algorithm continues until all input iterables have been exhausted.",
+    "examples": [
+      "// returns ['A','D','E','B','F','C]\nlist( roundrobin(['ABC', 'D', 'EF']) )"
+    ],
+    "lineNumber": 18,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterables",
+        "description": "The input iterables."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 145,
+    "kind": "file",
+    "name": "src/map/slice.js",
+    "content": "import {iter} from '..';\n\n/**\n * Same as\n * <code>map( [ i , x ] => x , filter( [ i , x ] => (new Set( range( start ,\n * stop , step ) ) ).has( i ) , enumerate( iterable ) ) );</code>.\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} start - Where to start the slice.\n * @param {Number} stop - Where to stop the slice.\n * @param {Number} step - The step of the slice.\n * @returns {Iterator}\n */\nexport function* slice(iterable, start, stop, step) {\n\tconst iterator = iter(iterable);\n\n\twhile (start > 0) {\n\t\tif (iterator.next().done) {\n\t\t\treturn;\n\t\t}\n\n\t\t--start;\n\t\t--stop;\n\t}\n\n\twhile (stop > 0) {\n\t\tconst current = iterator.next();\n\n\t\tif (current.done) {\n\t\t\treturn;\n\t\t}\n\n\t\tyield current.value;\n\n\t\t--stop;\n\n\t\tlet n = step;\n\n\t\twhile (n > 1) {\n\t\t\tif (iterator.next().done) {\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\t--n;\n\t\t}\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/map/slice.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 146,
+    "kind": "function",
+    "name": "slice",
+    "memberof": "src/map/slice.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/map/slice.js~slice",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/map/slice.js",
+    "importStyle": "{slice}",
+    "description": "Same as\n<code>map( [ i , x ] => x , filter( [ i , x ] => (new Set( range( start ,\nstop , step ) ) ).has( i ) , enumerate( iterable ) ) );</code>.",
+    "lineNumber": 14,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "start",
+        "description": "Where to start the slice."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "stop",
+        "description": "Where to stop the slice."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "step",
+        "description": "The step of the slice."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 147,
+    "kind": "file",
+    "name": "src/map/sorted.js",
+    "content": "import {list} from '../base/list';\n\n/**\n * Outputs an array containing the elements of the input iterable sorted\n * according to a given comparison function.\n *\n * @param {Function} compare - The comparison function to use. This function\n * must be 2-ary. It must return -1, 0, or 1 depending whether the first\n * parameter is, respectively, less than, equal to, or greater than the second\n * parameter.\n * @param {Iterable} iterable - The input iterable.\n * @returns {Array} - The input iterable, sorted.\n */\nexport function sorted(compare, iterable) {\n\treturn list(iterable).sort(compare);\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/map/sorted.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 148,
+    "kind": "function",
+    "name": "sorted",
+    "memberof": "src/map/sorted.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/map/sorted.js~sorted",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/map/sorted.js",
+    "importStyle": "{sorted}",
+    "description": "Outputs an array containing the elements of the input iterable sorted\naccording to a given comparison function.",
+    "lineNumber": 14,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} - The input iterable, sorted."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "compare",
+        "description": "The comparison function to use. This function\nmust be 2-ary. It must return -1, 0, or 1 depending whether the first\nparameter is, respectively, less than, equal to, or greater than the second\nparameter."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "The input iterable, sorted."
+    }
+  },
+  {
+    "__docId__": 149,
+    "kind": "file",
+    "name": "src/map/starmap.js",
+    "content": "/**\n * Same as {@link map} but allows multiple arguments callable functions.\n *\n * @example\n * // return [ 0 , 1 , 4 , 9 ]\n * list( starmap( ( x , y ) => x*y , zip( range( 4 ) , range( 4 ) ) ) ;\n *\n * @param {Function} callable - The callable to use.\n * @param {Iterable} iterable - The input iterable.\n * @returns {Iterator}\n */\nexport function* starmap(callable, iterable) {\n\tfor (const args of iterable) {\n\t\tyield callable(...args);\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/map/starmap.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 150,
+    "kind": "function",
+    "name": "starmap",
+    "memberof": "src/map/starmap.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/map/starmap.js~starmap",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/map/starmap.js",
+    "importStyle": "{starmap}",
+    "description": "Same as {@link map} but allows multiple arguments callable functions.",
+    "examples": [
+      "// return [ 0 , 1 , 4 , 9 ]\nlist( starmap( ( x , y ) => x*y , zip( range( 4 ) , range( 4 ) ) ) ;"
+    ],
+    "lineNumber": 12,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "callable",
+        "description": "The callable to use."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 151,
+    "kind": "file",
+    "name": "src/map/takewhile.js",
+    "content": "/**\n * Output elements of the input iterable while the current element satisfies the\n * input predicate.\n *\n * @param {Function} predicate - The input predicate.\n * @param {Iterable} iterable - The input iterable.\n * @returns {Iterator}\n */\nexport function* takewhile(predicate, iterable) {\n\tfor (const item of iterable) {\n\t\tif (!predicate(item)) {\n\t\t\treturn;\n\t\t}\n\n\t\tyield item;\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/map/takewhile.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 152,
+    "kind": "function",
+    "name": "takewhile",
+    "memberof": "src/map/takewhile.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/map/takewhile.js~takewhile",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/map/takewhile.js",
+    "importStyle": "{takewhile}",
+    "description": "Output elements of the input iterable while the current element satisfies the\ninput predicate.",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "predicate",
+        "description": "The input predicate."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 153,
+    "kind": "file",
+    "name": "src/map/zip.js",
+    "content": "import {_zip} from './_zip';\n\n/**\n * Zips iterables together. Yields a tuple containing the first element of each\n * iterable, then a tupe containing the second element of each iterable, etc.\n * Stops when one of the iterables runs out of elements.\n *\n * @example\n * // returns [ [ 'a' , 1 ] , [ 'b' , 2 ] , [ 'c' , 3 ] ]\n * list( zip( 'abcd' , range(3) ) ) ;\n *\n * @param {...Iterable} iterables - The iterables to zip.\n * @returns {Iterator}\n *\n */\nexport function zip(...iterables) {\n\treturn _zip(iterables);\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/map/zip.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 154,
+    "kind": "function",
+    "name": "zip",
+    "memberof": "src/map/zip.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/map/zip.js~zip",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/map/zip.js",
+    "importStyle": "{zip}",
+    "description": "Zips iterables together. Yields a tuple containing the first element of each\niterable, then a tupe containing the second element of each iterable, etc.\nStops when one of the iterables runs out of elements.",
+    "examples": [
+      "// returns [ [ 'a' , 1 ] , [ 'b' , 2 ] , [ 'c' , 3 ] ]\nlist( zip( 'abcd' , range(3) ) ) ;"
+    ],
+    "lineNumber": 16,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "...Iterable"
+        ],
+        "spread": true,
+        "optional": false,
+        "name": "iterables",
+        "description": "The iterables to zip."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 155,
+    "kind": "file",
+    "name": "src/map/ziplongest.js",
+    "content": "import {_ziplongest} from './_ziplongest';\n\n/**\n * Same as zip, but continues to yield zipped tuples until the last iterable is\n * exhausted.\n *\n * @example\n * // returns [['A','x'],['B','y'],['C','-'],['D','-']]\n * list( ziplongest( '-' , 'ABCD', 'xy' ) ) ;\n *\n * @param fillvalue - The value to yield for iterators that are exhausted.\n * @param {...Iterable} iterables - The iterables to zip.\n * @returns {Iterator}\n *\n */\nexport function ziplongest(fillvalue, ...iterables) {\n\treturn _ziplongest(fillvalue, iterables);\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/map/ziplongest.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 156,
+    "kind": "function",
+    "name": "ziplongest",
+    "memberof": "src/map/ziplongest.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/map/ziplongest.js~ziplongest",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/map/ziplongest.js",
+    "importStyle": "{ziplongest}",
+    "description": "Same as zip, but continues to yield zipped tuples until the last iterable is\nexhausted.",
+    "examples": [
+      "// returns [['A','x'],['B','y'],['C','-'],['D','-']]\nlist( ziplongest( '-' , 'ABCD', 'xy' ) ) ;"
+    ],
+    "lineNumber": 16,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "fillvalue",
+        "description": "The value to yield for iterators that are exhausted."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "...Iterable"
+        ],
+        "spread": true,
+        "optional": false,
+        "name": "iterables",
+        "description": "The iterables to zip."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 157,
+    "kind": "file",
+    "name": "src/reduce/_reduce.js",
+    "content": "/**\n * Applies the accumulator function iteratively on the last return value of the\n * accumulator and the next value in the input iterable. The initial value is\n * the initializer parameter.\n *\n * @example\n * _reduce( ( x , y ) => x + y , range( 10 ) , 0 ) ; // returns 45\n *\n * @example\n * _reduce( ( x , y ) => x + y , range( 10 ) , 100 ) ; // returns 145\n *\n * @param {Function} accumulator - The accumulator, a 2-ary function.\n * @param {Iterable} iterable - The input iterable.\n * @param {Object} initializer - The initial value of the reduction.\n * @returns {Object} - The reduction of the elements of <code>iterable</code>.\n */\nexport function _reduce(accumulator, iterable, initializer) {\n\tfor (const item of iterable) {\n\t\tinitializer = accumulator(initializer, item);\n\t}\n\n\treturn initializer;\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/reduce/_reduce.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 158,
+    "kind": "function",
+    "name": "_reduce",
+    "memberof": "src/reduce/_reduce.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/reduce/_reduce.js~_reduce",
+    "access": "private",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/reduce/_reduce.js",
+    "importStyle": "{_reduce}",
+    "description": "Applies the accumulator function iteratively on the last return value of the\naccumulator and the next value in the input iterable. The initial value is\nthe initializer parameter.",
+    "examples": [
+      "_reduce( ( x , y ) => x + y , range( 10 ) , 0 ) ; // returns 45",
+      "_reduce( ( x , y ) => x + y , range( 10 ) , 100 ) ; // returns 145"
+    ],
+    "lineNumber": 17,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object} - The reduction of the elements of <code>iterable</code>."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "accumulator",
+        "description": "The accumulator, a 2-ary function."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "initializer",
+        "description": "The initial value of the reduction."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": "The reduction of the elements of <code>iterable</code>."
+    }
+  },
+  {
+    "__docId__": 159,
+    "kind": "file",
+    "name": "src/reduce/_sum.js",
+    "content": "/**\n * Sums the elements of the input iterable. An optional initializer parameter\n * allows to start the sum of the elements at a chosen value.\n *\n * @example\n * _sum( range( 10 ) , 0 ) ; // returns 45\n *\n * @example\n * _sum( range( 10 ) , 100 ) ; // returns 145\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Object} initializer - The initial value of the sum.\n * @returns {Object} - The sum of the initializer with the elements of\n * <code>iterable</code>.\n *\n */\nexport function _sum(iterable, initializer) {\n\tfor (const item of iterable) {\n\t\tinitializer += item;\n\t}\n\n\treturn initializer;\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/reduce/_sum.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 160,
+    "kind": "function",
+    "name": "_sum",
+    "memberof": "src/reduce/_sum.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/reduce/_sum.js~_sum",
+    "access": "private",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/reduce/_sum.js",
+    "importStyle": "{_sum}",
+    "description": "Sums the elements of the input iterable. An optional initializer parameter\nallows to start the sum of the elements at a chosen value.",
+    "examples": [
+      "_sum( range( 10 ) , 0 ) ; // returns 45",
+      "_sum( range( 10 ) , 100 ) ; // returns 145"
+    ],
+    "lineNumber": 17,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object} - The sum of the initializer with the elements of\n<code>iterable</code>."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "initializer",
+        "description": "The initial value of the sum."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": "The sum of the initializer with the elements of\n<code>iterable</code>."
+    }
+  },
+  {
+    "__docId__": 161,
+    "kind": "file",
+    "name": "src/reduce/all.js",
+    "content": "/**\n * Returns true if all of the elements of the input iterable are truthy.\n *\n * @example\n * all( repeat( true ) ) ; // loops forever\n *\n * @example\n * all( repeat( false ) ) ; // returns false\n *\n * @example\n * all( chain( [ nrepeat( true , 10 ) , repeat( false ) ) ) ; // returns false\n *\n * @param {Iterable} iterable - The input iterable.\n * @returns {Boolean} Returns <code>true</code> if all element of\n * <code>iterable</code> are truthy, <code>false</code> otherwise.\n */\nexport function all(iterable) {\n\tfor (const item of iterable) {\n\t\tif (!item) {\n\t\t\treturn false;\n\t\t}\n\t}\n\n\treturn true;\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/reduce/all.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 162,
+    "kind": "function",
+    "name": "all",
+    "memberof": "src/reduce/all.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/reduce/all.js~all",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/reduce/all.js",
+    "importStyle": "{all}",
+    "description": "Returns true if all of the elements of the input iterable are truthy.",
+    "examples": [
+      "all( repeat( true ) ) ; // loops forever",
+      "all( repeat( false ) ) ; // returns false",
+      "all( chain( [ nrepeat( true , 10 ) , repeat( false ) ) ) ; // returns false"
+    ],
+    "lineNumber": 17,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Boolean} Returns <code>true</code> if all element of\n<code>iterable</code> are truthy, <code>false</code> otherwise."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Boolean"
+      ],
+      "spread": false,
+      "description": "Returns <code>true</code> if all element of\n<code>iterable</code> are truthy, <code>false</code> otherwise."
+    }
+  },
+  {
+    "__docId__": 163,
+    "kind": "file",
+    "name": "src/reduce/any.js",
+    "content": "/**\n * Returns true if any of the elements of the input iterable is truthy.\n *\n * @example\n * any( repeat( true ) ) ; // returns true\n *\n * @example\n * any( repeat( false ) ) ; // loops forever\n *\n * @example\n * any( nrepeat( false , 10 ) ) ; // returns false\n *\n * @param {Iterable} iterable - The input iterable.\n * @returns {Boolean} Returns <code>true</code> if any element of\n * <code>iterable</code> is truthy, <code>false</code> otherwise.\n */\nexport function any(iterable) {\n\tfor (const item of iterable) {\n\t\tif (item) {\n\t\t\treturn true;\n\t\t}\n\t}\n\n\treturn false;\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/reduce/any.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 164,
+    "kind": "function",
+    "name": "any",
+    "memberof": "src/reduce/any.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/reduce/any.js~any",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/reduce/any.js",
+    "importStyle": "{any}",
+    "description": "Returns true if any of the elements of the input iterable is truthy.",
+    "examples": [
+      "any( repeat( true ) ) ; // returns true",
+      "any( repeat( false ) ) ; // loops forever",
+      "any( nrepeat( false , 10 ) ) ; // returns false"
+    ],
+    "lineNumber": 17,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Boolean} Returns <code>true</code> if any element of\n<code>iterable</code> is truthy, <code>false</code> otherwise."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Boolean"
+      ],
+      "spread": false,
+      "description": "Returns <code>true</code> if any element of\n<code>iterable</code> is truthy, <code>false</code> otherwise."
+    }
+  },
+  {
+    "__docId__": 165,
+    "kind": "file",
+    "name": "src/reduce/index.js",
+    "content": "export * from './_reduce';\nexport * from './_sum';\nexport * from './all';\nexport * from './any';\nexport * from './max';\nexport * from './min';\nexport * from './reduce';\nexport * from './some';\nexport * from './sum';\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/reduce/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 166,
+    "kind": "file",
+    "name": "src/reduce/max.js",
+    "content": "import {iter} from '../base/iter';\n\n/**\n * Returns the largest element of the input iterable according\n * to some comparison function.\n *\n * @example\n * max( ( a , b ) => a - b , range( 10 ) ) ; // returns 9\n *\n * @example\n * max( ( a , b ) => a - b , range( 0 ) ) ; // returns undefined\n *\n * @param {Function} compare - The comparison function to use. This function\n * must be 2-ary. It must return -1, 0, or 1 depending whether the first\n * parameter is, respectively, less than, equal to, or greater than the second\n * parameter.\n * @param {Iterable} iterable - The input iterable.\n * @param {Object} [dflt=undefined] - The default value to return in the case\n * that the input iterable is empty.\n * @returns {Object} The largest element of <code>iterable</code> according to\n * <code>compare</code>.\n */\nexport function max(compare, iterable, dflt = undefined) {\n\tconst iterator = iter(iterable);\n\n\tconst first = iterator.next();\n\n\tif (first.done) {\n\t\treturn dflt;\n\t}\n\n\tlet largest = first.value;\n\n\tfor (const candidate of iterator) {\n\t\tif (compare(candidate, largest) > 0) {\n\t\t\tlargest = candidate;\n\t\t}\n\t}\n\n\treturn largest;\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/reduce/max.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 167,
+    "kind": "function",
+    "name": "max",
+    "memberof": "src/reduce/max.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/reduce/max.js~max",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/reduce/max.js",
+    "importStyle": "{max}",
+    "description": "Returns the largest element of the input iterable according\nto some comparison function.",
+    "examples": [
+      "max( ( a , b ) => a - b , range( 10 ) ) ; // returns 9",
+      "max( ( a , b ) => a - b , range( 0 ) ) ; // returns undefined"
+    ],
+    "lineNumber": 23,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object} The largest element of <code>iterable</code> according to\n<code>compare</code>."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "compare",
+        "description": "The comparison function to use. This function\nmust be 2-ary. It must return -1, 0, or 1 depending whether the first\nparameter is, respectively, less than, equal to, or greater than the second\nparameter."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "undefined",
+        "defaultRaw": "undefined",
+        "name": "dflt",
+        "description": "The default value to return in the case\nthat the input iterable is empty."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": "The largest element of <code>iterable</code> according to\n<code>compare</code>."
+    }
+  },
+  {
+    "__docId__": 168,
+    "kind": "file",
+    "name": "src/reduce/min.js",
+    "content": "import {iter} from '../base/iter';\n\n/**\n * Returns the smallest element of the input iterable according\n * to some comparison function.\n *\n * @example\n * min( ( a , b ) => a - b , range( 10 ) ) ; // returns 0\n *\n * @example\n * min( ( a , b ) => a - b , range( 0 ) ) ; // returns undefined\n *\n * @param {Function} compare - The comparison function to use. This function\n * must be 2-ary. It must return -1, 0, or 1 depending whether the first\n * parameter is, respectively, less than, equal to, or greater than the second\n * parameter.\n * @param {Iterable} iterable - The input iterable.\n * @param {Object} [dflt=undefined] - The default value to return in the case\n * that the input iterable is empty.\n * @returns {Object} The smallest element of <code>iterable</code> according to\n * <code>compare</code>.\n */\nexport function min(compare, iterable, dflt = undefined) {\n\tconst iterator = iter(iterable);\n\n\tconst first = iterator.next();\n\n\tif (first.done) {\n\t\treturn dflt;\n\t}\n\n\tlet smallest = first.value;\n\n\tfor (const candidate of iterator) {\n\t\tif (compare(candidate, smallest) < 0) {\n\t\t\tsmallest = candidate;\n\t\t}\n\t}\n\n\treturn smallest;\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/reduce/min.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 169,
+    "kind": "function",
+    "name": "min",
+    "memberof": "src/reduce/min.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/reduce/min.js~min",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/reduce/min.js",
+    "importStyle": "{min}",
+    "description": "Returns the smallest element of the input iterable according\nto some comparison function.",
+    "examples": [
+      "min( ( a , b ) => a - b , range( 10 ) ) ; // returns 0",
+      "min( ( a , b ) => a - b , range( 0 ) ) ; // returns undefined"
+    ],
+    "lineNumber": 23,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object} The smallest element of <code>iterable</code> according to\n<code>compare</code>."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "compare",
+        "description": "The comparison function to use. This function\nmust be 2-ary. It must return -1, 0, or 1 depending whether the first\nparameter is, respectively, less than, equal to, or greater than the second\nparameter."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "undefined",
+        "defaultRaw": "undefined",
+        "name": "dflt",
+        "description": "The default value to return in the case\nthat the input iterable is empty."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": "The smallest element of <code>iterable</code> according to\n<code>compare</code>."
+    }
+  },
+  {
+    "__docId__": 170,
+    "kind": "file",
+    "name": "src/reduce/reduce.js",
+    "content": "import {_reduce} from './_reduce';\nimport {iter} from '../base/iter';\n\n/**\n * Applies the accumulator function iteratively on the last return value of the\n * accumulator and the next value in the input iterable. The initial value is\n * the initializer parameter. If no initial value is given, the first element\n * of the input iterable is used.\n *\n * @example\n * _reduce( ( x , y ) => x + y , range( 10 ) , 0 ) ; // returns 45\n *\n * @example\n * _reduce( ( x , y ) => x + y , range( 10 ) , 100 ) ; // returns 145\n *\n * @param {Function} accumulator - The accumulator, a 2-ary function.\n * @param {Iterable} iterable - The input iterable.\n * @param {Object} [initializer=undefined] - The initial value of the reduction.\n * @returns {Object} - The reduction of the elements of <code>iterable</code>.\n */\nexport function reduce(accumulator, iterable, initializer = undefined) {\n\tif (initializer === undefined) {\n\t\tconst iterator = iter(iterable);\n\t\tconst first = iterator.next();\n\n\t\tif (first.done) {\n\t\t\treturn undefined;\n\t\t}\n\n\t\treturn _reduce(accumulator, iterator, first.value);\n\t}\n\n\treturn _reduce(accumulator, iterable, initializer);\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/reduce/reduce.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 171,
+    "kind": "function",
+    "name": "reduce",
+    "memberof": "src/reduce/reduce.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/reduce/reduce.js~reduce",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/reduce/reduce.js",
+    "importStyle": "{reduce}",
+    "description": "Applies the accumulator function iteratively on the last return value of the\naccumulator and the next value in the input iterable. The initial value is\nthe initializer parameter. If no initial value is given, the first element\nof the input iterable is used.",
+    "examples": [
+      "_reduce( ( x , y ) => x + y , range( 10 ) , 0 ) ; // returns 45",
+      "_reduce( ( x , y ) => x + y , range( 10 ) , 100 ) ; // returns 145"
+    ],
+    "lineNumber": 21,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object} - The reduction of the elements of <code>iterable</code>."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "accumulator",
+        "description": "The accumulator, a 2-ary function."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "undefined",
+        "defaultRaw": "undefined",
+        "name": "initializer",
+        "description": "The initial value of the reduction."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": "The reduction of the elements of <code>iterable</code>."
+    }
+  },
+  {
+    "__docId__": 172,
+    "kind": "file",
+    "name": "src/reduce/some.js",
+    "content": "/**\n * Returns true if at least some of the elements of the input iterable are\n * truthy.\n *\n * @example\n * some( repeat( true ) , 100 ) ; // returns true\n *\n * @example\n * some( repeat( false ) , 0 ) ; // returns true\n *\n * @example\n * some( repeat( false ) , 10 ) ; // loops forever\n *\n * @example\n * some( nrepeat( true , 10 ) , 11 ) ; // returns false\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} n - The number of elements that should be truthy.\n * @returns {Boolean} Returns <code>true</code> if at least <code>n</code>\n * elements of <code>iterable</code> are truthy, <code>false</code> otherwise.\n */\n\nexport function some(iterable, n) {\n\tif (n <= 0) {\n\t\treturn true;\n\t}\n\n\tfor (const item of iterable) {\n\t\tif (item && --n === 0) {\n\t\t\treturn true;\n\t\t}\n\t}\n\n\treturn false;\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/reduce/some.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 173,
+    "kind": "function",
+    "name": "some",
+    "memberof": "src/reduce/some.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/reduce/some.js~some",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/reduce/some.js",
+    "importStyle": "{some}",
+    "description": "Returns true if at least some of the elements of the input iterable are\ntruthy.",
+    "examples": [
+      "some( repeat( true ) , 100 ) ; // returns true",
+      "some( repeat( false ) , 0 ) ; // returns true",
+      "some( repeat( false ) , 10 ) ; // loops forever",
+      "some( nrepeat( true , 10 ) , 11 ) ; // returns false"
+    ],
+    "lineNumber": 23,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Boolean} Returns <code>true</code> if at least <code>n</code>\nelements of <code>iterable</code> are truthy, <code>false</code> otherwise."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "n",
+        "description": "The number of elements that should be truthy."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Boolean"
+      ],
+      "spread": false,
+      "description": "Returns <code>true</code> if at least <code>n</code>\nelements of <code>iterable</code> are truthy, <code>false</code> otherwise."
+    }
+  },
+  {
+    "__docId__": 174,
+    "kind": "file",
+    "name": "src/reduce/sum.js",
+    "content": "import {_sum} from './_sum';\n\n/**\n * Sums the elements of the input iterable. An optional initializer parameter\n * allows to start the sum of the elements at a chosen value. The default value\n * for the initializer parameter is <code>0</code>.\n *\n * @example\n * sum( range( 10 ) ) ; // returns 45\n *\n * @example\n * sum( range( 10 ) , 100 ) ; // returns 145\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Object} [initializer=0] - The initial value of the sum.\n * @returns {Object} - The sum of the initializer with the elements of\n * <code>iterable</code>.\n *\n */\nexport function sum(iterable, initializer = 0) {\n\treturn _sum(iterable, initializer);\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/reduce/sum.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 175,
+    "kind": "function",
+    "name": "sum",
+    "memberof": "src/reduce/sum.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/reduce/sum.js~sum",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/reduce/sum.js",
+    "importStyle": "{sum}",
+    "description": "Sums the elements of the input iterable. An optional initializer parameter\nallows to start the sum of the elements at a chosen value. The default value\nfor the initializer parameter is <code>0</code>.",
+    "examples": [
+      "sum( range( 10 ) ) ; // returns 45",
+      "sum( range( 10 ) , 100 ) ; // returns 145"
+    ],
+    "lineNumber": 20,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Object} - The sum of the initializer with the elements of\n<code>iterable</code>."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "iterable",
+        "description": "The input iterable."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "0",
+        "defaultRaw": 0,
+        "name": "initializer",
+        "description": "The initial value of the sum."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": "The sum of the initializer with the elements of\n<code>iterable</code>."
+    }
+  },
+  {
+    "kind": "index",
+    "content": "# [@aureooms/js-itertools](https://aureooms.github.io/js-itertools)\n\n<img src=\"http://www.explainxkcd.com//wiki/images/f/fd/python.png\" width=\"864\">\n\nPython's iterable and iterator library for JavaScript.\nSee [docs](https://aureooms.github.io/js-itertools).\nParent is [@aureooms/js-library](https://github.com/aureooms/js-library).\n\n```js\ncycle( chain( [ [ 0 , 1 , 2 ] , [ 3 , 4 , 5 ] ] ) ) ; // 0 1 2 3 4 5 0 1 ...\n```\n\n[![License](https://img.shields.io/github/license/aureooms/js-itertools.svg)](https://raw.githubusercontent.com/aureooms/js-itertools/master/LICENSE)\n[![Version](https://img.shields.io/npm/v/@aureooms/js-itertools.svg)](https://www.npmjs.org/package/@aureooms/js-itertools)\n[![Build](https://img.shields.io/travis/aureooms/js-itertools/master.svg)](https://travis-ci.org/aureooms/js-itertools/branches)\n[![Dependencies](https://img.shields.io/david/aureooms/js-itertools.svg)](https://david-dm.org/aureooms/js-itertools)\n[![Dev dependencies](https://img.shields.io/david/dev/aureooms/js-itertools.svg)](https://david-dm.org/aureooms/js-itertools?type=dev)\n[![GitHub issues](https://img.shields.io/github/issues/aureooms/js-itertools.svg)](https://github.com/aureooms/js-itertools/issues)\n[![Downloads](https://img.shields.io/npm/dm/@aureooms/js-itertools.svg)](https://www.npmjs.org/package/@aureooms/js-itertools)\n\n[![Code issues](https://img.shields.io/codeclimate/issues/aureooms/js-itertools.svg)](https://codeclimate.com/github/aureooms/js-itertools/issues)\n[![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-itertools.svg)](https://codeclimate.com/github/aureooms/js-itertools/trends/churn)\n[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-itertools/master.svg)](https://codecov.io/gh/aureooms/js-itertools)\n[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-itertools.svg)](https://codeclimate.com/github/aureooms/js-itertools/trends/technical_debt)\n[![Documentation](https://aureooms.github.io/js-itertools/badge.svg)](https://aureooms.github.io/js-itertools/source.html)\n[![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-itertools)](https://bundlephobia.com/result?p=@aureooms/js-itertools)\n\n## References in Python and JavaScript\n\n  - https://docs.python.org/3/library/itertools.html\n  - http://mochi.github.io/mochikit/doc/html/MochiKit/Iter.html\n  - https://github.com/cweider/js-itertools\n  - http://itertoolsjs.com\n  - https://github.com/thegoleffect/node-itertools\n  - http://rfw.name/sloth.js\n  - https://github.com/lodash/lodash\n  - https://github.com/erikrose/more-itertools\n  - https://github.com/StreetStrider/aux.js\n",
+    "longname": "/home/aureooms/dev/js/js-itertools/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"@aureooms/js-itertools\",\n  \"description\": \"Iterable and iterator library for JavaScript\",\n  \"version\": \"4.0.0\",\n  \"author\": \"Aurélien Ooms <aurelien.ooms@gmail.com>\",\n  \"ava\": {\n    \"files\": [\n      \"test/src/**/*\"\n    ],\n    \"concurrency\": 8,\n    \"require\": [\n      \"@babel/polyfill\",\n      \"@babel/register\"\n    ],\n    \"timeout\": \"1m\"\n  },\n  \"babel\": {\n    \"presets\": [\n      \"@babel/preset-env\"\n    ],\n    \"env\": {\n      \"development\": {\n        \"sourceMaps\": \"inline\"\n      }\n    }\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/aureooms/js-itertools/issues\"\n  },\n  \"dependencies\": {\n    \"@aureooms/js-collections-deque\": \"^4.0.0\",\n    \"@aureooms/js-error\": \"^4.0.0\"\n  },\n  \"devDependencies\": {\n    \"@aureooms/js-compare\": \"1.4.5\",\n    \"@aureooms/js-operator\": \"1.0.2\",\n    \"@aureooms/js-predicate\": \"2.0.2\",\n    \"@babel/cli\": \"7.8.4\",\n    \"@babel/core\": \"7.9.0\",\n    \"@babel/polyfill\": \"7.8.7\",\n    \"@babel/preset-env\": \"7.9.5\",\n    \"@babel/register\": \"7.9.0\",\n    \"ava\": \"3.8.1\",\n    \"coveralls\": \"3.1.0\",\n    \"esdoc\": \"1.1.0\",\n    \"esdoc-inject-script-plugin\": \"1.0.0\",\n    \"esdoc-inject-style-plugin\": \"1.0.0\",\n    \"esdoc-standard-plugin\": \"1.0.0\",\n    \"np\": \"6.2.3\",\n    \"nyc\": \"15.0.1\",\n    \"xo\": \"0.30.0\"\n  },\n  \"files\": [\n    \"lib\"\n  ],\n  \"homepage\": \"https://aureooms.github.io/js-itertools\",\n  \"keywords\": [\n    \"chain\",\n    \"combinations\",\n    \"filter\",\n    \"iter\",\n    \"iterable\",\n    \"iterator\",\n    \"list\",\n    \"map\",\n    \"permutations\",\n    \"product\",\n    \"reduce\"\n  ],\n  \"license\": \"AGPL-3.0\",\n  \"main\": \"lib/index.js\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/aureooms/js-itertools\"\n  },\n  \"scripts\": {\n    \"build\": \"rm -rf lib && babel src -d lib\",\n    \"cover\": \"nyc --reporter=lcov npm test\",\n    \"esdoc\": \"esdoc\",\n    \"prepare\": \"npm run build\",\n    \"release\": \"np\",\n    \"test\": \"xo && ava\"\n  },\n  \"xo\": {\n    \"prettier\": true,\n    \"ignore\": [\n      \"lib\",\n      \"doc\"\n    ],\n    \"overrides\": [\n      {\n        \"files\": \"src/base/len.js\",\n        \"rules\": {\n          \"unicorn/prevent-abbreviations\": \"off\"\n        }\n      },\n      {\n        \"files\": \"src/base/StopIteration.js\",\n        \"rules\": {\n          \"unicorn/filename-case\": [\n            \"error\",\n            {\n              \"case\": \"pascalCase\"\n            }\n          ]\n        }\n      }\n    ]\n  }\n}\n",
+    "longname": "/home/aureooms/dev/js/js-itertools/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manualIndex",
+    "globalIndex": false,
+    "content": null,
+    "longname": "",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/aureooms/dev/js/js-itertools/doc/manual/overview.md",
+    "name": "./doc/manual/overview.md",
+    "content": "# Overview\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/aureooms/dev/js/js-itertools/doc/manual/installation.md",
+    "name": "./doc/manual/installation.md",
+    "content": "# Installation\n\nCan be managed through\n[jspm](http://jspm.io)\nor [npm](https://github.com/npm/npm).\n\n### jspm\n```terminal\njspm install github:aureooms/js-itertools\n# or\njspm install npm:@aureooms/js-itertools\n```\n\n### npm\n```terminal\nnpm install @aureooms/js-itertools --save\n```\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/aureooms/dev/js/js-itertools/doc/manual/usage.md",
+    "name": "./doc/manual/usage.md",
+    "content": "# Usage\n\nThe code needs a ES2015+ polyfill to work, for example\n[@babel/polyfill](https://babeljs.io/docs/usage/polyfill).\n```js\nrequire( '@babel/polyfill' ) ;\n// or\nimport '@babel/polyfill' ;\n```\n\nThen\n```js\nconst itertools = require( '@aureooms/js-itertools' ) ;\n// or\nimport * as itertools from '@aureooms/js-itertools' ;\n```\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/aureooms/dev/js/js-itertools/doc/manual/example.md",
+    "name": "./doc/manual/example.md",
+    "content": "# Example\n\n```js\nrange( 3 ) ; // 0 1 2\n\nrange( 2 , 5 ) ; // 2 3 4\n\nrange( 5 , 2 , -1 ) ; // 5 4 3\n\ncount( 2 , 3 ) ; // 2 5 8 11 14 ...\n\nrepeat( \"A\" ) ; // A A A ...\n\nnrepeat( \"A\" , 3 ) ; // A A A\n\ncycle( \"AB\" ) ; // A B A B A B ...\n\nncycle( \"AB\" , 3 ) ; // A B A B A B\n\nhead( repeat( \"A\" ) , 3 ) : // A A A\n\nlist( nrepeat( \"A\" , 3 ) ) ; // AAA\n\npick( \"ABCD\" , range( 2 ) ) ; // A C\n\ntee( \"ABC\" , 2 ) ; // [ A B C , A B C ]\n\nany( [ false* , true , ... ] ) ; // T\n\nany( [ false* ] ) ; // F\n\nall( [ true* , false , ... ] ) ; // F\n\nall( [ true* ] ) ; // T\n\nsome( [ true , true , false , true , ... ] , 3 ) ; // T\n\nsome( [ true , false , true , false* ] , 3 ) ; // F\n\nimport compare from \"@aureooms/js-compare\" ;\n\nmin( compare.increasing , [ 2 , 1 , 3 ] ) ; // 1\n\nmax( compare.increasing , [ 2 , 1 , 3 ] ) ; // 3\n\nimport operator from \"@aureooms/js-operator\" ;\n\nreduce( operator.mul , range( 2 , 6 ) , 1 ) ; // 120\n\nreduce( operator.add , range( 2 , 6 ) , 1 ) ; // 15\n\nsum( range( 1 , 6 ) ) ; // 15\n\nchain( [ \"ABC\" , \"XY\" ] ) ; // A B C X Y\n\nzip( [ \"ABC\" , \"XY\" ] ) ; // AX BY\n\ncompress( count( 0 , 1 ) , cycle( [ true , false ] ) ) ; // 0 2 4 6 ...\n\nimport predicate from \"@aureooms/js-predicate\" ;\n\ntakewhile( predicate.le( 5 ) , count( 0 , 1 ) ) ; // 0 1 2 3 4 5\n\ndropwhile( predicate.le( 5 ) , count( 0 , 1 ) ) ; // 6 7 8 ...\n\nzip( [ count( 0 , 1 ) , \"ABC\" ] ) ; // 0A 1B 2C\n\nenumerate( \"ABC\" ) ; // 0A 1B 2C\n\nfilter( predicate.divisible( 2 ) , count( 0 , 1 ) ) ; // 0 2 4 8 ...\n\nfilterfalse( predicate.divisible( 2 ) , count( 0 , 1 ) ) ; // 1 3 5 7 ...\n\ngroup( operator.identity , \"AAAABBBCCAABB\" ) ; // [ A AAAA ] [ B BBB ] [ C CC ] [ A AA ] [ B BB ]\n\nslice( count( 0 , 1 ) , 40 , 50 , 3 ) ; // 40 43 46 49\n\nroundrobin( [ \"ABC\" , \"D\" , \"EF\" ] ) ; // A D E B F C\n\nmap( operator.truth , [ 0 , 1 , null , undefined , \"A\" ] ) ; // F T F F T\n\nstarmap( operator.mul , zip( count( 0 , 1 ) , count( 0 , 1 ) ) ) ; // 0 1 4 9 16 25 36 ...\n\nproduct( [ \"ABCD\" , \"xy\" ] , 1 ) ; // Ax Ay Bx By Cx Cy Dx Dy\n\nproduct( [ range( 2 ) ] , 3 ) ; // 000 001 010 011 100 101 110 111\n\npermutations( \"ABCD\" , 2 ) ; // AB AC AD BA BC BD CA CB CD DA DB DC\n\npermutations( range( 3 ) , 3 ) ; // 012 021 102 120 201 210\n\ncombinations( \"ABCD\" , 2 ) ; // AB AC AD BC BD CD\n\ncombinations( range( 4 ) , 3 ) ; // 012 013 023 123\n\ncombinationswithrepetition( \"ABC\" , 1 ) ; // A B C\n\ncombinationswithrepetition( range( 3 ) , 2 ) ; // 00 01 02 11 12 22\n\nreversed( \"ABC\" ) ; // C B A\n\nsorted( compare.increasing , [ 3 , 1 , 2 ] ) ; // 1 2 3\n\nclosure( x => x + 1 , 0 ) ; // 0 1 2 3 ...\n```\n",
+    "static": true,
+    "access": "public"
+  }
+]

@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 126,
+  "end": 138,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 126,
+    "end": 138,
     "loc": {
       "start": {
         "line": 1,
@@ -31,7 +31,7 @@
       {
         "type": "ExportNamedDeclaration",
         "start": 88,
-        "end": 125,
+        "end": 137,
         "loc": {
           "start": {
             "line": 5,
@@ -39,83 +39,82 @@
           },
           "end": {
             "line": 5,
-            "column": 37
+            "column": 49
           }
         },
-        "specifiers": [],
-        "source": null,
-        "declaration": {
-          "type": "FunctionDeclaration",
-          "start": 95,
-          "end": 125,
+        "declaration": null,
+        "specifiers": [
+          {
+            "type": "ExportSpecifier",
+            "start": 96,
+            "end": 109,
+            "loc": {
+              "start": {
+                "line": 5,
+                "column": 8
+              },
+              "end": {
+                "line": 5,
+                "column": 21
+              }
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 96,
+              "end": 109,
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 8
+                },
+                "end": {
+                  "line": 5,
+                  "column": 21
+                },
+                "identifierName": "StopIteration"
+              },
+              "name": "StopIteration",
+              "leadingComments": null
+            },
+            "exported": {
+              "type": "Identifier",
+              "start": 96,
+              "end": 109,
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 8
+                },
+                "end": {
+                  "line": 5,
+                  "column": 21
+                },
+                "identifierName": "StopIteration"
+              },
+              "name": "StopIteration"
+            },
+            "leadingComments": null
+          }
+        ],
+        "source": {
+          "type": "StringLiteral",
+          "start": 116,
+          "end": 136,
           "loc": {
             "start": {
               "line": 5,
-              "column": 7
+              "column": 28
             },
             "end": {
               "line": 5,
-              "column": 37
+              "column": 48
             }
           },
-          "id": {
-            "type": "Identifier",
-            "start": 104,
-            "end": 117,
-            "loc": {
-              "start": {
-                "line": 5,
-                "column": 16
-              },
-              "end": {
-                "line": 5,
-                "column": 29
-              },
-              "identifierName": "StopIteration"
-            },
-            "name": "StopIteration",
-            "leadingComments": null
+          "extra": {
+            "rawValue": "@aureooms/js-error",
+            "raw": "'@aureooms/js-error'"
           },
-          "generator": false,
-          "expression": false,
-          "async": false,
-          "params": [],
-          "body": {
-            "type": "BlockStatement",
-            "start": 122,
-            "end": 125,
-            "loc": {
-              "start": {
-                "line": 5,
-                "column": 34
-              },
-              "end": {
-                "line": 5,
-                "column": 37
-              }
-            },
-            "body": [],
-            "directives": []
-          },
-          "leadingComments": [
-            {
-              "type": "CommentBlock",
-              "value": "*\n * Error thrown by {@link next} when the input iterator is exhausted.\n * @class\n ",
-              "start": 0,
-              "end": 87,
-              "loc": {
-                "start": {
-                  "line": 1,
-                  "column": 0
-                },
-                "end": {
-                  "line": 4,
-                  "column": 3
-                }
-              }
-            }
-          ],
-          "trailingComments": []
+          "value": "@aureooms/js-error"
         },
         "leadingComments": [
           {
@@ -204,9 +203,8 @@
     },
     {
       "type": {
-        "label": "function",
-        "keyword": "function",
-        "beforeExpr": false,
+        "label": "{",
+        "beforeExpr": true,
         "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
@@ -215,9 +213,8 @@
         "postfix": false,
         "binop": null
       },
-      "value": "function",
       "start": 95,
-      "end": 103,
+      "end": 96,
       "loc": {
         "start": {
           "line": 5,
@@ -225,7 +222,7 @@
         },
         "end": {
           "line": 5,
-          "column": 15
+          "column": 8
         }
       }
     },
@@ -242,91 +239,16 @@
         "binop": null
       },
       "value": "StopIteration",
-      "start": 104,
-      "end": 117,
+      "start": 96,
+      "end": 109,
       "loc": {
         "start": {
           "line": 5,
-          "column": 16
+          "column": 8
         },
         "end": {
           "line": 5,
-          "column": 29
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "(",
-        "beforeExpr": true,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 118,
-      "end": 119,
-      "loc": {
-        "start": {
-          "line": 5,
-          "column": 30
-        },
-        "end": {
-          "line": 5,
-          "column": 31
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ")",
-        "beforeExpr": false,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 120,
-      "end": 121,
-      "loc": {
-        "start": {
-          "line": 5,
-          "column": 32
-        },
-        "end": {
-          "line": 5,
-          "column": 33
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "{",
-        "beforeExpr": true,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 122,
-      "end": 123,
-      "loc": {
-        "start": {
-          "line": 5,
-          "column": 34
-        },
-        "end": {
-          "line": 5,
-          "column": 35
+          "column": 21
         }
       }
     },
@@ -342,16 +264,95 @@
         "postfix": false,
         "binop": null
       },
-      "start": 124,
-      "end": 125,
+      "start": 109,
+      "end": 110,
       "loc": {
         "start": {
           "line": 5,
-          "column": 36
+          "column": 21
         },
         "end": {
           "line": 5,
-          "column": 37
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "from",
+      "start": 111,
+      "end": 115,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 23
+        },
+        "end": {
+          "line": 5,
+          "column": 27
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "@aureooms/js-error",
+      "start": 116,
+      "end": 136,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 28
+        },
+        "end": {
+          "line": 5,
+          "column": 48
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 136,
+      "end": 137,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 48
+        },
+        "end": {
+          "line": 5,
+          "column": 49
         }
       }
     },
@@ -368,8 +369,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 126,
-      "end": 126,
+      "start": 138,
+      "end": 138,
       "loc": {
         "start": {
           "line": 6,

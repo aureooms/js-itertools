@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 28,
+  "end": 27,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 28,
+    "end": 27,
     "loc": {
       "start": {
         "line": 1,
@@ -31,7 +31,7 @@
       {
         "type": "ExportAllDeclaration",
         "start": 0,
-        "end": 27,
+        "end": 26,
         "loc": {
           "start": {
             "line": 1,
@@ -39,7 +39,7 @@
           },
           "end": {
             "line": 1,
-            "column": 27
+            "column": 26
           }
         },
         "source": {
@@ -189,16 +189,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 26,
-      "end": 27,
+      "start": 25,
+      "end": 26,
       "loc": {
         "start": {
           "line": 1,
-          "column": 26
+          "column": 25
         },
         "end": {
           "line": 1,
-          "column": 27
+          "column": 26
         }
       }
     },
@@ -215,8 +215,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 28,
-      "end": 28,
+      "start": 27,
+      "end": 27,
       "loc": {
         "start": {
           "line": 2,

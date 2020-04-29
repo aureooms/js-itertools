@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 111,
+  "end": 107,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 111,
+    "end": 107,
     "loc": {
       "start": {
         "line": 1,
@@ -31,7 +31,7 @@
       {
         "type": "ImportDeclaration",
         "start": 0,
-        "end": 31,
+        "end": 28,
         "loc": {
           "start": {
             "line": 1,
@@ -39,36 +39,36 @@
           },
           "end": {
             "line": 1,
-            "column": 31
+            "column": 28
           }
         },
         "specifiers": [
           {
             "type": "ImportSpecifier",
-            "start": 9,
-            "end": 13,
+            "start": 8,
+            "end": 12,
             "loc": {
               "start": {
                 "line": 1,
-                "column": 9
+                "column": 8
               },
               "end": {
                 "line": 1,
-                "column": 13
+                "column": 12
               }
             },
             "imported": {
               "type": "Identifier",
-              "start": 9,
-              "end": 13,
+              "start": 8,
+              "end": 12,
               "loc": {
                 "start": {
                   "line": 1,
-                  "column": 9
+                  "column": 8
                 },
                 "end": {
                   "line": 1,
-                  "column": 13
+                  "column": 12
                 },
                 "identifierName": "take"
               },
@@ -76,16 +76,16 @@
             },
             "local": {
               "type": "Identifier",
-              "start": 9,
-              "end": 13,
+              "start": 8,
+              "end": 12,
               "loc": {
                 "start": {
                   "line": 1,
-                  "column": 9
+                  "column": 8
                 },
                 "end": {
                   "line": 1,
-                  "column": 13
+                  "column": 12
                 },
                 "identifierName": "take"
               },
@@ -95,16 +95,16 @@
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 21,
-          "end": 29,
+          "start": 19,
+          "end": 27,
           "loc": {
             "start": {
               "line": 1,
-              "column": 21
+              "column": 19
             },
             "end": {
               "line": 1,
-              "column": 29
+              "column": 27
             }
           },
           "extra": {
@@ -117,8 +117,8 @@
           {
             "type": "CommentBlock",
             "value": "*\n * Same as {@link take}.\n * @function head\n ",
-            "start": 33,
-            "end": 83,
+            "start": 30,
+            "end": 80,
             "loc": {
               "start": {
                 "line": 3,
@@ -134,8 +134,8 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 84,
-        "end": 110,
+        "start": 81,
+        "end": 106,
         "loc": {
           "start": {
             "line": 7,
@@ -143,15 +143,15 @@
           },
           "end": {
             "line": 7,
-            "column": 26
+            "column": 25
           }
         },
         "specifiers": [],
         "source": null,
         "declaration": {
           "type": "VariableDeclaration",
-          "start": 91,
-          "end": 110,
+          "start": 88,
+          "end": 106,
           "loc": {
             "start": {
               "line": 7,
@@ -159,14 +159,14 @@
             },
             "end": {
               "line": 7,
-              "column": 26
+              "column": 25
             }
           },
           "declarations": [
             {
               "type": "VariableDeclarator",
-              "start": 97,
-              "end": 108,
+              "start": 94,
+              "end": 105,
               "loc": {
                 "start": {
                   "line": 7,
@@ -179,8 +179,8 @@
               },
               "id": {
                 "type": "Identifier",
-                "start": 97,
-                "end": 101,
+                "start": 94,
+                "end": 98,
                 "loc": {
                   "start": {
                     "line": 7,
@@ -197,8 +197,8 @@
               },
               "init": {
                 "type": "Identifier",
-                "start": 104,
-                "end": 108,
+                "start": 101,
+                "end": 105,
                 "loc": {
                   "start": {
                     "line": 7,
@@ -220,8 +220,8 @@
             {
               "type": "CommentBlock",
               "value": "*\n * Same as {@link take}.\n * @function head\n ",
-              "start": 33,
-              "end": 83,
+              "start": 30,
+              "end": 80,
               "loc": {
                 "start": {
                   "line": 3,
@@ -240,8 +240,8 @@
           {
             "type": "CommentBlock",
             "value": "*\n * Same as {@link take}.\n * @function head\n ",
-            "start": 33,
-            "end": 83,
+            "start": 30,
+            "end": 80,
             "loc": {
               "start": {
                 "line": 3,
@@ -262,8 +262,8 @@
     {
       "type": "CommentBlock",
       "value": "*\n * Same as {@link take}.\n * @function head\n ",
-      "start": 33,
-      "end": 83,
+      "start": 30,
+      "end": 80,
       "loc": {
         "start": {
           "line": 3,
@@ -282,7 +282,7 @@
         "label": "import",
         "keyword": "import",
         "beforeExpr": false,
-        "startsExpr": false,
+        "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
@@ -343,16 +343,16 @@
         "binop": null
       },
       "value": "take",
-      "start": 9,
-      "end": 13,
+      "start": 8,
+      "end": 12,
       "loc": {
         "start": {
           "line": 1,
-          "column": 9
+          "column": 8
         },
         "end": {
           "line": 1,
-          "column": 13
+          "column": 12
         }
       }
     },
@@ -368,16 +368,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 14,
-      "end": 15,
+      "start": 12,
+      "end": 13,
       "loc": {
         "start": {
           "line": 1,
-          "column": 14
+          "column": 12
         },
         "end": {
           "line": 1,
-          "column": 15
+          "column": 13
         }
       }
     },
@@ -394,16 +394,16 @@
         "binop": null
       },
       "value": "from",
-      "start": 16,
-      "end": 20,
+      "start": 14,
+      "end": 18,
       "loc": {
         "start": {
           "line": 1,
-          "column": 16
+          "column": 14
         },
         "end": {
           "line": 1,
-          "column": 20
+          "column": 18
         }
       }
     },
@@ -421,16 +421,16 @@
         "updateContext": null
       },
       "value": "./take",
-      "start": 21,
-      "end": 29,
+      "start": 19,
+      "end": 27,
       "loc": {
         "start": {
           "line": 1,
-          "column": 21
+          "column": 19
         },
         "end": {
           "line": 1,
-          "column": 29
+          "column": 27
         }
       }
     },
@@ -447,24 +447,24 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 30,
-      "end": 31,
+      "start": 27,
+      "end": 28,
       "loc": {
         "start": {
           "line": 1,
-          "column": 30
+          "column": 27
         },
         "end": {
           "line": 1,
-          "column": 31
+          "column": 28
         }
       }
     },
     {
       "type": "CommentBlock",
       "value": "*\n * Same as {@link take}.\n * @function head\n ",
-      "start": 33,
-      "end": 83,
+      "start": 30,
+      "end": 80,
       "loc": {
         "start": {
           "line": 3,
@@ -491,8 +491,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 84,
-      "end": 90,
+      "start": 81,
+      "end": 87,
       "loc": {
         "start": {
           "line": 7,
@@ -519,8 +519,8 @@
         "updateContext": null
       },
       "value": "const",
-      "start": 91,
-      "end": 96,
+      "start": 88,
+      "end": 93,
       "loc": {
         "start": {
           "line": 7,
@@ -545,8 +545,8 @@
         "binop": null
       },
       "value": "head",
-      "start": 97,
-      "end": 101,
+      "start": 94,
+      "end": 98,
       "loc": {
         "start": {
           "line": 7,
@@ -572,8 +572,8 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 102,
-      "end": 103,
+      "start": 99,
+      "end": 100,
       "loc": {
         "start": {
           "line": 7,
@@ -598,8 +598,8 @@
         "binop": null
       },
       "value": "take",
-      "start": 104,
-      "end": 108,
+      "start": 101,
+      "end": 105,
       "loc": {
         "start": {
           "line": 7,
@@ -624,16 +624,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 109,
-      "end": 110,
+      "start": 105,
+      "end": 106,
       "loc": {
         "start": {
           "line": 7,
-          "column": 25
+          "column": 24
         },
         "end": {
           "line": 7,
-          "column": 26
+          "column": 25
         }
       }
     },
@@ -650,8 +650,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 111,
-      "end": 111,
+      "start": 107,
+      "end": 107,
       "loc": {
         "start": {
           "line": 8,

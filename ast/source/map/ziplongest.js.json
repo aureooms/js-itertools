@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 537,
+  "end": 524,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 21,
+      "line": 19,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 537,
+    "end": 524,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 21,
+        "line": 19,
         "column": 0
       }
     },
@@ -31,7 +31,7 @@
       {
         "type": "ImportDeclaration",
         "start": 0,
-        "end": 45,
+        "end": 42,
         "loc": {
           "start": {
             "line": 1,
@@ -39,36 +39,36 @@
           },
           "end": {
             "line": 1,
-            "column": 45
+            "column": 42
           }
         },
         "specifiers": [
           {
             "type": "ImportSpecifier",
-            "start": 9,
-            "end": 20,
+            "start": 8,
+            "end": 19,
             "loc": {
               "start": {
                 "line": 1,
-                "column": 9
+                "column": 8
               },
               "end": {
                 "line": 1,
-                "column": 20
+                "column": 19
               }
             },
             "imported": {
               "type": "Identifier",
-              "start": 9,
-              "end": 20,
+              "start": 8,
+              "end": 19,
               "loc": {
                 "start": {
                   "line": 1,
-                  "column": 9
+                  "column": 8
                 },
                 "end": {
                   "line": 1,
-                  "column": 20
+                  "column": 19
                 },
                 "identifierName": "_ziplongest"
               },
@@ -76,16 +76,16 @@
             },
             "local": {
               "type": "Identifier",
-              "start": 9,
-              "end": 20,
+              "start": 8,
+              "end": 19,
               "loc": {
                 "start": {
                   "line": 1,
-                  "column": 9
+                  "column": 8
                 },
                 "end": {
                   "line": 1,
-                  "column": 20
+                  "column": 19
                 },
                 "identifierName": "_ziplongest"
               },
@@ -95,16 +95,16 @@
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 28,
-          "end": 43,
+          "start": 26,
+          "end": 41,
           "loc": {
             "start": {
               "line": 1,
-              "column": 28
+              "column": 26
             },
             "end": {
               "line": 1,
-              "column": 43
+              "column": 41
             }
           },
           "extra": {
@@ -117,8 +117,8 @@
           {
             "type": "CommentBlock",
             "value": "*\n * Same as zip, but continues to yield zipped tuples until the last iterable is\n * exhausted.\n *\n * @example\n * // returns [['A','x'],['B','y'],['C','-'],['D','-']]\n * list( ziplongest( '-' , 'ABCD', 'xy' ) ) ;\n *\n * @param fillvalue - The value to yield for iterators that are exhausted.\n * @param {...Iterable} iterables - The iterables to zip.\n * @returns {Iterator}\n *\n ",
-            "start": 47,
-            "end": 427,
+            "start": 44,
+            "end": 424,
             "loc": {
               "start": {
                 "line": 3,
@@ -134,15 +134,15 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 428,
-        "end": 536,
+        "start": 425,
+        "end": 523,
         "loc": {
           "start": {
             "line": 16,
             "column": 0
           },
           "end": {
-            "line": 20,
+            "line": 18,
             "column": 1
           }
         },
@@ -150,22 +150,22 @@
         "source": null,
         "declaration": {
           "type": "FunctionDeclaration",
-          "start": 435,
-          "end": 536,
+          "start": 432,
+          "end": 523,
           "loc": {
             "start": {
               "line": 16,
               "column": 7
             },
             "end": {
-              "line": 20,
+              "line": 18,
               "column": 1
             }
           },
           "id": {
             "type": "Identifier",
-            "start": 444,
-            "end": 454,
+            "start": 441,
+            "end": 451,
             "loc": {
               "start": {
                 "line": 16,
@@ -186,16 +186,16 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 457,
-              "end": 466,
+              "start": 452,
+              "end": 461,
               "loc": {
                 "start": {
                   "line": 16,
-                  "column": 29
+                  "column": 27
                 },
                 "end": {
                   "line": 16,
-                  "column": 38
+                  "column": 36
                 },
                 "identifierName": "fillvalue"
               },
@@ -203,30 +203,30 @@
             },
             {
               "type": "RestElement",
-              "start": 469,
-              "end": 481,
+              "start": 463,
+              "end": 475,
               "loc": {
                 "start": {
                   "line": 16,
-                  "column": 41
+                  "column": 38
                 },
                 "end": {
                   "line": 16,
-                  "column": 53
+                  "column": 50
                 }
               },
               "argument": {
                 "type": "Identifier",
-                "start": 472,
-                "end": 481,
+                "start": 466,
+                "end": 475,
                 "loc": {
                   "start": {
                     "line": 16,
-                    "column": 44
+                    "column": 41
                   },
                   "end": {
                     "line": 16,
-                    "column": 53
+                    "column": 50
                   },
                   "identifierName": "iterables"
                 },
@@ -236,58 +236,58 @@
           ],
           "body": {
             "type": "BlockStatement",
-            "start": 484,
-            "end": 536,
+            "start": 477,
+            "end": 523,
             "loc": {
               "start": {
                 "line": 16,
-                "column": 56
+                "column": 52
               },
               "end": {
-                "line": 20,
+                "line": 18,
                 "column": 1
               }
             },
             "body": [
               {
                 "type": "ReturnStatement",
-                "start": 488,
-                "end": 533,
+                "start": 480,
+                "end": 521,
                 "loc": {
                   "start": {
-                    "line": 18,
+                    "line": 17,
                     "column": 1
                   },
                   "end": {
-                    "line": 18,
-                    "column": 46
+                    "line": 17,
+                    "column": 42
                   }
                 },
                 "argument": {
                   "type": "CallExpression",
-                  "start": 495,
-                  "end": 531,
+                  "start": 487,
+                  "end": 520,
                   "loc": {
                     "start": {
-                      "line": 18,
+                      "line": 17,
                       "column": 8
                     },
                     "end": {
-                      "line": 18,
-                      "column": 44
+                      "line": 17,
+                      "column": 41
                     }
                   },
                   "callee": {
                     "type": "Identifier",
-                    "start": 495,
-                    "end": 506,
+                    "start": 487,
+                    "end": 498,
                     "loc": {
                       "start": {
-                        "line": 18,
+                        "line": 17,
                         "column": 8
                       },
                       "end": {
-                        "line": 18,
+                        "line": 17,
                         "column": 19
                       },
                       "identifierName": "_ziplongest"
@@ -297,16 +297,16 @@
                   "arguments": [
                     {
                       "type": "Identifier",
-                      "start": 508,
-                      "end": 517,
+                      "start": 499,
+                      "end": 508,
                       "loc": {
                         "start": {
-                          "line": 18,
-                          "column": 21
+                          "line": 17,
+                          "column": 20
                         },
                         "end": {
-                          "line": 18,
-                          "column": 30
+                          "line": 17,
+                          "column": 29
                         },
                         "identifierName": "fillvalue"
                       },
@@ -314,16 +314,16 @@
                     },
                     {
                       "type": "Identifier",
-                      "start": 520,
-                      "end": 529,
+                      "start": 510,
+                      "end": 519,
                       "loc": {
                         "start": {
-                          "line": 18,
-                          "column": 33
+                          "line": 17,
+                          "column": 31
                         },
                         "end": {
-                          "line": 18,
-                          "column": 42
+                          "line": 17,
+                          "column": 40
                         },
                         "identifierName": "iterables"
                       },
@@ -339,8 +339,8 @@
             {
               "type": "CommentBlock",
               "value": "*\n * Same as zip, but continues to yield zipped tuples until the last iterable is\n * exhausted.\n *\n * @example\n * // returns [['A','x'],['B','y'],['C','-'],['D','-']]\n * list( ziplongest( '-' , 'ABCD', 'xy' ) ) ;\n *\n * @param fillvalue - The value to yield for iterators that are exhausted.\n * @param {...Iterable} iterables - The iterables to zip.\n * @returns {Iterator}\n *\n ",
-              "start": 47,
-              "end": 427,
+              "start": 44,
+              "end": 424,
               "loc": {
                 "start": {
                   "line": 3,
@@ -359,8 +359,8 @@
           {
             "type": "CommentBlock",
             "value": "*\n * Same as zip, but continues to yield zipped tuples until the last iterable is\n * exhausted.\n *\n * @example\n * // returns [['A','x'],['B','y'],['C','-'],['D','-']]\n * list( ziplongest( '-' , 'ABCD', 'xy' ) ) ;\n *\n * @param fillvalue - The value to yield for iterators that are exhausted.\n * @param {...Iterable} iterables - The iterables to zip.\n * @returns {Iterator}\n *\n ",
-            "start": 47,
-            "end": 427,
+            "start": 44,
+            "end": 424,
             "loc": {
               "start": {
                 "line": 3,
@@ -381,8 +381,8 @@
     {
       "type": "CommentBlock",
       "value": "*\n * Same as zip, but continues to yield zipped tuples until the last iterable is\n * exhausted.\n *\n * @example\n * // returns [['A','x'],['B','y'],['C','-'],['D','-']]\n * list( ziplongest( '-' , 'ABCD', 'xy' ) ) ;\n *\n * @param fillvalue - The value to yield for iterators that are exhausted.\n * @param {...Iterable} iterables - The iterables to zip.\n * @returns {Iterator}\n *\n ",
-      "start": 47,
-      "end": 427,
+      "start": 44,
+      "end": 424,
       "loc": {
         "start": {
           "line": 3,
@@ -401,7 +401,7 @@
         "label": "import",
         "keyword": "import",
         "beforeExpr": false,
-        "startsExpr": false,
+        "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
@@ -462,16 +462,16 @@
         "binop": null
       },
       "value": "_ziplongest",
-      "start": 9,
-      "end": 20,
+      "start": 8,
+      "end": 19,
       "loc": {
         "start": {
           "line": 1,
-          "column": 9
+          "column": 8
         },
         "end": {
           "line": 1,
-          "column": 20
+          "column": 19
         }
       }
     },
@@ -487,16 +487,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 21,
-      "end": 22,
+      "start": 19,
+      "end": 20,
       "loc": {
         "start": {
           "line": 1,
-          "column": 21
+          "column": 19
         },
         "end": {
           "line": 1,
-          "column": 22
+          "column": 20
         }
       }
     },
@@ -513,16 +513,16 @@
         "binop": null
       },
       "value": "from",
-      "start": 23,
-      "end": 27,
+      "start": 21,
+      "end": 25,
       "loc": {
         "start": {
           "line": 1,
-          "column": 23
+          "column": 21
         },
         "end": {
           "line": 1,
-          "column": 27
+          "column": 25
         }
       }
     },
@@ -540,16 +540,16 @@
         "updateContext": null
       },
       "value": "./_ziplongest",
-      "start": 28,
-      "end": 43,
+      "start": 26,
+      "end": 41,
       "loc": {
         "start": {
           "line": 1,
-          "column": 28
+          "column": 26
         },
         "end": {
           "line": 1,
-          "column": 43
+          "column": 41
         }
       }
     },
@@ -566,24 +566,24 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 44,
-      "end": 45,
+      "start": 41,
+      "end": 42,
       "loc": {
         "start": {
           "line": 1,
-          "column": 44
+          "column": 41
         },
         "end": {
           "line": 1,
-          "column": 45
+          "column": 42
         }
       }
     },
     {
       "type": "CommentBlock",
       "value": "*\n * Same as zip, but continues to yield zipped tuples until the last iterable is\n * exhausted.\n *\n * @example\n * // returns [['A','x'],['B','y'],['C','-'],['D','-']]\n * list( ziplongest( '-' , 'ABCD', 'xy' ) ) ;\n *\n * @param fillvalue - The value to yield for iterators that are exhausted.\n * @param {...Iterable} iterables - The iterables to zip.\n * @returns {Iterator}\n *\n ",
-      "start": 47,
-      "end": 427,
+      "start": 44,
+      "end": 424,
       "loc": {
         "start": {
           "line": 3,
@@ -610,8 +610,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 428,
-      "end": 434,
+      "start": 425,
+      "end": 431,
       "loc": {
         "start": {
           "line": 16,
@@ -637,8 +637,8 @@
         "binop": null
       },
       "value": "function",
-      "start": 435,
-      "end": 443,
+      "start": 432,
+      "end": 440,
       "loc": {
         "start": {
           "line": 16,
@@ -663,8 +663,8 @@
         "binop": null
       },
       "value": "ziplongest",
-      "start": 444,
-      "end": 454,
+      "start": 441,
+      "end": 451,
       "loc": {
         "start": {
           "line": 16,
@@ -688,16 +688,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 455,
-      "end": 456,
+      "start": 451,
+      "end": 452,
       "loc": {
         "start": {
           "line": 16,
-          "column": 27
+          "column": 26
         },
         "end": {
           "line": 16,
-          "column": 28
+          "column": 27
         }
       }
     },
@@ -714,16 +714,16 @@
         "binop": null
       },
       "value": "fillvalue",
-      "start": 457,
-      "end": 466,
+      "start": 452,
+      "end": 461,
       "loc": {
         "start": {
           "line": 16,
-          "column": 29
+          "column": 27
         },
         "end": {
           "line": 16,
-          "column": 38
+          "column": 36
         }
       }
     },
@@ -740,16 +740,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 467,
-      "end": 468,
+      "start": 461,
+      "end": 462,
       "loc": {
         "start": {
           "line": 16,
-          "column": 39
+          "column": 36
         },
         "end": {
           "line": 16,
-          "column": 40
+          "column": 37
         }
       }
     },
@@ -766,16 +766,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 469,
-      "end": 472,
+      "start": 463,
+      "end": 466,
       "loc": {
         "start": {
           "line": 16,
-          "column": 41
+          "column": 38
         },
         "end": {
           "line": 16,
-          "column": 44
+          "column": 41
         }
       }
     },
@@ -792,16 +792,16 @@
         "binop": null
       },
       "value": "iterables",
-      "start": 472,
-      "end": 481,
+      "start": 466,
+      "end": 475,
       "loc": {
         "start": {
           "line": 16,
-          "column": 44
+          "column": 41
         },
         "end": {
           "line": 16,
-          "column": 53
+          "column": 50
         }
       }
     },
@@ -817,16 +817,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 482,
-      "end": 483,
+      "start": 475,
+      "end": 476,
       "loc": {
         "start": {
           "line": 16,
-          "column": 54
+          "column": 50
         },
         "end": {
           "line": 16,
-          "column": 55
+          "column": 51
         }
       }
     },
@@ -842,16 +842,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 484,
-      "end": 485,
+      "start": 477,
+      "end": 478,
       "loc": {
         "start": {
           "line": 16,
-          "column": 56
+          "column": 52
         },
         "end": {
           "line": 16,
-          "column": 57
+          "column": 53
         }
       }
     },
@@ -870,15 +870,15 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 488,
-      "end": 494,
+      "start": 480,
+      "end": 486,
       "loc": {
         "start": {
-          "line": 18,
+          "line": 17,
           "column": 1
         },
         "end": {
-          "line": 18,
+          "line": 17,
           "column": 7
         }
       }
@@ -896,15 +896,15 @@
         "binop": null
       },
       "value": "_ziplongest",
-      "start": 495,
-      "end": 506,
+      "start": 487,
+      "end": 498,
       "loc": {
         "start": {
-          "line": 18,
+          "line": 17,
           "column": 8
         },
         "end": {
-          "line": 18,
+          "line": 17,
           "column": 19
         }
       }
@@ -921,15 +921,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 506,
-      "end": 507,
+      "start": 498,
+      "end": 499,
       "loc": {
         "start": {
-          "line": 18,
+          "line": 17,
           "column": 19
         },
         "end": {
-          "line": 18,
+          "line": 17,
           "column": 20
         }
       }
@@ -947,16 +947,16 @@
         "binop": null
       },
       "value": "fillvalue",
-      "start": 508,
-      "end": 517,
+      "start": 499,
+      "end": 508,
       "loc": {
         "start": {
-          "line": 18,
-          "column": 21
+          "line": 17,
+          "column": 20
         },
         "end": {
-          "line": 18,
-          "column": 30
+          "line": 17,
+          "column": 29
         }
       }
     },
@@ -973,16 +973,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 518,
-      "end": 519,
+      "start": 508,
+      "end": 509,
       "loc": {
         "start": {
-          "line": 18,
-          "column": 31
+          "line": 17,
+          "column": 29
         },
         "end": {
-          "line": 18,
-          "column": 32
+          "line": 17,
+          "column": 30
         }
       }
     },
@@ -999,16 +999,16 @@
         "binop": null
       },
       "value": "iterables",
-      "start": 520,
-      "end": 529,
+      "start": 510,
+      "end": 519,
       "loc": {
         "start": {
-          "line": 18,
-          "column": 33
+          "line": 17,
+          "column": 31
         },
         "end": {
-          "line": 18,
-          "column": 42
+          "line": 17,
+          "column": 40
         }
       }
     },
@@ -1024,16 +1024,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 530,
-      "end": 531,
+      "start": 519,
+      "end": 520,
       "loc": {
         "start": {
-          "line": 18,
-          "column": 43
+          "line": 17,
+          "column": 40
         },
         "end": {
-          "line": 18,
-          "column": 44
+          "line": 17,
+          "column": 41
         }
       }
     },
@@ -1050,16 +1050,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 532,
-      "end": 533,
+      "start": 520,
+      "end": 521,
       "loc": {
         "start": {
-          "line": 18,
-          "column": 45
+          "line": 17,
+          "column": 41
         },
         "end": {
-          "line": 18,
-          "column": 46
+          "line": 17,
+          "column": 42
         }
       }
     },
@@ -1075,15 +1075,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 535,
-      "end": 536,
+      "start": 522,
+      "end": 523,
       "loc": {
         "start": {
-          "line": 20,
+          "line": 18,
           "column": 0
         },
         "end": {
-          "line": 20,
+          "line": 18,
           "column": 1
         }
       }
@@ -1101,15 +1101,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 537,
-      "end": 537,
+      "start": 524,
+      "end": 524,
       "loc": {
         "start": {
-          "line": 21,
+          "line": 19,
           "column": 0
         },
         "end": {
-          "line": 21,
+          "line": 19,
           "column": 0
         }
       }

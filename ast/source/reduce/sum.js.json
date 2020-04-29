@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 684,
+  "end": 671,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 25,
+      "line": 23,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 684,
+    "end": 671,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 25,
+        "line": 23,
         "column": 0
       }
     },
@@ -31,7 +31,7 @@
       {
         "type": "ImportDeclaration",
         "start": 0,
-        "end": 31,
+        "end": 28,
         "loc": {
           "start": {
             "line": 1,
@@ -39,36 +39,36 @@
           },
           "end": {
             "line": 1,
-            "column": 31
+            "column": 28
           }
         },
         "specifiers": [
           {
             "type": "ImportSpecifier",
-            "start": 9,
-            "end": 13,
+            "start": 8,
+            "end": 12,
             "loc": {
               "start": {
                 "line": 1,
-                "column": 9
+                "column": 8
               },
               "end": {
                 "line": 1,
-                "column": 13
+                "column": 12
               }
             },
             "imported": {
               "type": "Identifier",
-              "start": 9,
-              "end": 13,
+              "start": 8,
+              "end": 12,
               "loc": {
                 "start": {
                   "line": 1,
-                  "column": 9
+                  "column": 8
                 },
                 "end": {
                   "line": 1,
-                  "column": 13
+                  "column": 12
                 },
                 "identifierName": "_sum"
               },
@@ -76,16 +76,16 @@
             },
             "local": {
               "type": "Identifier",
-              "start": 9,
-              "end": 13,
+              "start": 8,
+              "end": 12,
               "loc": {
                 "start": {
                   "line": 1,
-                  "column": 9
+                  "column": 8
                 },
                 "end": {
                   "line": 1,
-                  "column": 13
+                  "column": 12
                 },
                 "identifierName": "_sum"
               },
@@ -95,16 +95,16 @@
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 21,
-          "end": 29,
+          "start": 19,
+          "end": 27,
           "loc": {
             "start": {
               "line": 1,
-              "column": 21
+              "column": 19
             },
             "end": {
               "line": 1,
-              "column": 29
+              "column": 27
             }
           },
           "extra": {
@@ -117,8 +117,8 @@
           {
             "type": "CommentBlock",
             "value": "*\n * Sums the elements of the input iterable. An optional initializer parameter\n * allows to start the sum of the elements at a chosen value. The default value\n * for the initializer parameter is <code>0</code>.\n *\n * @example\n * sum( range( 10 ) ) ; // returns 45\n *\n * @example\n * sum( range( 10 ) , 100 ) ; // returns 145\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Object} [initializer=0] - The initial value of the sum.\n * @returns {Object} - The sum of the initializer with the elements of\n * <code>iterable</code>.\n *\n ",
-            "start": 33,
-            "end": 585,
+            "start": 30,
+            "end": 582,
             "loc": {
               "start": {
                 "line": 3,
@@ -134,15 +134,15 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 586,
-        "end": 683,
+        "start": 583,
+        "end": 670,
         "loc": {
           "start": {
             "line": 20,
             "column": 0
           },
           "end": {
-            "line": 24,
+            "line": 22,
             "column": 1
           }
         },
@@ -150,22 +150,22 @@
         "source": null,
         "declaration": {
           "type": "FunctionDeclaration",
-          "start": 593,
-          "end": 683,
+          "start": 590,
+          "end": 670,
           "loc": {
             "start": {
               "line": 20,
               "column": 7
             },
             "end": {
-              "line": 24,
+              "line": 22,
               "column": 1
             }
           },
           "id": {
             "type": "Identifier",
-            "start": 602,
-            "end": 605,
+            "start": 599,
+            "end": 602,
             "loc": {
               "start": {
                 "line": 20,
@@ -186,16 +186,16 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 608,
-              "end": 616,
+              "start": 603,
+              "end": 611,
               "loc": {
                 "start": {
                   "line": 20,
-                  "column": 22
+                  "column": 20
                 },
                 "end": {
                   "line": 20,
-                  "column": 30
+                  "column": 28
                 },
                 "identifierName": "iterable"
               },
@@ -203,30 +203,30 @@
             },
             {
               "type": "AssignmentPattern",
-              "start": 619,
-              "end": 634,
+              "start": 613,
+              "end": 628,
               "loc": {
                 "start": {
                   "line": 20,
-                  "column": 33
+                  "column": 30
                 },
                 "end": {
                   "line": 20,
-                  "column": 48
+                  "column": 45
                 }
               },
               "left": {
                 "type": "Identifier",
-                "start": 619,
-                "end": 630,
+                "start": 613,
+                "end": 624,
                 "loc": {
                   "start": {
                     "line": 20,
-                    "column": 33
+                    "column": 30
                   },
                   "end": {
                     "line": 20,
-                    "column": 44
+                    "column": 41
                   },
                   "identifierName": "initializer"
                 },
@@ -234,16 +234,16 @@
               },
               "right": {
                 "type": "NumericLiteral",
-                "start": 633,
-                "end": 634,
+                "start": 627,
+                "end": 628,
                 "loc": {
                   "start": {
                     "line": 20,
-                    "column": 47
+                    "column": 44
                   },
                   "end": {
                     "line": 20,
-                    "column": 48
+                    "column": 45
                   }
                 },
                 "extra": {
@@ -256,58 +256,58 @@
           ],
           "body": {
             "type": "BlockStatement",
-            "start": 637,
-            "end": 683,
+            "start": 630,
+            "end": 670,
             "loc": {
               "start": {
                 "line": 20,
-                "column": 51
+                "column": 47
               },
               "end": {
-                "line": 24,
+                "line": 22,
                 "column": 1
               }
             },
             "body": [
               {
                 "type": "ReturnStatement",
-                "start": 641,
-                "end": 680,
+                "start": 633,
+                "end": 668,
                 "loc": {
                   "start": {
-                    "line": 22,
+                    "line": 21,
                     "column": 1
                   },
                   "end": {
-                    "line": 22,
-                    "column": 40
+                    "line": 21,
+                    "column": 36
                   }
                 },
                 "argument": {
                   "type": "CallExpression",
-                  "start": 648,
-                  "end": 678,
+                  "start": 640,
+                  "end": 667,
                   "loc": {
                     "start": {
-                      "line": 22,
+                      "line": 21,
                       "column": 8
                     },
                     "end": {
-                      "line": 22,
-                      "column": 38
+                      "line": 21,
+                      "column": 35
                     }
                   },
                   "callee": {
                     "type": "Identifier",
-                    "start": 648,
-                    "end": 652,
+                    "start": 640,
+                    "end": 644,
                     "loc": {
                       "start": {
-                        "line": 22,
+                        "line": 21,
                         "column": 8
                       },
                       "end": {
-                        "line": 22,
+                        "line": 21,
                         "column": 12
                       },
                       "identifierName": "_sum"
@@ -317,16 +317,16 @@
                   "arguments": [
                     {
                       "type": "Identifier",
-                      "start": 654,
-                      "end": 662,
+                      "start": 645,
+                      "end": 653,
                       "loc": {
                         "start": {
-                          "line": 22,
-                          "column": 14
+                          "line": 21,
+                          "column": 13
                         },
                         "end": {
-                          "line": 22,
-                          "column": 22
+                          "line": 21,
+                          "column": 21
                         },
                         "identifierName": "iterable"
                       },
@@ -334,16 +334,16 @@
                     },
                     {
                       "type": "Identifier",
-                      "start": 665,
-                      "end": 676,
+                      "start": 655,
+                      "end": 666,
                       "loc": {
                         "start": {
-                          "line": 22,
-                          "column": 25
+                          "line": 21,
+                          "column": 23
                         },
                         "end": {
-                          "line": 22,
-                          "column": 36
+                          "line": 21,
+                          "column": 34
                         },
                         "identifierName": "initializer"
                       },
@@ -359,8 +359,8 @@
             {
               "type": "CommentBlock",
               "value": "*\n * Sums the elements of the input iterable. An optional initializer parameter\n * allows to start the sum of the elements at a chosen value. The default value\n * for the initializer parameter is <code>0</code>.\n *\n * @example\n * sum( range( 10 ) ) ; // returns 45\n *\n * @example\n * sum( range( 10 ) , 100 ) ; // returns 145\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Object} [initializer=0] - The initial value of the sum.\n * @returns {Object} - The sum of the initializer with the elements of\n * <code>iterable</code>.\n *\n ",
-              "start": 33,
-              "end": 585,
+              "start": 30,
+              "end": 582,
               "loc": {
                 "start": {
                   "line": 3,
@@ -379,8 +379,8 @@
           {
             "type": "CommentBlock",
             "value": "*\n * Sums the elements of the input iterable. An optional initializer parameter\n * allows to start the sum of the elements at a chosen value. The default value\n * for the initializer parameter is <code>0</code>.\n *\n * @example\n * sum( range( 10 ) ) ; // returns 45\n *\n * @example\n * sum( range( 10 ) , 100 ) ; // returns 145\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Object} [initializer=0] - The initial value of the sum.\n * @returns {Object} - The sum of the initializer with the elements of\n * <code>iterable</code>.\n *\n ",
-            "start": 33,
-            "end": 585,
+            "start": 30,
+            "end": 582,
             "loc": {
               "start": {
                 "line": 3,
@@ -401,8 +401,8 @@
     {
       "type": "CommentBlock",
       "value": "*\n * Sums the elements of the input iterable. An optional initializer parameter\n * allows to start the sum of the elements at a chosen value. The default value\n * for the initializer parameter is <code>0</code>.\n *\n * @example\n * sum( range( 10 ) ) ; // returns 45\n *\n * @example\n * sum( range( 10 ) , 100 ) ; // returns 145\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Object} [initializer=0] - The initial value of the sum.\n * @returns {Object} - The sum of the initializer with the elements of\n * <code>iterable</code>.\n *\n ",
-      "start": 33,
-      "end": 585,
+      "start": 30,
+      "end": 582,
       "loc": {
         "start": {
           "line": 3,
@@ -421,7 +421,7 @@
         "label": "import",
         "keyword": "import",
         "beforeExpr": false,
-        "startsExpr": false,
+        "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
@@ -482,16 +482,16 @@
         "binop": null
       },
       "value": "_sum",
-      "start": 9,
-      "end": 13,
+      "start": 8,
+      "end": 12,
       "loc": {
         "start": {
           "line": 1,
-          "column": 9
+          "column": 8
         },
         "end": {
           "line": 1,
-          "column": 13
+          "column": 12
         }
       }
     },
@@ -507,16 +507,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 14,
-      "end": 15,
+      "start": 12,
+      "end": 13,
       "loc": {
         "start": {
           "line": 1,
-          "column": 14
+          "column": 12
         },
         "end": {
           "line": 1,
-          "column": 15
+          "column": 13
         }
       }
     },
@@ -533,16 +533,16 @@
         "binop": null
       },
       "value": "from",
-      "start": 16,
-      "end": 20,
+      "start": 14,
+      "end": 18,
       "loc": {
         "start": {
           "line": 1,
-          "column": 16
+          "column": 14
         },
         "end": {
           "line": 1,
-          "column": 20
+          "column": 18
         }
       }
     },
@@ -560,16 +560,16 @@
         "updateContext": null
       },
       "value": "./_sum",
-      "start": 21,
-      "end": 29,
+      "start": 19,
+      "end": 27,
       "loc": {
         "start": {
           "line": 1,
-          "column": 21
+          "column": 19
         },
         "end": {
           "line": 1,
-          "column": 29
+          "column": 27
         }
       }
     },
@@ -586,24 +586,24 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 30,
-      "end": 31,
+      "start": 27,
+      "end": 28,
       "loc": {
         "start": {
           "line": 1,
-          "column": 30
+          "column": 27
         },
         "end": {
           "line": 1,
-          "column": 31
+          "column": 28
         }
       }
     },
     {
       "type": "CommentBlock",
       "value": "*\n * Sums the elements of the input iterable. An optional initializer parameter\n * allows to start the sum of the elements at a chosen value. The default value\n * for the initializer parameter is <code>0</code>.\n *\n * @example\n * sum( range( 10 ) ) ; // returns 45\n *\n * @example\n * sum( range( 10 ) , 100 ) ; // returns 145\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Object} [initializer=0] - The initial value of the sum.\n * @returns {Object} - The sum of the initializer with the elements of\n * <code>iterable</code>.\n *\n ",
-      "start": 33,
-      "end": 585,
+      "start": 30,
+      "end": 582,
       "loc": {
         "start": {
           "line": 3,
@@ -630,8 +630,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 586,
-      "end": 592,
+      "start": 583,
+      "end": 589,
       "loc": {
         "start": {
           "line": 20,
@@ -657,8 +657,8 @@
         "binop": null
       },
       "value": "function",
-      "start": 593,
-      "end": 601,
+      "start": 590,
+      "end": 598,
       "loc": {
         "start": {
           "line": 20,
@@ -683,8 +683,8 @@
         "binop": null
       },
       "value": "sum",
-      "start": 602,
-      "end": 605,
+      "start": 599,
+      "end": 602,
       "loc": {
         "start": {
           "line": 20,
@@ -708,16 +708,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 606,
-      "end": 607,
+      "start": 602,
+      "end": 603,
       "loc": {
         "start": {
           "line": 20,
-          "column": 20
+          "column": 19
         },
         "end": {
           "line": 20,
-          "column": 21
+          "column": 20
         }
       }
     },
@@ -734,16 +734,16 @@
         "binop": null
       },
       "value": "iterable",
-      "start": 608,
-      "end": 616,
+      "start": 603,
+      "end": 611,
       "loc": {
         "start": {
           "line": 20,
-          "column": 22
+          "column": 20
         },
         "end": {
           "line": 20,
-          "column": 30
+          "column": 28
         }
       }
     },
@@ -760,16 +760,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 617,
-      "end": 618,
+      "start": 611,
+      "end": 612,
       "loc": {
         "start": {
           "line": 20,
-          "column": 31
+          "column": 28
         },
         "end": {
           "line": 20,
-          "column": 32
+          "column": 29
         }
       }
     },
@@ -786,16 +786,16 @@
         "binop": null
       },
       "value": "initializer",
-      "start": 619,
-      "end": 630,
+      "start": 613,
+      "end": 624,
       "loc": {
         "start": {
           "line": 20,
-          "column": 33
+          "column": 30
         },
         "end": {
           "line": 20,
-          "column": 44
+          "column": 41
         }
       }
     },
@@ -813,16 +813,16 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 631,
-      "end": 632,
+      "start": 625,
+      "end": 626,
       "loc": {
         "start": {
           "line": 20,
-          "column": 45
+          "column": 42
         },
         "end": {
           "line": 20,
-          "column": 46
+          "column": 43
         }
       }
     },
@@ -840,16 +840,16 @@
         "updateContext": null
       },
       "value": 0,
-      "start": 633,
-      "end": 634,
+      "start": 627,
+      "end": 628,
       "loc": {
         "start": {
           "line": 20,
-          "column": 47
+          "column": 44
         },
         "end": {
           "line": 20,
-          "column": 48
+          "column": 45
         }
       }
     },
@@ -865,16 +865,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 635,
-      "end": 636,
+      "start": 628,
+      "end": 629,
       "loc": {
         "start": {
           "line": 20,
-          "column": 49
+          "column": 45
         },
         "end": {
           "line": 20,
-          "column": 50
+          "column": 46
         }
       }
     },
@@ -890,16 +890,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 637,
-      "end": 638,
+      "start": 630,
+      "end": 631,
       "loc": {
         "start": {
           "line": 20,
-          "column": 51
+          "column": 47
         },
         "end": {
           "line": 20,
-          "column": 52
+          "column": 48
         }
       }
     },
@@ -918,15 +918,15 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 641,
-      "end": 647,
+      "start": 633,
+      "end": 639,
       "loc": {
         "start": {
-          "line": 22,
+          "line": 21,
           "column": 1
         },
         "end": {
-          "line": 22,
+          "line": 21,
           "column": 7
         }
       }
@@ -944,15 +944,15 @@
         "binop": null
       },
       "value": "_sum",
-      "start": 648,
-      "end": 652,
+      "start": 640,
+      "end": 644,
       "loc": {
         "start": {
-          "line": 22,
+          "line": 21,
           "column": 8
         },
         "end": {
-          "line": 22,
+          "line": 21,
           "column": 12
         }
       }
@@ -969,15 +969,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 652,
-      "end": 653,
+      "start": 644,
+      "end": 645,
       "loc": {
         "start": {
-          "line": 22,
+          "line": 21,
           "column": 12
         },
         "end": {
-          "line": 22,
+          "line": 21,
           "column": 13
         }
       }
@@ -995,16 +995,16 @@
         "binop": null
       },
       "value": "iterable",
-      "start": 654,
-      "end": 662,
+      "start": 645,
+      "end": 653,
       "loc": {
         "start": {
-          "line": 22,
-          "column": 14
+          "line": 21,
+          "column": 13
         },
         "end": {
-          "line": 22,
-          "column": 22
+          "line": 21,
+          "column": 21
         }
       }
     },
@@ -1021,16 +1021,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 663,
-      "end": 664,
+      "start": 653,
+      "end": 654,
       "loc": {
         "start": {
-          "line": 22,
-          "column": 23
+          "line": 21,
+          "column": 21
         },
         "end": {
-          "line": 22,
-          "column": 24
+          "line": 21,
+          "column": 22
         }
       }
     },
@@ -1047,16 +1047,16 @@
         "binop": null
       },
       "value": "initializer",
-      "start": 665,
-      "end": 676,
+      "start": 655,
+      "end": 666,
       "loc": {
         "start": {
-          "line": 22,
-          "column": 25
+          "line": 21,
+          "column": 23
         },
         "end": {
-          "line": 22,
-          "column": 36
+          "line": 21,
+          "column": 34
         }
       }
     },
@@ -1072,16 +1072,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 677,
-      "end": 678,
+      "start": 666,
+      "end": 667,
       "loc": {
         "start": {
-          "line": 22,
-          "column": 37
+          "line": 21,
+          "column": 34
         },
         "end": {
-          "line": 22,
-          "column": 38
+          "line": 21,
+          "column": 35
         }
       }
     },
@@ -1098,16 +1098,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 679,
-      "end": 680,
+      "start": 667,
+      "end": 668,
       "loc": {
         "start": {
-          "line": 22,
-          "column": 39
+          "line": 21,
+          "column": 35
         },
         "end": {
-          "line": 22,
-          "column": 40
+          "line": 21,
+          "column": 36
         }
       }
     },
@@ -1123,15 +1123,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 682,
-      "end": 683,
+      "start": 669,
+      "end": 670,
       "loc": {
         "start": {
-          "line": 24,
+          "line": 22,
           "column": 0
         },
         "end": {
-          "line": 24,
+          "line": 22,
           "column": 1
         }
       }
@@ -1149,15 +1149,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 684,
-      "end": 684,
+      "start": 671,
+      "end": 671,
       "loc": {
         "start": {
-          "line": 25,
+          "line": 23,
           "column": 0
         },
         "end": {
-          "line": 25,
+          "line": 23,
           "column": 0
         }
       }
