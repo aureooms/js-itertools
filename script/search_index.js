@@ -252,6 +252,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "@aureooms/js-itertools/src/extra/nth.js~nth",
+    "function/index.html#static-function-nth",
+    "<span>nth</span> <span class=\"search-result-import-path\">@aureooms/js-itertools/src/extra/nth.js</span>",
+    "function"
+  ],
+  [
     "@aureooms/js-itertools/src/map/permutations.js~permutations",
     "function/index.html#static-function-permutations",
     "<span>permutations</span> <span class=\"search-result-import-path\">@aureooms/js-itertools/src/map/permutations.js</span>",
@@ -819,6 +825,12 @@ window.esdocSearchIndex = [
     "src/extra/index.js",
     "file/src/extra/index.js.html",
     "src/extra/index.js",
+    "file"
+  ],
+  [
+    "src/extra/nth.js",
+    "file/src/extra/nth.js.html",
+    "src/extra/nth.js",
     "file"
   ],
   [

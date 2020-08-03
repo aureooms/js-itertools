@@ -54,6 +54,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-first">first</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-head">head</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#extra">extra</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-closure">closure</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-nth">nth</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#map">map</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_product">_product</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_zip">_zip</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_zip2">_zip2</a></span></span></li>
@@ -104,11 +105,11 @@
  *
  * @example
  * // A B C D A B
- * list( map( ( k , g ) =&gt; k , groupby(&apos;AAAABBBCCDAABBB&apos;) ) )
+ * list( map( ( k , g ) =&gt; k , group( x =&gt; x , &apos;AAAABBBCCDAABBB&apos; ) ) )
  *
  * @example
  * // AAAA BBB CC D
- * list( map( ( k , g ) =&gt; list( g ) , groupby(&apos;AAAABBBCCD&apos;) ) )
+ * list( map( ( k , g ) =&gt; list( g ) , group( x =&gt; x , &apos;AAAABBBCCD&apos; ) ) )
  *
  * @param {Function} key - The function used to determine the equivalence class
  * of an element.

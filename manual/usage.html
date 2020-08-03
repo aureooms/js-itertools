@@ -57,13 +57,16 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><div class="github-markdown" data-ice="content"><h1 id="usage">Usage</h1><p>The code needs a ES2015+ polyfill to work, for example
-<a href="https://babeljs.io/docs/usage/polyfill">@babel/polyfill</a>.</p>
-<pre><code class="lang-js"><code class="source-code prettyprint">require( &apos;@babel/polyfill&apos; ) ;
+<div class="content" data-ice="content"><div class="github-markdown" data-ice="content"><h1 id="usage">Usage</h1><blockquote>
+<p>:warning: The code requires <code>regeneratorRuntime</code> to be defined, for instance by importing
+<a href="https://www.npmjs.com/package/regenerator-runtime">regenerator-runtime/runtime</a>.</p>
+</blockquote>
+<p>First, require the polyfill at the entry point of your application</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">require( &apos;regenerator-runtime/runtime&apos; );
 // or
-import &apos;@babel/polyfill&apos; ;</code>
+import &apos;regenerator-runtime/runtime.js&apos; ;</code>
 </code></pre>
-<p>Then</p>
+<p>Then, import the library where needed</p>
 <pre><code class="lang-js"><code class="source-code prettyprint">const itertools = require( &apos;@aureooms/js-itertools&apos; ) ;
 // or
 import * as itertools from &apos;@aureooms/js-itertools&apos; ;</code>

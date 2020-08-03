@@ -1,7 +1,7 @@
 {
   "coverage": "100%",
-  "expectCount": 62,
-  "actualCount": 62,
+  "expectCount": 63,
+  "actualCount": 63,
   "files": {
     "src/base/_count.js": {
       "expectCount": 1,
@@ -124,6 +124,11 @@
       "undocumentLines": []
     },
     "src/extra/closure.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/extra/nth.js": {
       "expectCount": 1,
       "actualCount": 1,
       "undocumentLines": []

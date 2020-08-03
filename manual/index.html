@@ -84,11 +84,13 @@ jspm install npm:@aureooms/js-itertools</code>
     </div>
 <div class="manual-card-wrap" data-ice="cards">
       <div class="manual-card">
-        <div data-ice="card"><h1>Usage</h1><p>The code needs a ES2015+ polyfill to work, for example
-<a href="https://babeljs.io/docs/usage/polyfill">@babel/polyfill</a>.</p><pre><code class="lang-js"><code class="source-code prettyprint">require( &apos;@babel/polyfill&apos; ) ;
+        <div data-ice="card"><h1>Usage</h1><blockquote>
+<p>:warning: The code requires <code>regeneratorRuntime</code> to be defined, for instance by importing
+<a href="https://www.npmjs.com/package/regenerator-runtime">regenerator-runtime/runtime</a>.</p>
+</blockquote><p>First, require the polyfill at the entry point of your application</p><pre><code class="lang-js"><code class="source-code prettyprint">require( &apos;regenerator-runtime/runtime&apos; );
 // or
-import &apos;@babel/polyfill&apos; ;</code>
-</code></pre><p>Then</p><pre><code class="lang-js"><code class="source-code prettyprint">const itertools = require( &apos;@aureooms/js-itertools&apos; ) ;
+import &apos;regenerator-runtime/runtime.js&apos; ;</code>
+</code></pre><p>Then, import the library where needed</p><pre><code class="lang-js"><code class="source-code prettyprint">const itertools = require( &apos;@aureooms/js-itertools&apos; ) ;
 // or
 import * as itertools from &apos;@aureooms/js-itertools&apos; ;</code>
 </code></pre></div>

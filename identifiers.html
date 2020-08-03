@@ -54,6 +54,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-first">first</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-head">head</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#extra">extra</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-closure">closure</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-nth">nth</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#map">map</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_product">_product</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_zip">_zip</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_zip2">_zip2</a></span></span></li>
@@ -330,7 +331,7 @@ given size.</p>
       <div>
         
         
-        <div data-ice="description"><p>Drops the first <code>n</code> elements of the input iterable.</p>
+        <div data-ice="description"><p>Drops the first <code>n</code> values of the input iterable.</p>
 </div>
       </div>
     </td>
@@ -441,13 +442,13 @@ next <code>n-1</code> elements of the input iterable.</p>
           <span data-ice="kind-icon" class="kind-function">F</span>
           
           
-          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-last">last</a></span></span><span class="code" data-ice="signature">(iterator: <span>Iterator</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></span>
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-last">last</a></span></span><span class="code" data-ice="signature">(iterable: <span>Iterable</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Returns the last value of the input iterator.</p>
+        <div data-ice="description"><p>Returns the last value of the input iterable.</p>
 </div>
       </div>
     </td>
@@ -644,13 +645,13 @@ next <code>n-1</code> elements of the input iterable.</p>
           <span data-ice="kind-icon" class="kind-function">F</span>
           
           <span data-ice="generator">*</span>
-          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-tail">tail</a></span></span><span class="code" data-ice="signature">(iterable: <span>Iterable</span>, n: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></span>
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-tail">tail</a></span></span><span class="code" data-ice="signature">(iterable: <span>Iterable</span>, n: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></span>): <span>Iterator</span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Returns the last <code>n</code> elements of the input iterable in an array.</p>
+        <div data-ice="description"><p>Returns the last <code>n</code> values of the input iterable in an array.</p>
 </div>
       </div>
     </td>
@@ -837,6 +838,36 @@ next <code>n-1</code> elements of the input iterable.</p>
 is well chosen. An actual closure function would keep track of encountered
 elements to stop when all elements have been found.</div>
         <div data-ice="description"><p>Computes the closure of a unary operator, starting from a single element.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-function">F</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-nth">nth</a></span></span><span class="code" data-ice="signature">(iterable: <span>Iterable</span>, n: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Returns the <code>n</code>th value of the input iterable (<code>n</code>
+is a 0-based index).</p>
 </div>
       </div>
     </td>

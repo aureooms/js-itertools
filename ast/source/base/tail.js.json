@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 666,
+  "end": 663,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 666,
+    "end": 663,
     "loc": {
       "start": {
         "line": 1,
@@ -185,9 +185,9 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Returns the last <code>n</code> elements of the input iterable in an array.\n * If <code>n</code> is negative, behaves like <code>{@link drop}( iterable,\n * -n)</code>.\n *\n * @example\n * // returns [ 3 , 4 ]\n * list( tail( range( 5 ) , 2 ) ) ;\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} n - The number of elements to include in the output.\n * @returns {Array} - The last <code>n</code> elements of the input iterable.\n ",
+            "value": "*\n * Returns the last <code>n</code> values of the input iterable in an array.\n * If <code>n</code> is negative, behaves like <code>{@link drop}( iterable,\n * -n)</code>.\n *\n * @example\n * // returns [ 3 , 4 ]\n * list( tail( range( 5 ) , 2 ) ) ;\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} n - The number of values to include in the output.\n * @returns {Iterator} - The last <code>n</code> values of the input iterable.\n ",
             "start": 83,
-            "end": 541,
+            "end": 538,
             "loc": {
               "start": {
                 "line": 5,
@@ -203,8 +203,8 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 542,
-        "end": 665,
+        "start": 539,
+        "end": 662,
         "loc": {
           "start": {
             "line": 18,
@@ -219,8 +219,8 @@
         "source": null,
         "declaration": {
           "type": "FunctionDeclaration",
-          "start": 549,
-          "end": 665,
+          "start": 546,
+          "end": 662,
           "loc": {
             "start": {
               "line": 18,
@@ -233,8 +233,8 @@
           },
           "id": {
             "type": "Identifier",
-            "start": 559,
-            "end": 563,
+            "start": 556,
+            "end": 560,
             "loc": {
               "start": {
                 "line": 18,
@@ -255,8 +255,8 @@
           "params": [
             {
               "type": "Identifier",
-              "start": 564,
-              "end": 572,
+              "start": 561,
+              "end": 569,
               "loc": {
                 "start": {
                   "line": 18,
@@ -272,8 +272,8 @@
             },
             {
               "type": "Identifier",
-              "start": 574,
-              "end": 575,
+              "start": 571,
+              "end": 572,
               "loc": {
                 "start": {
                   "line": 18,
@@ -290,8 +290,8 @@
           ],
           "body": {
             "type": "BlockStatement",
-            "start": 577,
-            "end": 665,
+            "start": 574,
+            "end": 662,
             "loc": {
               "start": {
                 "line": 18,
@@ -305,8 +305,8 @@
             "body": [
               {
                 "type": "IfStatement",
-                "start": 580,
-                "end": 634,
+                "start": 577,
+                "end": 631,
                 "loc": {
                   "start": {
                     "line": 19,
@@ -319,8 +319,8 @@
                 },
                 "test": {
                   "type": "BinaryExpression",
-                  "start": 584,
-                  "end": 589,
+                  "start": 581,
+                  "end": 586,
                   "loc": {
                     "start": {
                       "line": 19,
@@ -333,8 +333,8 @@
                   },
                   "left": {
                     "type": "Identifier",
-                    "start": 584,
-                    "end": 585,
+                    "start": 581,
+                    "end": 582,
                     "loc": {
                       "start": {
                         "line": 19,
@@ -351,8 +351,8 @@
                   "operator": "<",
                   "right": {
                     "type": "NumericLiteral",
-                    "start": 588,
-                    "end": 589,
+                    "start": 585,
+                    "end": 586,
                     "loc": {
                       "start": {
                         "line": 19,
@@ -372,8 +372,8 @@
                 },
                 "consequent": {
                   "type": "BlockStatement",
-                  "start": 591,
-                  "end": 634,
+                  "start": 588,
+                  "end": 631,
                   "loc": {
                     "start": {
                       "line": 19,
@@ -387,8 +387,8 @@
                   "body": [
                     {
                       "type": "ExpressionStatement",
-                      "start": 595,
-                      "end": 621,
+                      "start": 592,
+                      "end": 618,
                       "loc": {
                         "start": {
                           "line": 20,
@@ -401,8 +401,8 @@
                       },
                       "expression": {
                         "type": "YieldExpression",
-                        "start": 595,
-                        "end": 620,
+                        "start": 592,
+                        "end": 617,
                         "loc": {
                           "start": {
                             "line": 20,
@@ -416,8 +416,8 @@
                         "delegate": true,
                         "argument": {
                           "type": "CallExpression",
-                          "start": 602,
-                          "end": 620,
+                          "start": 599,
+                          "end": 617,
                           "loc": {
                             "start": {
                               "line": 20,
@@ -430,8 +430,8 @@
                           },
                           "callee": {
                             "type": "Identifier",
-                            "start": 602,
-                            "end": 606,
+                            "start": 599,
+                            "end": 603,
                             "loc": {
                               "start": {
                                 "line": 20,
@@ -448,8 +448,8 @@
                           "arguments": [
                             {
                               "type": "Identifier",
-                              "start": 607,
-                              "end": 615,
+                              "start": 604,
+                              "end": 612,
                               "loc": {
                                 "start": {
                                   "line": 20,
@@ -465,8 +465,8 @@
                             },
                             {
                               "type": "UnaryExpression",
-                              "start": 617,
-                              "end": 619,
+                              "start": 614,
+                              "end": 616,
                               "loc": {
                                 "start": {
                                   "line": 20,
@@ -481,8 +481,8 @@
                               "prefix": true,
                               "argument": {
                                 "type": "Identifier",
-                                "start": 618,
-                                "end": 619,
+                                "start": 615,
+                                "end": 616,
                                 "loc": {
                                   "start": {
                                     "line": 20,
@@ -506,8 +506,8 @@
                     },
                     {
                       "type": "ReturnStatement",
-                      "start": 624,
-                      "end": 631,
+                      "start": 621,
+                      "end": 628,
                       "loc": {
                         "start": {
                           "line": 21,
@@ -527,8 +527,8 @@
               },
               {
                 "type": "ExpressionStatement",
-                "start": 637,
-                "end": 663,
+                "start": 634,
+                "end": 660,
                 "loc": {
                   "start": {
                     "line": 24,
@@ -541,8 +541,8 @@
                 },
                 "expression": {
                   "type": "YieldExpression",
-                  "start": 637,
-                  "end": 662,
+                  "start": 634,
+                  "end": 659,
                   "loc": {
                     "start": {
                       "line": 24,
@@ -556,8 +556,8 @@
                   "delegate": true,
                   "argument": {
                     "type": "CallExpression",
-                    "start": 644,
-                    "end": 662,
+                    "start": 641,
+                    "end": 659,
                     "loc": {
                       "start": {
                         "line": 24,
@@ -570,8 +570,8 @@
                     },
                     "callee": {
                       "type": "Identifier",
-                      "start": 644,
-                      "end": 649,
+                      "start": 641,
+                      "end": 646,
                       "loc": {
                         "start": {
                           "line": 24,
@@ -588,8 +588,8 @@
                     "arguments": [
                       {
                         "type": "Identifier",
-                        "start": 650,
-                        "end": 658,
+                        "start": 647,
+                        "end": 655,
                         "loc": {
                           "start": {
                             "line": 24,
@@ -605,8 +605,8 @@
                       },
                       {
                         "type": "Identifier",
-                        "start": 660,
-                        "end": 661,
+                        "start": 657,
+                        "end": 658,
                         "loc": {
                           "start": {
                             "line": 24,
@@ -630,9 +630,9 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\n * Returns the last <code>n</code> elements of the input iterable in an array.\n * If <code>n</code> is negative, behaves like <code>{@link drop}( iterable,\n * -n)</code>.\n *\n * @example\n * // returns [ 3 , 4 ]\n * list( tail( range( 5 ) , 2 ) ) ;\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} n - The number of elements to include in the output.\n * @returns {Array} - The last <code>n</code> elements of the input iterable.\n ",
+              "value": "*\n * Returns the last <code>n</code> values of the input iterable in an array.\n * If <code>n</code> is negative, behaves like <code>{@link drop}( iterable,\n * -n)</code>.\n *\n * @example\n * // returns [ 3 , 4 ]\n * list( tail( range( 5 ) , 2 ) ) ;\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} n - The number of values to include in the output.\n * @returns {Iterator} - The last <code>n</code> values of the input iterable.\n ",
               "start": 83,
-              "end": 541,
+              "end": 538,
               "loc": {
                 "start": {
                   "line": 5,
@@ -650,9 +650,9 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * Returns the last <code>n</code> elements of the input iterable in an array.\n * If <code>n</code> is negative, behaves like <code>{@link drop}( iterable,\n * -n)</code>.\n *\n * @example\n * // returns [ 3 , 4 ]\n * list( tail( range( 5 ) , 2 ) ) ;\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} n - The number of elements to include in the output.\n * @returns {Array} - The last <code>n</code> elements of the input iterable.\n ",
+            "value": "*\n * Returns the last <code>n</code> values of the input iterable in an array.\n * If <code>n</code> is negative, behaves like <code>{@link drop}( iterable,\n * -n)</code>.\n *\n * @example\n * // returns [ 3 , 4 ]\n * list( tail( range( 5 ) , 2 ) ) ;\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} n - The number of values to include in the output.\n * @returns {Iterator} - The last <code>n</code> values of the input iterable.\n ",
             "start": 83,
-            "end": 541,
+            "end": 538,
             "loc": {
               "start": {
                 "line": 5,
@@ -672,9 +672,9 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\n * Returns the last <code>n</code> elements of the input iterable in an array.\n * If <code>n</code> is negative, behaves like <code>{@link drop}( iterable,\n * -n)</code>.\n *\n * @example\n * // returns [ 3 , 4 ]\n * list( tail( range( 5 ) , 2 ) ) ;\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} n - The number of elements to include in the output.\n * @returns {Array} - The last <code>n</code> elements of the input iterable.\n ",
+      "value": "*\n * Returns the last <code>n</code> values of the input iterable in an array.\n * If <code>n</code> is negative, behaves like <code>{@link drop}( iterable,\n * -n)</code>.\n *\n * @example\n * // returns [ 3 , 4 ]\n * list( tail( range( 5 ) , 2 ) ) ;\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} n - The number of values to include in the output.\n * @returns {Iterator} - The last <code>n</code> values of the input iterable.\n ",
       "start": 83,
-      "end": 541,
+      "end": 538,
       "loc": {
         "start": {
           "line": 5,
@@ -1006,9 +1006,9 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n * Returns the last <code>n</code> elements of the input iterable in an array.\n * If <code>n</code> is negative, behaves like <code>{@link drop}( iterable,\n * -n)</code>.\n *\n * @example\n * // returns [ 3 , 4 ]\n * list( tail( range( 5 ) , 2 ) ) ;\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} n - The number of elements to include in the output.\n * @returns {Array} - The last <code>n</code> elements of the input iterable.\n ",
+      "value": "*\n * Returns the last <code>n</code> values of the input iterable in an array.\n * If <code>n</code> is negative, behaves like <code>{@link drop}( iterable,\n * -n)</code>.\n *\n * @example\n * // returns [ 3 , 4 ]\n * list( tail( range( 5 ) , 2 ) ) ;\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} n - The number of values to include in the output.\n * @returns {Iterator} - The last <code>n</code> values of the input iterable.\n ",
       "start": 83,
-      "end": 541,
+      "end": 538,
       "loc": {
         "start": {
           "line": 5,
@@ -1035,8 +1035,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 542,
-      "end": 548,
+      "start": 539,
+      "end": 545,
       "loc": {
         "start": {
           "line": 18,
@@ -1062,8 +1062,8 @@
         "binop": null
       },
       "value": "function",
-      "start": 549,
-      "end": 557,
+      "start": 546,
+      "end": 554,
       "loc": {
         "start": {
           "line": 18,
@@ -1089,8 +1089,8 @@
         "updateContext": null
       },
       "value": "*",
-      "start": 557,
-      "end": 558,
+      "start": 554,
+      "end": 555,
       "loc": {
         "start": {
           "line": 18,
@@ -1115,8 +1115,8 @@
         "binop": null
       },
       "value": "tail",
-      "start": 559,
-      "end": 563,
+      "start": 556,
+      "end": 560,
       "loc": {
         "start": {
           "line": 18,
@@ -1140,8 +1140,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 563,
-      "end": 564,
+      "start": 560,
+      "end": 561,
       "loc": {
         "start": {
           "line": 18,
@@ -1166,8 +1166,8 @@
         "binop": null
       },
       "value": "iterable",
-      "start": 564,
-      "end": 572,
+      "start": 561,
+      "end": 569,
       "loc": {
         "start": {
           "line": 18,
@@ -1192,8 +1192,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 572,
-      "end": 573,
+      "start": 569,
+      "end": 570,
       "loc": {
         "start": {
           "line": 18,
@@ -1218,8 +1218,8 @@
         "binop": null
       },
       "value": "n",
-      "start": 574,
-      "end": 575,
+      "start": 571,
+      "end": 572,
       "loc": {
         "start": {
           "line": 18,
@@ -1243,8 +1243,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 575,
-      "end": 576,
+      "start": 572,
+      "end": 573,
       "loc": {
         "start": {
           "line": 18,
@@ -1268,8 +1268,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 577,
-      "end": 578,
+      "start": 574,
+      "end": 575,
       "loc": {
         "start": {
           "line": 18,
@@ -1296,8 +1296,8 @@
         "updateContext": null
       },
       "value": "if",
-      "start": 580,
-      "end": 582,
+      "start": 577,
+      "end": 579,
       "loc": {
         "start": {
           "line": 19,
@@ -1321,8 +1321,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 583,
-      "end": 584,
+      "start": 580,
+      "end": 581,
       "loc": {
         "start": {
           "line": 19,
@@ -1347,8 +1347,8 @@
         "binop": null
       },
       "value": "n",
-      "start": 584,
-      "end": 585,
+      "start": 581,
+      "end": 582,
       "loc": {
         "start": {
           "line": 19,
@@ -1374,8 +1374,8 @@
         "updateContext": null
       },
       "value": "<",
-      "start": 586,
-      "end": 587,
+      "start": 583,
+      "end": 584,
       "loc": {
         "start": {
           "line": 19,
@@ -1401,8 +1401,8 @@
         "updateContext": null
       },
       "value": 0,
-      "start": 588,
-      "end": 589,
+      "start": 585,
+      "end": 586,
       "loc": {
         "start": {
           "line": 19,
@@ -1426,8 +1426,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 589,
-      "end": 590,
+      "start": 586,
+      "end": 587,
       "loc": {
         "start": {
           "line": 19,
@@ -1451,8 +1451,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 591,
-      "end": 592,
+      "start": 588,
+      "end": 589,
       "loc": {
         "start": {
           "line": 19,
@@ -1479,8 +1479,8 @@
         "updateContext": null
       },
       "value": "yield",
-      "start": 595,
-      "end": 600,
+      "start": 592,
+      "end": 597,
       "loc": {
         "start": {
           "line": 20,
@@ -1506,8 +1506,8 @@
         "updateContext": null
       },
       "value": "*",
-      "start": 600,
-      "end": 601,
+      "start": 597,
+      "end": 598,
       "loc": {
         "start": {
           "line": 20,
@@ -1532,8 +1532,8 @@
         "binop": null
       },
       "value": "drop",
-      "start": 602,
-      "end": 606,
+      "start": 599,
+      "end": 603,
       "loc": {
         "start": {
           "line": 20,
@@ -1557,8 +1557,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 606,
-      "end": 607,
+      "start": 603,
+      "end": 604,
       "loc": {
         "start": {
           "line": 20,
@@ -1583,8 +1583,8 @@
         "binop": null
       },
       "value": "iterable",
-      "start": 607,
-      "end": 615,
+      "start": 604,
+      "end": 612,
       "loc": {
         "start": {
           "line": 20,
@@ -1609,8 +1609,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 615,
-      "end": 616,
+      "start": 612,
+      "end": 613,
       "loc": {
         "start": {
           "line": 20,
@@ -1636,8 +1636,8 @@
         "updateContext": null
       },
       "value": "-",
-      "start": 617,
-      "end": 618,
+      "start": 614,
+      "end": 615,
       "loc": {
         "start": {
           "line": 20,
@@ -1662,8 +1662,8 @@
         "binop": null
       },
       "value": "n",
-      "start": 618,
-      "end": 619,
+      "start": 615,
+      "end": 616,
       "loc": {
         "start": {
           "line": 20,
@@ -1687,8 +1687,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 619,
-      "end": 620,
+      "start": 616,
+      "end": 617,
       "loc": {
         "start": {
           "line": 20,
@@ -1713,8 +1713,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 620,
-      "end": 621,
+      "start": 617,
+      "end": 618,
       "loc": {
         "start": {
           "line": 20,
@@ -1741,8 +1741,8 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 624,
-      "end": 630,
+      "start": 621,
+      "end": 627,
       "loc": {
         "start": {
           "line": 21,
@@ -1767,8 +1767,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 630,
-      "end": 631,
+      "start": 627,
+      "end": 628,
       "loc": {
         "start": {
           "line": 21,
@@ -1792,8 +1792,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 633,
-      "end": 634,
+      "start": 630,
+      "end": 631,
       "loc": {
         "start": {
           "line": 22,
@@ -1820,8 +1820,8 @@
         "updateContext": null
       },
       "value": "yield",
-      "start": 637,
-      "end": 642,
+      "start": 634,
+      "end": 639,
       "loc": {
         "start": {
           "line": 24,
@@ -1847,8 +1847,8 @@
         "updateContext": null
       },
       "value": "*",
-      "start": 642,
-      "end": 643,
+      "start": 639,
+      "end": 640,
       "loc": {
         "start": {
           "line": 24,
@@ -1873,8 +1873,8 @@
         "binop": null
       },
       "value": "deque",
-      "start": 644,
-      "end": 649,
+      "start": 641,
+      "end": 646,
       "loc": {
         "start": {
           "line": 24,
@@ -1898,8 +1898,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 649,
-      "end": 650,
+      "start": 646,
+      "end": 647,
       "loc": {
         "start": {
           "line": 24,
@@ -1924,8 +1924,8 @@
         "binop": null
       },
       "value": "iterable",
-      "start": 650,
-      "end": 658,
+      "start": 647,
+      "end": 655,
       "loc": {
         "start": {
           "line": 24,
@@ -1950,8 +1950,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 658,
-      "end": 659,
+      "start": 655,
+      "end": 656,
       "loc": {
         "start": {
           "line": 24,
@@ -1976,8 +1976,8 @@
         "binop": null
       },
       "value": "n",
-      "start": 660,
-      "end": 661,
+      "start": 657,
+      "end": 658,
       "loc": {
         "start": {
           "line": 24,
@@ -2001,8 +2001,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 661,
-      "end": 662,
+      "start": 658,
+      "end": 659,
       "loc": {
         "start": {
           "line": 24,
@@ -2027,8 +2027,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 662,
-      "end": 663,
+      "start": 659,
+      "end": 660,
       "loc": {
         "start": {
           "line": 24,
@@ -2052,8 +2052,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 664,
-      "end": 665,
+      "start": 661,
+      "end": 662,
       "loc": {
         "start": {
           "line": 25,
@@ -2078,8 +2078,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 666,
-      "end": 666,
+      "start": 663,
+      "end": 663,
       "loc": {
         "start": {
           "line": 26,

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../../../">
-  <title data-ice="title">src/map/roundrobin.js | @aureooms/js-itertools</title>
+  <title data-ice="title">src/extra/nth.js | @aureooms/js-itertools</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -96,46 +96,33 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1 data-ice="title">src/map/roundrobin.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import {iter, len, cycle, map, slice} from &apos;..&apos;;
+<div class="content" data-ice="content"><h1 data-ice="title">src/extra/nth.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import deque from &apos;@aureooms/js-collections-deque&apos;;
+import {next, drop, StopIteration} from &apos;../base&apos;;
 
 /**
- * Yields the first item of the first input iterable, then the first item of
- * the second input iterable, etc., until the last input iterable. Then start
- * again with the second item of the first input iterable, etc. If one of the
- * input iterable is exhausted, it is removed from the list of input iterables
- * and the algorithm continues until all input iterables have been exhausted.
+ * Returns the &lt;code&gt;n&lt;/code&gt;th value of the input iterable (&lt;code&gt;n&lt;/code&gt;
+ * is a 0-based index). If
+ * &lt;code&gt;n&lt;/code&gt; is negative, returns the &lt;code&gt;n&lt;/code&gt;th value from the
+ * end.
+ * If no such value exists, throws a {@link StopIteration}.
  *
  * @example
- * // returns [&apos;A&apos;,&apos;D&apos;,&apos;E&apos;,&apos;B&apos;,&apos;F&apos;,&apos;C]
- * list( roundrobin([&apos;ABC&apos;, &apos;D&apos;, &apos;EF&apos;]) )
+ * // returns 3
+ * nth( range( 5 ) , 3 ) ;
  *
- * @param {Iterable[]} iterables - The input iterables.
- * @returns {Iterator}
- *
+ * @param {Iterable} iterable - The input iterable.
+ * @param {Number} n - The index of the value to output.
+ * @returns {Object} The &lt;code&gt;n&lt;/code&gt;th value of the input iterable.
  */
-export function* roundrobin(iterables) {
-	let pending = len(iterables);
-
-	let iterators = cycle(map(iter, iterables));
-
-	while (pending) {
-		while (true) {
-			const iterator = iterators.next().value;
-
-			const it = iterator.next();
-
-			if (it.done) {
-				break;
-			}
-
-			yield it.value;
-		}
-
-		--pending;
-
-		iterators = cycle(slice(iterators, 0, pending, 1));
+export function nth(iterable, n) {
+	if (n &lt; 0) {
+		const deq = deque(iterable, -n);
+		if (deq.len() &lt; -n) throw new StopIteration();
+		return deq.get(0);
 	}
+
+	return next(drop(iterable, n));
 }
 </code></pre>
 

@@ -54,6 +54,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-first">first</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-head">head</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#extra">extra</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-closure">closure</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-nth">nth</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#map">map</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_product">_product</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_zip">_zip</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_zip2">_zip2</a></span></span></li>
@@ -445,7 +446,7 @@ second input iterable.</p>
       <div>
         
         
-        <div data-ice="description"><p>Drops the first <code>n</code> elements of the input iterable.</p>
+        <div data-ice="description"><p>Drops the first <code>n</code> values of the input iterable.</p>
 </div>
       </div>
     </td>
@@ -704,13 +705,13 @@ consecutive elements from the same equivalence class.</p>
           
           
           
-          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-last">last</a></span></span><span class="code" data-ice="signature">(iterator: <span>Iterator</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></span>
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-last">last</a></span></span><span class="code" data-ice="signature">(iterable: <span>Iterable</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Returns the last value of the input iterator.</p>
+        <div data-ice="description"><p>Returns the last value of the input iterable.</p>
 </div>
       </div>
     </td>
@@ -945,6 +946,36 @@ to some comparison function.</p>
         
         
         <div data-ice="description"><p>Repeats the input item a few times.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-nth">nth</a></span></span><span class="code" data-ice="signature">(iterable: <span>Iterable</span>, n: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Returns the <code>n</code>th value of the input iterable (<code>n</code>
+is a 0-based index).</p>
 </div>
       </div>
     </td>
@@ -1351,13 +1382,13 @@ according to a given comparison function.</p>
           
           
           <span data-ice="generator">*</span>
-          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-tail">tail</a></span></span><span class="code" data-ice="signature">(iterable: <span>Iterable</span>, n: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></span>
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-tail">tail</a></span></span><span class="code" data-ice="signature">(iterable: <span>Iterable</span>, n: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></span>): <span>Iterator</span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Returns the last <code>n</code> elements of the input iterable in an array.</p>
+        <div data-ice="description"><p>Returns the last <code>n</code> values of the input iterable in an array.</p>
 </div>
       </div>
     </td>
@@ -2791,7 +2822,7 @@ list(head(cycle(range(2)),7)) ;</code></pre>
   <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {drop} from &apos;<span><a href="file/src/base/drop.js.html#lineNumber18">@aureooms/js-itertools/src/base/drop.js</a></span>&apos;</code></pre></div>
   
   
-  <div data-ice="description"><p>Drops the first <code>n</code> elements of the input iterable.
+  <div data-ice="description"><p>Drops the first <code>n</code> values of the input iterable.
 If <code>n</code> is negative, behaves like <code><span><a href="function/index.html#static-function-tail">tail</a></span>( iterable,
 -n)</code>.</p>
 </div>
@@ -2817,7 +2848,7 @@ If <code>n</code> is negative, behaves like <code><span><a href="function/index.
       <td data-ice="name" class="code" data-depth="0">n</td>
       <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></span></td>
       <td data-ice="appendix"></td>
-      <td data-ice="description"><p>The number of elements to drop.</p>
+      <td data-ice="description"><p>The number of values to drop.</p>
 </td>
     </tr>
 </tbody>
@@ -2831,7 +2862,8 @@ If <code>n</code> is negative, behaves like <code><span><a href="function/index.
       <tbody>
         <tr>
           <td class="return-type code" data-ice="returnType"><span>Iterator</span></td>
-          
+          <td class="return-desc" data-ice="returnDescription"><p>The remaining values of the input iterable.</p>
+</td>
         </tr>
       </tbody>
     </table>
@@ -3458,12 +3490,12 @@ of an element.</p>
   <div class="example-doc" data-ice="exampleDoc">
       
       <pre class="prettyprint source-code"><code data-ice="exampleCode">// A B C D A B
-list( map( ( k , g ) =&gt; k , groupby(&apos;AAAABBBCCDAABBB&apos;) ) )</code></pre>
+list( map( ( k , g ) =&gt; k , group( x =&gt; x , &apos;AAAABBBCCDAABBB&apos; ) ) )</code></pre>
     </div>
 <div class="example-doc" data-ice="exampleDoc">
       
       <pre class="prettyprint source-code"><code data-ice="exampleCode">// AAAA BBB CC D
-list( map( ( k , g ) =&gt; list( g ) , groupby(&apos;AAAABBBCCD&apos;) ) )</code></pre>
+list( map( ( k , g ) =&gt; list( g ) , group( x =&gt; x , &apos;AAAABBBCCD&apos; ) ) )</code></pre>
     </div>
 </div>
 
@@ -3553,7 +3585,7 @@ list( map( ( k , g ) =&gt; list( g ) , groupby(&apos;AAAABBBCCD&apos;) ) )</code
     
     
     
-    <span class="code" data-ice="name">last</span><span class="code" data-ice="signature">(iterator: <span>Iterator</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></span>
+    <span class="code" data-ice="name">last</span><span class="code" data-ice="signature">(iterable: <span>Iterable</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></span>
     <span class="right-info">
       
       
@@ -3564,7 +3596,7 @@ list( map( ( k , g ) =&gt; list( g ) , groupby(&apos;AAAABBBCCD&apos;) ) )</code
   <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {last} from &apos;<span><a href="file/src/base/last.js.html#lineNumber11">@aureooms/js-itertools/src/base/last.js</a></span>&apos;</code></pre></div>
   
   
-  <div data-ice="description"><p>Returns the last value of the input iterator. If there the iterator is
+  <div data-ice="description"><p>Returns the last value of the input iterable. If the iterable is
 exhausted, throws a <span>StopIteration</span>.</p>
 </div>
 
@@ -3579,10 +3611,10 @@ exhausted, throws a <span>StopIteration</span>.</p>
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">iterator</td>
-      <td data-ice="type" class="code"><span>Iterator</span></td>
+      <td data-ice="name" class="code" data-depth="0">iterable</td>
+      <td data-ice="type" class="code"><span>Iterable</span></td>
       <td data-ice="appendix"></td>
-      <td data-ice="description"><p>The input iterator.</p>
+      <td data-ice="description"><p>The input iterable.</p>
 </td>
     </tr>
 </tbody>
@@ -3596,7 +3628,8 @@ exhausted, throws a <span>StopIteration</span>.</p>
       <tbody>
         <tr>
           <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></td>
-          
+          <td class="return-desc" data-ice="returnDescription"><p>The last value of the input iterable.</p>
+</td>
         </tr>
       </tbody>
     </table>
@@ -4230,7 +4263,8 @@ that the input iterator is exhausted.</p>
       <tbody>
         <tr>
           <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></td>
-          
+          <td class="return-desc" data-ice="returnDescription"><p>The next value of the input iterator.</p>
+</td>
         </tr>
       </tbody>
     </table>
@@ -4333,6 +4367,99 @@ item a fixed number of times.</p>
   <div class="example-doc" data-ice="exampleDoc">
       
       <pre class="prettyprint source-code"><code data-ice="exampleCode">list( nrepeat( 6 , 3 ) ) ; // returns [ 6 , 6 , 6 ]</code></pre>
+    </div>
+</div>
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-nth">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">nth</span><span class="code" data-ice="signature">(iterable: <span>Iterable</span>, n: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/extra/nth.js.html#lineNumber19">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {nth} from &apos;<span><a href="file/src/extra/nth.js.html#lineNumber19">@aureooms/js-itertools/src/extra/nth.js</a></span>&apos;</code></pre></div>
+  
+  
+  <div data-ice="description"><p>Returns the <code>n</code>th value of the input iterable (<code>n</code>
+is a 0-based index). If
+<code>n</code> is negative, returns the <code>n</code>th value from the
+end.
+If no such value exists, throws a <span>StopIteration</span>.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">iterable</td>
+      <td data-ice="type" class="code"><span>Iterable</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>The input iterable.</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">n</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>The index of the value to output.</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>The <code>n</code>th value of the input iterable.</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">// returns 3
+nth( range( 5 ) , 3 ) ;</code></pre>
     </div>
 </div>
 
@@ -5532,7 +5659,7 @@ for the initializer parameter is <code>0</code>.</p>
     
     
     <span data-ice="generator">*</span>
-    <span class="code" data-ice="name">tail</span><span class="code" data-ice="signature">(iterable: <span>Iterable</span>, n: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></span>
+    <span class="code" data-ice="name">tail</span><span class="code" data-ice="signature">(iterable: <span>Iterable</span>, n: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></span>): <span>Iterator</span></span>
     <span class="right-info">
       
       
@@ -5543,7 +5670,7 @@ for the initializer parameter is <code>0</code>.</p>
   <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {tail} from &apos;<span><a href="file/src/base/tail.js.html#lineNumber18">@aureooms/js-itertools/src/base/tail.js</a></span>&apos;</code></pre></div>
   
   
-  <div data-ice="description"><p>Returns the last <code>n</code> elements of the input iterable in an array.
+  <div data-ice="description"><p>Returns the last <code>n</code> values of the input iterable in an array.
 If <code>n</code> is negative, behaves like <code><span><a href="function/index.html#static-function-drop">drop</a></span>( iterable,
 -n)</code>.</p>
 </div>
@@ -5569,7 +5696,7 @@ If <code>n</code> is negative, behaves like <code><span><a href="function/index.
       <td data-ice="name" class="code" data-depth="0">n</td>
       <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></span></td>
       <td data-ice="appendix"></td>
-      <td data-ice="description"><p>The number of elements to include in the output.</p>
+      <td data-ice="description"><p>The number of values to include in the output.</p>
 </td>
     </tr>
 </tbody>
@@ -5582,8 +5709,8 @@ If <code>n</code> is negative, behaves like <code><span><a href="function/index.
     <table>
       <tbody>
         <tr>
-          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></td>
-          <td class="return-desc" data-ice="returnDescription"><p>The last <code>n</code> elements of the input iterable.</p>
+          <td class="return-type code" data-ice="returnType"><span>Iterator</span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>The last <code>n</code> values of the input iterable.</p>
 </td>
         </tr>
       </tbody>
