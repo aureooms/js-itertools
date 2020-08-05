@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../../../">
-  <title data-ice="title">src/map/zip.js | @aureooms/js-itertools</title>
+  <title data-ice="title">src/extra/diagonal.js | @aureooms/js-itertools</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -97,24 +97,83 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1 data-ice="title">src/map/zip.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import {_zip} from &apos;./_zip&apos;;
+<div class="content" data-ice="content"><h1 data-ice="title">src/extra/diagonal.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import deque from &apos;@aureooms/js-collections-deque&apos;;
+
+import {iter, _next, count} from &apos;../base&apos;;
 
 /**
- * Zips iterables together. Yields a tuple containing the first element of each
- * iterable, then a tupe containing the second element of each iterable, etc.
- * Stops when one of the iterables runs out of elements.
+ * Computes the product of two iterables in a way that allows for one or both
+ * of them to be infinite (in constrast with {@link product}).
+ * Although the output iterator may be infinite, it is guaranteed that each
+ * value of the product is located at some finite position in the output
+ * iterator.
+ *
+ * If one of the two inputs has finite size N, it is guaranteed that memory
+ * usage never exceeds O(N) values. If both inputs have infinite size, then
+ * memory usage grows proportionately to the square root of the number of
+ * output pairs.
  *
  * @example
- * // returns [ [ &apos;a&apos; , 1 ] , [ &apos;b&apos; , 2 ] , [ &apos;c&apos; , 3 ] ]
- * list( zip( &apos;abcd&apos; , range(3) ) ) ;
+ * // returns [ [ 0 , 0 ] , [ 0 , 1 ] , [ 1 , 0 ] , [ 1 , 1 ] ]
+ * list( diagonal( range( 2 ) , range( 2 ) ) ) ;
  *
- * @param {...Iterable} iterables - The iterables to zip.
+ * @param {Iterable} A - The first iterable.
+ * @param {Iterable} B - The second iterable.
  * @returns {Iterator}
  *
  */
-export function zip(...iterables) {
-	return _zip(iterables);
+export function* diagonal(A, B) {
+	const itA = iter(A);
+	const itB = iter(B);
+	const _A = deque();
+	const _B = deque();
+
+	for (const n of count()) {
+		let _a = _next(itA);
+		let _b = _next(itB);
+		if (!_a.done) {
+			// eslint-disable-next-line no-negated-condition
+			if (!_b.done) {
+				_A.append(_a.value);
+				_B.append(_b.value);
+				for (let i = 0; i &lt;= n; ++i) yield [_A.get(i), _B.get(n - i)];
+			} else {
+				if (_B.length === 0) return;
+				do {
+					_A.append(_a.value);
+					_A.popleft();
+					for (let i = 0; i &lt; n; ++i) yield [_A.get(i), _B.get(n - i - 1)];
+					_a = _next(itA);
+				} while (!_a.done);
+
+				break;
+			}
+			// eslint-disable-next-line no-negated-condition
+		} else if (!_b.done) {
+			if (_A.length === 0) return;
+			do {
+				_B.append(_b.value);
+				_B.popleft();
+				for (let i = 0; i &lt; n; ++i) yield [_A.get(i), _B.get(n - i - 1)];
+				_b = _next(itB);
+			} while (!_b.done);
+
+			break;
+		} else {
+			break;
+		}
+	}
+
+	// Yield lower triangle
+
+	const n = _A.length;
+
+	for (let i = 1; i &lt; n; ++i) {
+		for (let j = i; j &lt; n; ++j) {
+			yield [_A.get(j), _B.get(n - j + i - 1)];
+		}
+	}
 }
 </code></pre>
 

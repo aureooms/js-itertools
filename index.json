@@ -2089,8 +2089,74 @@
   {
     "__docId__": 100,
     "kind": "file",
+    "name": "src/extra/diagonal.js",
+    "content": "import deque from '@aureooms/js-collections-deque';\n\nimport {iter, _next, count} from '../base';\n\n/**\n * Computes the product of two iterables in a way that allows for one or both\n * of them to be infinite (in constrast with {@link product}).\n * Although the output iterator may be infinite, it is guaranteed that each\n * value of the product is located at some finite position in the output\n * iterator.\n *\n * If one of the two inputs has finite size N, it is guaranteed that memory\n * usage never exceeds O(N) values. If both inputs have infinite size, then\n * memory usage grows proportionately to the square root of the number of\n * output pairs.\n *\n * @example\n * // returns [ [ 0 , 0 ] , [ 0 , 1 ] , [ 1 , 0 ] , [ 1 , 1 ] ]\n * list( diagonal( range( 2 ) , range( 2 ) ) ) ;\n *\n * @param {Iterable} A - The first iterable.\n * @param {Iterable} B - The second iterable.\n * @returns {Iterator}\n *\n */\nexport function* diagonal(A, B) {\n\tconst itA = iter(A);\n\tconst itB = iter(B);\n\tconst _A = deque();\n\tconst _B = deque();\n\n\tfor (const n of count()) {\n\t\tlet _a = _next(itA);\n\t\tlet _b = _next(itB);\n\t\tif (!_a.done) {\n\t\t\t// eslint-disable-next-line no-negated-condition\n\t\t\tif (!_b.done) {\n\t\t\t\t_A.append(_a.value);\n\t\t\t\t_B.append(_b.value);\n\t\t\t\tfor (let i = 0; i <= n; ++i) yield [_A.get(i), _B.get(n - i)];\n\t\t\t} else {\n\t\t\t\tif (_B.length === 0) return;\n\t\t\t\tdo {\n\t\t\t\t\t_A.append(_a.value);\n\t\t\t\t\t_A.popleft();\n\t\t\t\t\tfor (let i = 0; i < n; ++i) yield [_A.get(i), _B.get(n - i - 1)];\n\t\t\t\t\t_a = _next(itA);\n\t\t\t\t} while (!_a.done);\n\n\t\t\t\tbreak;\n\t\t\t}\n\t\t\t// eslint-disable-next-line no-negated-condition\n\t\t} else if (!_b.done) {\n\t\t\tif (_A.length === 0) return;\n\t\t\tdo {\n\t\t\t\t_B.append(_b.value);\n\t\t\t\t_B.popleft();\n\t\t\t\tfor (let i = 0; i < n; ++i) yield [_A.get(i), _B.get(n - i - 1)];\n\t\t\t\t_b = _next(itB);\n\t\t\t} while (!_b.done);\n\n\t\t\tbreak;\n\t\t} else {\n\t\t\tbreak;\n\t\t}\n\t}\n\n\t// Yield lower triangle\n\n\tconst n = _A.length;\n\n\tfor (let i = 1; i < n; ++i) {\n\t\tfor (let j = i; j < n; ++j) {\n\t\t\tyield [_A.get(j), _B.get(n - j + i - 1)];\n\t\t}\n\t}\n}\n",
+    "static": true,
+    "longname": "/home/aureooms/dev/js/js-itertools/src/extra/diagonal.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 101,
+    "kind": "function",
+    "name": "diagonal",
+    "memberof": "src/extra/diagonal.js",
+    "generator": true,
+    "async": false,
+    "static": true,
+    "longname": "src/extra/diagonal.js~diagonal",
+    "access": "public",
+    "export": true,
+    "importPath": "@aureooms/js-itertools/src/extra/diagonal.js",
+    "importStyle": "{diagonal}",
+    "description": "Computes the product of two iterables in a way that allows for one or both\nof them to be infinite (in constrast with {@link product}).\nAlthough the output iterator may be infinite, it is guaranteed that each\nvalue of the product is located at some finite position in the output\niterator.\n\nIf one of the two inputs has finite size N, it is guaranteed that memory\nusage never exceeds O(N) values. If both inputs have infinite size, then\nmemory usage grows proportionately to the square root of the number of\noutput pairs.",
+    "examples": [
+      "// returns [ [ 0 , 0 ] , [ 0 , 1 ] , [ 1 , 0 ] , [ 1 , 1 ] ]\nlist( diagonal( range( 2 ) , range( 2 ) ) ) ;"
+    ],
+    "lineNumber": 26,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Iterator}"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "A",
+        "description": "The first iterable."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "B",
+        "description": "The second iterable."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterator"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 102,
+    "kind": "file",
     "name": "src/extra/index.js",
-    "content": "export * from './closure';\nexport * from './nth';\n",
+    "content": "export * from './closure';\nexport * from './diagonal';\nexport * from './nth';\n",
     "static": true,
     "longname": "/home/aureooms/dev/js/js-itertools/src/extra/index.js",
     "access": "public",
@@ -2098,7 +2164,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 101,
+    "__docId__": 103,
     "kind": "file",
     "name": "src/extra/nth.js",
     "content": "import deque from '@aureooms/js-collections-deque';\nimport {next, drop, StopIteration} from '../base';\n\n/**\n * Returns the <code>n</code>th value of the input iterable (<code>n</code>\n * is a 0-based index). If\n * <code>n</code> is negative, returns the <code>n</code>th value from the\n * end.\n * If no such value exists, throws a {@link StopIteration}.\n *\n * @example\n * // returns 3\n * nth( range( 5 ) , 3 ) ;\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} n - The index of the value to output.\n * @returns {Object} The <code>n</code>th value of the input iterable.\n */\nexport function nth(iterable, n) {\n\tif (n < 0) {\n\t\tconst deq = deque(iterable, -n);\n\t\tif (deq.len() < -n) throw new StopIteration();\n\t\treturn deq.get(0);\n\t}\n\n\treturn next(drop(iterable, n));\n}\n",
@@ -2109,7 +2175,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 102,
+    "__docId__": 104,
     "kind": "function",
     "name": "nth",
     "memberof": "src/extra/nth.js",
@@ -2164,7 +2230,7 @@
     }
   },
   {
-    "__docId__": 103,
+    "__docId__": 105,
     "kind": "file",
     "name": "src/index.js",
     "content": "export * from './base';\nexport * from './extra';\nexport * from './map';\nexport * from './reduce';\n",
@@ -2175,7 +2241,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 104,
+    "__docId__": 106,
     "kind": "file",
     "name": "src/map/_product.js",
     "content": "/**\n * Algorithm used by {@link product} to compute the product of one or more\n * iterables from pools of symbols.\n *\n * @example\n * // Ax Ay Bx By Cx Cy Dx Dy\n * _product(['xy', 'ABCD'], 0 , 2) ;\n *\n * @example\n * // 000 001 010 011 100 101 110 111\n * _product([[0,1],[0,1],[0,1]], 0 , 3) ;\n *\n * @param {Array[]} pools - The pools of symbols in reverse order.\n * @param {Number} i - Index of the pool to draw the next symbol from\n * @param {Number} n - Number of pools in total.\n * @returns {Iterator}\n */\nexport function* _product(pools, i, n) {\n\tif (i === n) {\n\t\tyield [];\n\t\treturn;\n\t}\n\n\tconst iterable = pools[i];\n\n\tfor (const buffer of _product(pools, i + 1, n)) {\n\t\tfor (const item of iterable) {\n\t\t\tbuffer.push(item);\n\n\t\t\tyield buffer;\n\n\t\t\tbuffer.pop(item);\n\t\t}\n\t}\n}\n",
@@ -2186,7 +2252,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 105,
+    "__docId__": 107,
     "kind": "function",
     "name": "_product",
     "memberof": "src/map/_product.js",
@@ -2252,7 +2318,7 @@
     }
   },
   {
-    "__docId__": 106,
+    "__docId__": 108,
     "kind": "file",
     "name": "src/map/_zip.js",
     "content": "import {list, map, iter, _next} from '..';\n\n/**\n * Zips iterables together. Yields a tuple containing the first element of each\n * iterable, then a tupe containing the second element of each iterable, etc.\n * Stops when one of the iterables runs out of elements.\n *\n * @example\n * // returns [ [ 'a' , 1 ] , [ 'b' , 2 ] , [ 'c' , 3 ] ]\n * list( _zip( [ 'abcd' , range(3) ] ) ) ;\n *\n * @param {Iterable[]} iterables - The iterables to zip.\n * @returns {Iterator}\n *\n */\nexport function* _zip(iterables) {\n\tconst iterators = list(map(iter, iterables));\n\n\tif (iterators.length === 0) {\n\t\treturn;\n\t}\n\n\twhile (true) {\n\t\tconst buffer = [];\n\n\t\tfor (const result of map(_next, iterators)) {\n\t\t\tif (result.done) {\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\tbuffer.push(result.value);\n\t\t}\n\n\t\tyield buffer;\n\t}\n}\n",
@@ -2263,7 +2329,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 107,
+    "__docId__": 109,
     "kind": "function",
     "name": "_zip",
     "memberof": "src/map/_zip.js",
@@ -2308,7 +2374,7 @@
     }
   },
   {
-    "__docId__": 108,
+    "__docId__": 110,
     "kind": "file",
     "name": "src/map/_zip2.js",
     "content": "import {iter} from '..';\n\n/**\n * Zips exactly two iterables together. Yields a tuple containing the first\n * element of each iterable, then a tupe containing the second element of each\n * iterable, etc.  Stops when one of the two iterables runs out of elements.\n *\n * @example\n * // returns [ [ 'a' , 1 ] , [ 'b' , 2 ] , [ 'c' , 3 ] ]\n * list( _zip2( 'abcd' , range(3) ) ) ;\n *\n * @param {Iterable} A - The first iterable.\n * @param {Iterable} B - The second iterable.\n * @returns {Iterator}\n *\n */\nexport function* _zip2(A, B) {\n\tA = iter(A);\n\tB = iter(B);\n\n\twhile (true) {\n\t\tconst a = A.next();\n\t\tif (a.done) {\n\t\t\treturn;\n\t\t}\n\n\t\tconst b = B.next();\n\t\tif (b.done) {\n\t\t\treturn;\n\t\t}\n\n\t\tyield [a.value, b.value];\n\t}\n}\n",
@@ -2319,7 +2385,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 109,
+    "__docId__": 111,
     "kind": "function",
     "name": "_zip2",
     "memberof": "src/map/_zip2.js",
@@ -2374,7 +2440,7 @@
     }
   },
   {
-    "__docId__": 110,
+    "__docId__": 112,
     "kind": "file",
     "name": "src/map/_ziplongest.js",
     "content": "import {list, map, iter, _next, repeat, enumerate} from '..';\n\n/**\n * Same as _zip, but continues to yield zipped tuples until the last iterable is\n * exhausted.\n *\n * @example\n * // returns [['A','x'],['B','y'],['C','-'],['D','-']]\n * list( _ziplongest( '-' , [ 'ABCD', 'xy' ] ) ) ;\n *\n * @param fillvalue - The value to yield for iterators that are exhausted.\n * @param {Iterable[]} iterables - The iterables to zip.\n * @returns {Iterator}\n *\n */\nexport function* _ziplongest(fillvalue, iterables) {\n\tlet counter = iterables.length;\n\n\tif (counter === 0) {\n\t\treturn;\n\t}\n\n\tconst filler = repeat(fillvalue);\n\n\tconst iterators = list(map(iter, iterables));\n\n\twhile (true) {\n\t\tconst buffer = [];\n\n\t\tfor (const [i, event] of enumerate(map(_next, iterators))) {\n\t\t\tif (event.done) {\n\t\t\t\t--counter;\n\t\t\t\tif (counter === 0) {\n\t\t\t\t\treturn;\n\t\t\t\t}\n\n\t\t\t\titerators[i] = filler;\n\t\t\t\tbuffer.push(fillvalue);\n\t\t\t} else {\n\t\t\t\tbuffer.push(event.value);\n\t\t\t}\n\t\t}\n\n\t\tyield buffer;\n\t}\n}\n",
@@ -2385,7 +2451,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 111,
+    "__docId__": 113,
     "kind": "function",
     "name": "_ziplongest",
     "memberof": "src/map/_ziplongest.js",
@@ -2440,7 +2506,7 @@
     }
   },
   {
-    "__docId__": 112,
+    "__docId__": 114,
     "kind": "file",
     "name": "src/map/chain.js",
     "content": "/**\n * Chains input iterables one after the other. Returns an iterator that yields\n * all values of the first input iterable, then all values of the second, etc.\n *\n * @example\n * // returns [ 0 , 1 , 0 , 1 , 2 ]\n * list( chain( [ range( 2 ) , range( 3 ) ] ) ) ;\n *\n * @param {Iterable[]} iterables - The input iterables to chain.\n * @returns {Iterator}\n *\n */\nexport function* chain(iterables) {\n\tfor (const iterable of iterables) {\n\t\tyield* iterable;\n\t}\n}\n",
@@ -2451,7 +2517,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 113,
+    "__docId__": 115,
     "kind": "function",
     "name": "chain",
     "memberof": "src/map/chain.js",
@@ -2496,7 +2562,7 @@
     }
   },
   {
-    "__docId__": 114,
+    "__docId__": 116,
     "kind": "file",
     "name": "src/map/combinations.js",
     "content": "import {list, range, pick} from '..';\n\n/**\n * Yields all combinations of each possible choice of <code>r</code> elements\n * of the input iterable.\n *\n * @example\n * // AB AC AD BC BD CD\n * combinations('ABCD', 2)\n *\n * @example\n * // 012 013 023 123\n * combinations(range(4), 3)\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} r - The size of the combinations to generate.\n * @returns {Iterator}\n */\nexport function* combinations(iterable, r) {\n\tconst pool = list(iterable);\n\tconst length = pool.length;\n\n\tif (r > length) {\n\t\treturn;\n\t}\n\n\tconst indices = list(range(0, r, 1));\n\n\tyield list(pick(pool, indices));\n\n\twhile (true) {\n\t\tlet i = r - 1;\n\n\t\t// eslint-disable-next-line no-constant-condition\n\t\twhile (true) {\n\t\t\tif (i < 0) {\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\tif (indices[i] !== i + length - r) {\n\t\t\t\tlet pivot = ++indices[i];\n\n\t\t\t\tfor (++i; i < r; ++i) {\n\t\t\t\t\tindices[i] = ++pivot;\n\t\t\t\t}\n\n\t\t\t\tbreak;\n\t\t\t}\n\n\t\t\t--i;\n\t\t}\n\n\t\tyield list(pick(pool, indices));\n\t}\n}\n",
@@ -2507,7 +2573,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 115,
+    "__docId__": 117,
     "kind": "function",
     "name": "combinations",
     "memberof": "src/map/combinations.js",
@@ -2563,7 +2629,7 @@
     }
   },
   {
-    "__docId__": 116,
+    "__docId__": 118,
     "kind": "file",
     "name": "src/map/combinationswithrepetition.js",
     "content": "import {list, nrepeat, pick} from '..';\n\n/**\n * Yields all combinations, with repetitions, of each possible choice of\n * <code>r</code> elements of the input iterable.\n *\n * @example\n * // A B C\n * combinationswithrepetition('ABC', 1)\n *\n * @example\n * // 00 01 02 11 12 22\n * combinationswithrepetition(range(3), 2)\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} r - The size of the combinations to generate.\n * @returns {Iterator}\n */\n\nexport function* combinationswithrepetition(iterable, r) {\n\tconst pool = list(iterable);\n\tconst length = pool.length;\n\n\tif (length === 0 && r > 0) {\n\t\treturn;\n\t}\n\n\tconst indices = list(nrepeat(0, r));\n\n\tyield list(pick(pool, indices));\n\n\twhile (true) {\n\t\tlet i = r - 1;\n\n\t\t// eslint-disable-next-line no-constant-condition\n\t\twhile (true) {\n\t\t\tif (i < 0) {\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\tif (indices[i] !== length - 1) {\n\t\t\t\tconst pivot = ++indices[i];\n\n\t\t\t\tfor (++i; i < r; ++i) {\n\t\t\t\t\tindices[i] = pivot;\n\t\t\t\t}\n\n\t\t\t\tbreak;\n\t\t\t}\n\n\t\t\t--i;\n\t\t}\n\n\t\tyield list(pick(pool, indices));\n\t}\n}\n",
@@ -2574,7 +2640,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 117,
+    "__docId__": 119,
     "kind": "function",
     "name": "combinationswithrepetition",
     "memberof": "src/map/combinationswithrepetition.js",
@@ -2630,7 +2696,7 @@
     }
   },
   {
-    "__docId__": 118,
+    "__docId__": 120,
     "kind": "file",
     "name": "src/map/compress.js",
     "content": "import {_zip2} from '..';\n\n/**\n * Filters the first input iterable according to truthy and flasy values from a\n * second input iterable. The ith element of the first input iterable is output\n * if and only if the ith element of the second input iterable is truthy.\n *\n * @param {Iterable} iterable - The first input iterable to filter.\n * @param {Iterable} selector - The second input iterable containing the truthy and falsy\n * values.\n * @returns {Iterator}\n */\nexport function* compress(iterable, selector) {\n\tfor (const [take, item] of _zip2(selector, iterable)) {\n\t\tif (take) {\n\t\t\tyield item;\n\t\t}\n\t}\n}\n",
@@ -2641,7 +2707,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 119,
+    "__docId__": 121,
     "kind": "function",
     "name": "compress",
     "memberof": "src/map/compress.js",
@@ -2693,7 +2759,7 @@
     }
   },
   {
-    "__docId__": 120,
+    "__docId__": 122,
     "kind": "file",
     "name": "src/map/dropwhile.js",
     "content": "import {iter} from '..';\n\n/**\n * Drop elements of the input iterable while the current element satisfies the\n * input predicate.\n *\n * @param {Function} predicate - The input predicate.\n * @param {Iterable} iterable - The input iterable.\n * @returns {Iterator}\n */\nexport function* dropwhile(predicate, iterable) {\n\tconst iterator = iter(iterable);\n\n\tfor (const item of iterator) {\n\t\tif (predicate(item)) {\n\t\t\tcontinue;\n\t\t}\n\n\t\t// Equivalent to return chain( [ [ item ] , iterator ] ) ;\n\n\t\tyield item;\n\n\t\tyield* iterator;\n\n\t\treturn;\n\t}\n}\n",
@@ -2704,7 +2770,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 121,
+    "__docId__": 123,
     "kind": "function",
     "name": "dropwhile",
     "memberof": "src/map/dropwhile.js",
@@ -2756,7 +2822,7 @@
     }
   },
   {
-    "__docId__": 122,
+    "__docId__": 124,
     "kind": "file",
     "name": "src/map/enumerate.js",
     "content": "import {_zip2, _count} from '..';\n\n/**\n * Yields (index,element) tuples where the elements are taken from the input\n * iterable. You can choose the starting index. The starting index is\n * <code>0</code> by default.\n *\n * @example\n * // returns [ [ 0 , 'a' ] , [ 1 , 'b' ] , [ 2 , 'c' ] ]\n * list( enumerate( 'abc' ) ) ;\n *\n * @example\n * // returns [ [ 1 , 'a' ] , [ 2 , 'b' ] , [ 3 , 'c' ] ]\n * list( enumerate( 'abc' , 1 ) ) ;\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} [start=0] - The starting index.\n * @returns {Iterator}\n */\nexport function enumerate(iterable, start = 0) {\n\treturn _zip2(_count(start, 1), iterable);\n}\n",
@@ -2767,7 +2833,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 123,
+    "__docId__": 125,
     "kind": "function",
     "name": "enumerate",
     "memberof": "src/map/enumerate.js",
@@ -2825,7 +2891,7 @@
     }
   },
   {
-    "__docId__": 124,
+    "__docId__": 126,
     "kind": "file",
     "name": "src/map/filter.js",
     "content": "/**\n * Yields all elements from input iterable that verify a given predicate.\n *\n * @example\n * // returns [ 1 , 3 , 5 , 7 , 9 ]\n * list( filter( x => x % 2 , range( 10 ) ) ) ;\n *\n * @param {Function} predicate - A unary function that returns a truthy or\n * falsy value.\n * @param {Iterable} iterable - The input iterable.\n * @returns {Iterator}\n *\n */\nexport function* filter(predicate, iterable) {\n\tfor (const item of iterable) {\n\t\tif (predicate(item)) {\n\t\t\tyield item;\n\t\t}\n\t}\n}\n\n/**\n * Same as {@link filter}.\n * @function filtertrue\n */\nexport const filtertrue = filter;\n",
@@ -2836,7 +2902,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 125,
+    "__docId__": 127,
     "kind": "function",
     "name": "filter",
     "memberof": "src/map/filter.js",
@@ -2891,7 +2957,7 @@
     }
   },
   {
-    "__docId__": 126,
+    "__docId__": 128,
     "kind": "variable",
     "name": "filtertrue",
     "memberof": "src/map/filter.js",
@@ -2916,7 +2982,7 @@
     }
   },
   {
-    "__docId__": 127,
+    "__docId__": 129,
     "kind": "file",
     "name": "src/map/filterfalse.js",
     "content": "/**\n * Yields all elements from input iterable that do not verify a given predicate.\n *\n * @example\n * // returns [ 0 , 2 , 4 , 6 , 8 ]\n * list( filter( x => x % 2 , range( 10 ) ) ) ;\n *\n * @param {Function} predicate - A unary function that returns a truthy or\n * falsy value.\n * @param {Iterable} iterable - The input iterable.\n * @returns {Iterator}\n *\n */\nexport function* filterfalse(predicate, iterable) {\n\tfor (const item of iterable) {\n\t\tif (!predicate(item)) {\n\t\t\tyield item;\n\t\t}\n\t}\n}\n",
@@ -2927,7 +2993,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 128,
+    "__docId__": 130,
     "kind": "function",
     "name": "filterfalse",
     "memberof": "src/map/filterfalse.js",
@@ -2982,7 +3048,7 @@
     }
   },
   {
-    "__docId__": 129,
+    "__docId__": 131,
     "kind": "file",
     "name": "src/map/group.js",
     "content": "import {iter} from '..';\n\n/**\n * Yields elements of the input iterable by grouping them into tuples\n * consecutive elements from the same equivalence class.\n *\n * @example\n * // A B C D A B\n * list( map( ( k , g ) => k , group( x => x , 'AAAABBBCCDAABBB' ) ) )\n *\n * @example\n * // AAAA BBB CC D\n * list( map( ( k , g ) => list( g ) , group( x => x , 'AAAABBBCCD' ) ) )\n *\n * @param {Function} key - The function used to determine the equivalence class\n * of an element.\n * @param {Iterable} iterable - The input iterable.\n * @returns {Iterator}\n */\nexport function* group(key, iterable) {\n\tconst iterator = iter(iterable);\n\n\tconst first = iterator.next();\n\n\tif (first.done) {\n\t\treturn;\n\t}\n\n\tlet currval = first.value;\n\tlet currkey = key(currval);\n\n\tconst grouper = function* (tgtkey) {\n\t\twhile (true) {\n\t\t\tyield currval;\n\n\t\t\tconst event = iterator.next();\n\t\t\tif (event.done) {\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\tcurrval = event.value;\n\t\t\tcurrkey = key(currval);\n\n\t\t\tif (currkey !== tgtkey) {\n\t\t\t\treturn;\n\t\t\t}\n\t\t}\n\t};\n\n\twhile (true) {\n\t\tconst tgtkey = currkey;\n\n\t\tconst g = grouper(tgtkey);\n\n\t\tyield [tgtkey, g];\n\n\t\twhile (currkey === tgtkey) {\n\t\t\tconst event = iterator.next();\n\t\t\tif (event.done) {\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\tcurrval = event.value;\n\t\t\tcurrkey = key(currval);\n\t\t}\n\t}\n}\n\n/**\n * Same as {@link group}.\n * @function groupby\n */\nexport const groupby = group;\n",
@@ -2993,7 +3059,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 130,
+    "__docId__": 132,
     "kind": "function",
     "name": "group",
     "memberof": "src/map/group.js",
@@ -3049,7 +3115,7 @@
     }
   },
   {
-    "__docId__": 131,
+    "__docId__": 133,
     "kind": "variable",
     "name": "groupby",
     "memberof": "src/map/group.js",
@@ -3074,7 +3140,7 @@
     }
   },
   {
-    "__docId__": 132,
+    "__docId__": 134,
     "kind": "file",
     "name": "src/map/index.js",
     "content": "export * from './_product';\nexport * from './_zip';\nexport * from './_zip2';\nexport * from './_ziplongest';\nexport * from './chain';\nexport * from './combinations';\nexport * from './combinationswithrepetition';\nexport * from './compress';\nexport * from './dropwhile';\nexport * from './enumerate';\nexport * from './filter';\nexport * from './filterfalse';\nexport * from './group';\nexport * from './map';\nexport * from './nrepeat';\nexport * from './permutations';\nexport * from './product';\nexport * from './repeat';\nexport * from './reversed';\nexport * from './roundrobin';\nexport * from './slice';\nexport * from './sorted';\nexport * from './starmap';\nexport * from './takewhile';\nexport * from './zip';\nexport * from './ziplongest';\n",
@@ -3085,7 +3151,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 133,
+    "__docId__": 135,
     "kind": "file",
     "name": "src/map/map.js",
     "content": "/**\n * Applies a given callable to each of the elements of the input iterable.\n *\n * @example\n * // return [ 0 , 1 , 4 , 9 ]\n * list( map( x => x**2 , range( 4 ) ) ) ;\n *\n * @param {Function} callable - The callable to use.\n * @param {Iterable} iterable - The input iterable.\n * @returns {Iterator}\n */\nexport function* map(callable, iterable) {\n\tfor (const item of iterable) {\n\t\tyield callable(item);\n\t}\n}\n",
@@ -3096,7 +3162,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 134,
+    "__docId__": 136,
     "kind": "function",
     "name": "map",
     "memberof": "src/map/map.js",
@@ -3151,7 +3217,7 @@
     }
   },
   {
-    "__docId__": 135,
+    "__docId__": 137,
     "kind": "file",
     "name": "src/map/nrepeat.js",
     "content": "/**\n * Repeats the input item a few times. Returns an iterator that yields the input\n * item a fixed number of times.\n *\n * @example\n * list( nrepeat( 6 , 3 ) ) ; // returns [ 6 , 6 , 6 ]\n *\n * @param {Object} item - The input item.\n * @param {Number} times - The number of times to yield <code>item</code>.\n * @returns {Iterator}\n */\nexport function* nrepeat(item, times) {\n\twhile (times-- > 0) {\n\t\tyield item;\n\t}\n}\n",
@@ -3162,7 +3228,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 136,
+    "__docId__": 138,
     "kind": "function",
     "name": "nrepeat",
     "memberof": "src/map/nrepeat.js",
@@ -3217,7 +3283,7 @@
     }
   },
   {
-    "__docId__": 137,
+    "__docId__": 139,
     "kind": "file",
     "name": "src/map/permutations.js",
     "content": "import {list, range, head, pick} from '..';\n\n/**\n * Yields all permutations of each possible choice of <code>r</code> elements\n * of the input iterable.\n *\n * @example\n * // AB AC AD BA BC BD CA CB CD DA DB DC\n * permutations('ABCD', 2) ;\n *\n * @example\n * // 012 021 102 120 201 210\n * permutations(range(3), 3) ;\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} r - The size of the permutations to generate.\n * @returns {Iterator}\n */\nexport function* permutations(iterable, r) {\n\tconst pool = list(iterable);\n\n\tconst length = pool.length;\n\n\tif (r > length) {\n\t\treturn;\n\t}\n\n\tconst indices = list(range(0, length, 1));\n\tconst cycles = list(range(length, length - r, -1));\n\n\tyield list(pick(pool, head(indices, r)));\n\n\tif (r === 0 || length === 0) {\n\t\treturn;\n\t}\n\n\twhile (true) {\n\t\tlet i = r;\n\n\t\twhile (i--) {\n\t\t\t--cycles[i];\n\n\t\t\tif (cycles[i] === 0) {\n\t\t\t\t// Could be costly\n\t\t\t\tindices.push(indices.splice(i, 1)[0]);\n\n\t\t\t\tcycles[i] = length - i;\n\t\t\t} else {\n\t\t\t\tconst j = cycles[i];\n\n\t\t\t\t[indices[i], indices[length - j]] = [indices[length - j], indices[i]];\n\n\t\t\t\tyield list(pick(pool, head(indices, r)));\n\t\t\t\tbreak;\n\t\t\t}\n\t\t}\n\n\t\tif (i === -1) {\n\t\t\treturn;\n\t\t}\n\t}\n}\n",
@@ -3228,7 +3294,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 138,
+    "__docId__": 140,
     "kind": "function",
     "name": "permutations",
     "memberof": "src/map/permutations.js",
@@ -3284,7 +3350,7 @@
     }
   },
   {
-    "__docId__": 139,
+    "__docId__": 141,
     "kind": "file",
     "name": "src/map/product.js",
     "content": "import {list, map, _product, ncycle, reversed} from '..';\n\n/**\n * Computes the product of the iterables given as first parameter. The second\n * parameter is an integer that tells how many times the list of iterables\n * given as input should be concatenated to itself before computing the\n * product. This second parameter is optional and its default value is\n * <code>1</code>.\n *\n * @example\n * // Ax Ay Bx By Cx Cy Dx Dy\n * product(['ABCD', 'xy']) ;\n *\n * @example\n * // 000 001 010 011 100 101 110 111\n * product([range(2)], 3) ;\n *\n * @param {Iterable} iterables - The input iterables.\n * @param {Number} repeat - The number of times to cycle through the input iterables.\n * @return {Iterator}\n */\n\nexport function product(iterables, repeat = 1) {\n\tconst pools = list(ncycle(reversed(map(list, iterables)), repeat));\n\n\treturn map(list, _product(pools, 0, pools.length));\n}\n",
@@ -3295,7 +3361,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 140,
+    "__docId__": 142,
     "kind": "function",
     "name": "product",
     "memberof": "src/map/product.js",
@@ -3345,7 +3411,7 @@
     }
   },
   {
-    "__docId__": 141,
+    "__docId__": 143,
     "kind": "file",
     "name": "src/map/repeat.js",
     "content": "/**\n * Repeats the input item endlessly. Returns an iterator that yields the input\n * item over and over again.\n *\n * @example\n * list( take( repeat( 6 ) , 3 ) ) ; // returns [ 6 , 6 , 6 ]\n *\n * @param {Object} item - The input item.\n * @returns {Iterator}\n */\nexport function* repeat(item) {\n\twhile (true) {\n\t\tyield item;\n\t}\n}\n",
@@ -3356,7 +3422,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 142,
+    "__docId__": 144,
     "kind": "function",
     "name": "repeat",
     "memberof": "src/map/repeat.js",
@@ -3401,7 +3467,7 @@
     }
   },
   {
-    "__docId__": 143,
+    "__docId__": 145,
     "kind": "file",
     "name": "src/map/reversed.js",
     "content": "/**\n * Yields elements of the input iterable in reverse order.\n *\n * @param {Iterable} iterable - The input iterable.\n * @returns {Iterator} - The input iterable, reversed.\n */\nexport function* reversed(iterable) {\n\tconst buffer = [];\n\n\tfor (const item of iterable) {\n\t\tbuffer.push(item);\n\t}\n\n\t// Caching length is believed to be faster\n\n\tlet jz = buffer.length;\n\n\tfor (; jz; --jz) {\n\t\tyield buffer.pop();\n\t}\n}\n",
@@ -3412,7 +3478,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 144,
+    "__docId__": 146,
     "kind": "function",
     "name": "reversed",
     "memberof": "src/map/reversed.js",
@@ -3454,7 +3520,7 @@
     }
   },
   {
-    "__docId__": 145,
+    "__docId__": 147,
     "kind": "file",
     "name": "src/map/roundrobin.js",
     "content": "import {iter, len, cycle, map, slice} from '..';\n\n/**\n * Yields the first item of the first input iterable, then the first item of\n * the second input iterable, etc., until the last input iterable. Then start\n * again with the second item of the first input iterable, etc. If one of the\n * input iterable is exhausted, it is removed from the list of input iterables\n * and the algorithm continues until all input iterables have been exhausted.\n *\n * @example\n * // returns ['A','D','E','B','F','C]\n * list( roundrobin(['ABC', 'D', 'EF']) )\n *\n * @param {Iterable[]} iterables - The input iterables.\n * @returns {Iterator}\n *\n */\nexport function* roundrobin(iterables) {\n\tlet pending = len(iterables);\n\n\tlet iterators = cycle(map(iter, iterables));\n\n\twhile (pending) {\n\t\twhile (true) {\n\t\t\tconst iterator = iterators.next().value;\n\n\t\t\tconst it = iterator.next();\n\n\t\t\tif (it.done) {\n\t\t\t\tbreak;\n\t\t\t}\n\n\t\t\tyield it.value;\n\t\t}\n\n\t\t--pending;\n\n\t\titerators = cycle(slice(iterators, 0, pending, 1));\n\t}\n}\n",
@@ -3465,7 +3531,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 146,
+    "__docId__": 148,
     "kind": "function",
     "name": "roundrobin",
     "memberof": "src/map/roundrobin.js",
@@ -3510,7 +3576,7 @@
     }
   },
   {
-    "__docId__": 147,
+    "__docId__": 149,
     "kind": "file",
     "name": "src/map/slice.js",
     "content": "import {iter} from '..';\n\n/**\n * Same as\n * <code>map( [ i , x ] => x , filter( [ i , x ] => (new Set( range( start ,\n * stop , step ) ) ).has( i ) , enumerate( iterable ) ) );</code>.\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} start - Where to start the slice.\n * @param {Number} stop - Where to stop the slice.\n * @param {Number} step - The step of the slice.\n * @returns {Iterator}\n */\nexport function* slice(iterable, start, stop, step) {\n\tconst iterator = iter(iterable);\n\n\twhile (start > 0) {\n\t\tif (iterator.next().done) {\n\t\t\treturn;\n\t\t}\n\n\t\t--start;\n\t\t--stop;\n\t}\n\n\twhile (stop > 0) {\n\t\tconst current = iterator.next();\n\n\t\tif (current.done) {\n\t\t\treturn;\n\t\t}\n\n\t\tyield current.value;\n\n\t\t--stop;\n\n\t\tlet n = step;\n\n\t\twhile (n > 1) {\n\t\t\tif (iterator.next().done) {\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\t--n;\n\t\t}\n\t}\n}\n",
@@ -3521,7 +3587,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 148,
+    "__docId__": 150,
     "kind": "function",
     "name": "slice",
     "memberof": "src/map/slice.js",
@@ -3593,7 +3659,7 @@
     }
   },
   {
-    "__docId__": 149,
+    "__docId__": 151,
     "kind": "file",
     "name": "src/map/sorted.js",
     "content": "import {list} from '../base/list';\n\n/**\n * Outputs an array containing the elements of the input iterable sorted\n * according to a given comparison function.\n *\n * @param {Function} compare - The comparison function to use. This function\n * must be 2-ary. It must return -1, 0, or 1 depending whether the first\n * parameter is, respectively, less than, equal to, or greater than the second\n * parameter.\n * @param {Iterable} iterable - The input iterable.\n * @returns {Array} - The input iterable, sorted.\n */\nexport function sorted(compare, iterable) {\n\treturn list(iterable).sort(compare);\n}\n",
@@ -3604,7 +3670,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 150,
+    "__docId__": 152,
     "kind": "function",
     "name": "sorted",
     "memberof": "src/map/sorted.js",
@@ -3656,7 +3722,7 @@
     }
   },
   {
-    "__docId__": 151,
+    "__docId__": 153,
     "kind": "file",
     "name": "src/map/starmap.js",
     "content": "/**\n * Same as {@link map} but allows multiple arguments callable functions.\n *\n * @example\n * // return [ 0 , 1 , 4 , 9 ]\n * list( starmap( ( x , y ) => x*y , zip( range( 4 ) , range( 4 ) ) ) ;\n *\n * @param {Function} callable - The callable to use.\n * @param {Iterable} iterable - The input iterable.\n * @returns {Iterator}\n */\nexport function* starmap(callable, iterable) {\n\tfor (const args of iterable) {\n\t\tyield callable(...args);\n\t}\n}\n",
@@ -3667,7 +3733,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 152,
+    "__docId__": 154,
     "kind": "function",
     "name": "starmap",
     "memberof": "src/map/starmap.js",
@@ -3722,7 +3788,7 @@
     }
   },
   {
-    "__docId__": 153,
+    "__docId__": 155,
     "kind": "file",
     "name": "src/map/takewhile.js",
     "content": "/**\n * Output elements of the input iterable while the current element satisfies the\n * input predicate.\n *\n * @param {Function} predicate - The input predicate.\n * @param {Iterable} iterable - The input iterable.\n * @returns {Iterator}\n */\nexport function* takewhile(predicate, iterable) {\n\tfor (const item of iterable) {\n\t\tif (!predicate(item)) {\n\t\t\treturn;\n\t\t}\n\n\t\tyield item;\n\t}\n}\n",
@@ -3733,7 +3799,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 154,
+    "__docId__": 156,
     "kind": "function",
     "name": "takewhile",
     "memberof": "src/map/takewhile.js",
@@ -3785,7 +3851,7 @@
     }
   },
   {
-    "__docId__": 155,
+    "__docId__": 157,
     "kind": "file",
     "name": "src/map/zip.js",
     "content": "import {_zip} from './_zip';\n\n/**\n * Zips iterables together. Yields a tuple containing the first element of each\n * iterable, then a tupe containing the second element of each iterable, etc.\n * Stops when one of the iterables runs out of elements.\n *\n * @example\n * // returns [ [ 'a' , 1 ] , [ 'b' , 2 ] , [ 'c' , 3 ] ]\n * list( zip( 'abcd' , range(3) ) ) ;\n *\n * @param {...Iterable} iterables - The iterables to zip.\n * @returns {Iterator}\n *\n */\nexport function zip(...iterables) {\n\treturn _zip(iterables);\n}\n",
@@ -3796,7 +3862,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 156,
+    "__docId__": 158,
     "kind": "function",
     "name": "zip",
     "memberof": "src/map/zip.js",
@@ -3841,7 +3907,7 @@
     }
   },
   {
-    "__docId__": 157,
+    "__docId__": 159,
     "kind": "file",
     "name": "src/map/ziplongest.js",
     "content": "import {_ziplongest} from './_ziplongest';\n\n/**\n * Same as zip, but continues to yield zipped tuples until the last iterable is\n * exhausted.\n *\n * @example\n * // returns [['A','x'],['B','y'],['C','-'],['D','-']]\n * list( ziplongest( '-' , 'ABCD', 'xy' ) ) ;\n *\n * @param fillvalue - The value to yield for iterators that are exhausted.\n * @param {...Iterable} iterables - The iterables to zip.\n * @returns {Iterator}\n *\n */\nexport function ziplongest(fillvalue, ...iterables) {\n\treturn _ziplongest(fillvalue, iterables);\n}\n",
@@ -3852,7 +3918,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 158,
+    "__docId__": 160,
     "kind": "function",
     "name": "ziplongest",
     "memberof": "src/map/ziplongest.js",
@@ -3907,7 +3973,7 @@
     }
   },
   {
-    "__docId__": 159,
+    "__docId__": 161,
     "kind": "file",
     "name": "src/reduce/_reduce.js",
     "content": "/**\n * Applies the accumulator function iteratively on the last return value of the\n * accumulator and the next value in the input iterable. The initial value is\n * the initializer parameter.\n *\n * @example\n * _reduce( ( x , y ) => x + y , range( 10 ) , 0 ) ; // returns 45\n *\n * @example\n * _reduce( ( x , y ) => x + y , range( 10 ) , 100 ) ; // returns 145\n *\n * @param {Function} accumulator - The accumulator, a 2-ary function.\n * @param {Iterable} iterable - The input iterable.\n * @param {Object} initializer - The initial value of the reduction.\n * @returns {Object} - The reduction of the elements of <code>iterable</code>.\n */\nexport function _reduce(accumulator, iterable, initializer) {\n\tfor (const item of iterable) {\n\t\tinitializer = accumulator(initializer, item);\n\t}\n\n\treturn initializer;\n}\n",
@@ -3918,7 +3984,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 160,
+    "__docId__": 162,
     "kind": "function",
     "name": "_reduce",
     "memberof": "src/reduce/_reduce.js",
@@ -3984,7 +4050,7 @@
     }
   },
   {
-    "__docId__": 161,
+    "__docId__": 163,
     "kind": "file",
     "name": "src/reduce/_sum.js",
     "content": "/**\n * Sums the elements of the input iterable. An optional initializer parameter\n * allows to start the sum of the elements at a chosen value.\n *\n * @example\n * _sum( range( 10 ) , 0 ) ; // returns 45\n *\n * @example\n * _sum( range( 10 ) , 100 ) ; // returns 145\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Object} initializer - The initial value of the sum.\n * @returns {Object} - The sum of the initializer with the elements of\n * <code>iterable</code>.\n *\n */\nexport function _sum(iterable, initializer) {\n\tfor (const item of iterable) {\n\t\tinitializer += item;\n\t}\n\n\treturn initializer;\n}\n",
@@ -3995,7 +4061,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 162,
+    "__docId__": 164,
     "kind": "function",
     "name": "_sum",
     "memberof": "src/reduce/_sum.js",
@@ -4051,7 +4117,7 @@
     }
   },
   {
-    "__docId__": 163,
+    "__docId__": 165,
     "kind": "file",
     "name": "src/reduce/all.js",
     "content": "/**\n * Returns true if all of the elements of the input iterable are truthy.\n *\n * @example\n * all( repeat( true ) ) ; // loops forever\n *\n * @example\n * all( repeat( false ) ) ; // returns false\n *\n * @example\n * all( chain( [ nrepeat( true , 10 ) , repeat( false ) ) ) ; // returns false\n *\n * @param {Iterable} iterable - The input iterable.\n * @returns {Boolean} Returns <code>true</code> if all element of\n * <code>iterable</code> are truthy, <code>false</code> otherwise.\n */\nexport function all(iterable) {\n\tfor (const item of iterable) {\n\t\tif (!item) {\n\t\t\treturn false;\n\t\t}\n\t}\n\n\treturn true;\n}\n",
@@ -4062,7 +4128,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 164,
+    "__docId__": 166,
     "kind": "function",
     "name": "all",
     "memberof": "src/reduce/all.js",
@@ -4109,7 +4175,7 @@
     }
   },
   {
-    "__docId__": 165,
+    "__docId__": 167,
     "kind": "file",
     "name": "src/reduce/any.js",
     "content": "/**\n * Returns true if any of the elements of the input iterable is truthy.\n *\n * @example\n * any( repeat( true ) ) ; // returns true\n *\n * @example\n * any( repeat( false ) ) ; // loops forever\n *\n * @example\n * any( nrepeat( false , 10 ) ) ; // returns false\n *\n * @param {Iterable} iterable - The input iterable.\n * @returns {Boolean} Returns <code>true</code> if any element of\n * <code>iterable</code> is truthy, <code>false</code> otherwise.\n */\nexport function any(iterable) {\n\tfor (const item of iterable) {\n\t\tif (item) {\n\t\t\treturn true;\n\t\t}\n\t}\n\n\treturn false;\n}\n",
@@ -4120,7 +4186,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 166,
+    "__docId__": 168,
     "kind": "function",
     "name": "any",
     "memberof": "src/reduce/any.js",
@@ -4167,7 +4233,7 @@
     }
   },
   {
-    "__docId__": 167,
+    "__docId__": 169,
     "kind": "file",
     "name": "src/reduce/index.js",
     "content": "export * from './_reduce';\nexport * from './_sum';\nexport * from './all';\nexport * from './any';\nexport * from './max';\nexport * from './min';\nexport * from './reduce';\nexport * from './some';\nexport * from './sum';\n",
@@ -4178,7 +4244,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 168,
+    "__docId__": 170,
     "kind": "file",
     "name": "src/reduce/max.js",
     "content": "import {iter} from '../base/iter';\n\n/**\n * Returns the largest element of the input iterable according\n * to some comparison function.\n *\n * @example\n * max( ( a , b ) => a - b , range( 10 ) ) ; // returns 9\n *\n * @example\n * max( ( a , b ) => a - b , range( 0 ) ) ; // returns undefined\n *\n * @param {Function} compare - The comparison function to use. This function\n * must be 2-ary. It must return -1, 0, or 1 depending whether the first\n * parameter is, respectively, less than, equal to, or greater than the second\n * parameter.\n * @param {Iterable} iterable - The input iterable.\n * @param {Object} [dflt=undefined] - The default value to return in the case\n * that the input iterable is empty.\n * @returns {Object} The largest element of <code>iterable</code> according to\n * <code>compare</code>.\n */\nexport function max(compare, iterable, dflt = undefined) {\n\tconst iterator = iter(iterable);\n\n\tconst first = iterator.next();\n\n\tif (first.done) {\n\t\treturn dflt;\n\t}\n\n\tlet largest = first.value;\n\n\tfor (const candidate of iterator) {\n\t\tif (compare(candidate, largest) > 0) {\n\t\t\tlargest = candidate;\n\t\t}\n\t}\n\n\treturn largest;\n}\n",
@@ -4189,7 +4255,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 169,
+    "__docId__": 171,
     "kind": "function",
     "name": "max",
     "memberof": "src/reduce/max.js",
@@ -4257,7 +4323,7 @@
     }
   },
   {
-    "__docId__": 170,
+    "__docId__": 172,
     "kind": "file",
     "name": "src/reduce/min.js",
     "content": "import {iter} from '../base/iter';\n\n/**\n * Returns the smallest element of the input iterable according\n * to some comparison function.\n *\n * @example\n * min( ( a , b ) => a - b , range( 10 ) ) ; // returns 0\n *\n * @example\n * min( ( a , b ) => a - b , range( 0 ) ) ; // returns undefined\n *\n * @param {Function} compare - The comparison function to use. This function\n * must be 2-ary. It must return -1, 0, or 1 depending whether the first\n * parameter is, respectively, less than, equal to, or greater than the second\n * parameter.\n * @param {Iterable} iterable - The input iterable.\n * @param {Object} [dflt=undefined] - The default value to return in the case\n * that the input iterable is empty.\n * @returns {Object} The smallest element of <code>iterable</code> according to\n * <code>compare</code>.\n */\nexport function min(compare, iterable, dflt = undefined) {\n\tconst iterator = iter(iterable);\n\n\tconst first = iterator.next();\n\n\tif (first.done) {\n\t\treturn dflt;\n\t}\n\n\tlet smallest = first.value;\n\n\tfor (const candidate of iterator) {\n\t\tif (compare(candidate, smallest) < 0) {\n\t\t\tsmallest = candidate;\n\t\t}\n\t}\n\n\treturn smallest;\n}\n",
@@ -4268,7 +4334,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 171,
+    "__docId__": 173,
     "kind": "function",
     "name": "min",
     "memberof": "src/reduce/min.js",
@@ -4336,7 +4402,7 @@
     }
   },
   {
-    "__docId__": 172,
+    "__docId__": 174,
     "kind": "file",
     "name": "src/reduce/reduce.js",
     "content": "import {_reduce} from './_reduce';\nimport {iter} from '../base/iter';\n\n/**\n * Applies the accumulator function iteratively on the last return value of the\n * accumulator and the next value in the input iterable. The initial value is\n * the initializer parameter. If no initial value is given, the first element\n * of the input iterable is used.\n *\n * @example\n * _reduce( ( x , y ) => x + y , range( 10 ) , 0 ) ; // returns 45\n *\n * @example\n * _reduce( ( x , y ) => x + y , range( 10 ) , 100 ) ; // returns 145\n *\n * @param {Function} accumulator - The accumulator, a 2-ary function.\n * @param {Iterable} iterable - The input iterable.\n * @param {Object} [initializer=undefined] - The initial value of the reduction.\n * @returns {Object} - The reduction of the elements of <code>iterable</code>.\n */\nexport function reduce(accumulator, iterable, initializer = undefined) {\n\tif (initializer === undefined) {\n\t\tconst iterator = iter(iterable);\n\t\tconst first = iterator.next();\n\n\t\tif (first.done) {\n\t\t\treturn undefined;\n\t\t}\n\n\t\treturn _reduce(accumulator, iterator, first.value);\n\t}\n\n\treturn _reduce(accumulator, iterable, initializer);\n}\n",
@@ -4347,7 +4413,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 173,
+    "__docId__": 175,
     "kind": "function",
     "name": "reduce",
     "memberof": "src/reduce/reduce.js",
@@ -4415,7 +4481,7 @@
     }
   },
   {
-    "__docId__": 174,
+    "__docId__": 176,
     "kind": "file",
     "name": "src/reduce/some.js",
     "content": "/**\n * Returns true if at least some of the elements of the input iterable are\n * truthy.\n *\n * @example\n * some( repeat( true ) , 100 ) ; // returns true\n *\n * @example\n * some( repeat( false ) , 0 ) ; // returns true\n *\n * @example\n * some( repeat( false ) , 10 ) ; // loops forever\n *\n * @example\n * some( nrepeat( true , 10 ) , 11 ) ; // returns false\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Number} n - The number of elements that should be truthy.\n * @returns {Boolean} Returns <code>true</code> if at least <code>n</code>\n * elements of <code>iterable</code> are truthy, <code>false</code> otherwise.\n */\n\nexport function some(iterable, n) {\n\tif (n <= 0) {\n\t\treturn true;\n\t}\n\n\tfor (const item of iterable) {\n\t\tif (item && --n === 0) {\n\t\t\treturn true;\n\t\t}\n\t}\n\n\treturn false;\n}\n",
@@ -4426,7 +4492,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 175,
+    "__docId__": 177,
     "kind": "function",
     "name": "some",
     "memberof": "src/reduce/some.js",
@@ -4484,7 +4550,7 @@
     }
   },
   {
-    "__docId__": 176,
+    "__docId__": 178,
     "kind": "file",
     "name": "src/reduce/sum.js",
     "content": "import {_sum} from './_sum';\n\n/**\n * Sums the elements of the input iterable. An optional initializer parameter\n * allows to start the sum of the elements at a chosen value. The default value\n * for the initializer parameter is <code>0</code>.\n *\n * @example\n * sum( range( 10 ) ) ; // returns 45\n *\n * @example\n * sum( range( 10 ) , 100 ) ; // returns 145\n *\n * @param {Iterable} iterable - The input iterable.\n * @param {Object} [initializer=0] - The initial value of the sum.\n * @returns {Object} - The sum of the initializer with the elements of\n * <code>iterable</code>.\n *\n */\nexport function sum(iterable, initializer = 0) {\n\treturn _sum(iterable, initializer);\n}\n",
@@ -4495,7 +4561,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 177,
+    "__docId__": 179,
     "kind": "function",
     "name": "sum",
     "memberof": "src/reduce/sum.js",
@@ -4562,7 +4628,7 @@
   },
   {
     "kind": "packageJSON",
-    "content": "{\n  \"name\": \"@aureooms/js-itertools\",\n  \"description\": \"Iterable and iterator library for JavaScript\",\n  \"version\": \"4.0.1\",\n  \"author\": \"Aurélien Ooms <aurelien.ooms@gmail.com>\",\n  \"ava\": {\n    \"files\": [\n      \"test/src/**/*\"\n    ],\n    \"concurrency\": 8,\n    \"require\": [\n      \"regenerator-runtime/runtime\",\n      \"@babel/register\"\n    ],\n    \"timeout\": \"2m\"\n  },\n  \"babel\": {\n    \"presets\": [\n      \"@babel/preset-env\"\n    ],\n    \"env\": {\n      \"development\": {\n        \"sourceMaps\": \"inline\"\n      }\n    }\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/aureooms/js-itertools/issues\"\n  },\n  \"dependencies\": {\n    \"@aureooms/js-collections-deque\": \"^4.0.1\",\n    \"@aureooms/js-error\": \"^4.0.1\"\n  },\n  \"devDependencies\": {\n    \"@aureooms/js-compare\": \"1.4.5\",\n    \"@aureooms/js-operator\": \"1.0.2\",\n    \"@aureooms/js-predicate\": \"2.0.2\",\n    \"@babel/cli\": \"7.10.5\",\n    \"@babel/core\": \"7.11.0\",\n    \"@babel/preset-env\": \"7.11.0\",\n    \"@babel/register\": \"7.10.5\",\n    \"ava\": \"3.11.1\",\n    \"coveralls\": \"3.1.0\",\n    \"esdoc\": \"1.1.0\",\n    \"esdoc-inject-script-plugin\": \"1.0.0\",\n    \"esdoc-inject-style-plugin\": \"1.0.0\",\n    \"esdoc-standard-plugin\": \"1.0.0\",\n    \"np\": \"6.3.2\",\n    \"nyc\": \"15.1.0\",\n    \"regenerator-runtime\": \"0.13.7\",\n    \"xo\": \"0.32.1\"\n  },\n  \"files\": [\n    \"lib\"\n  ],\n  \"homepage\": \"https://aureooms.github.io/js-itertools\",\n  \"keywords\": [\n    \"chain\",\n    \"combinations\",\n    \"filter\",\n    \"iter\",\n    \"iterable\",\n    \"iterator\",\n    \"list\",\n    \"map\",\n    \"permutations\",\n    \"product\",\n    \"reduce\"\n  ],\n  \"license\": \"AGPL-3.0\",\n  \"main\": \"lib/index.js\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/aureooms/js-itertools\"\n  },\n  \"scripts\": {\n    \"build\": \"rm -rf lib && babel src -d lib\",\n    \"cover\": \"nyc --reporter=lcov npm test\",\n    \"esdoc\": \"esdoc\",\n    \"prepare\": \"npm run build\",\n    \"release\": \"np\",\n    \"test\": \"xo && ava\"\n  },\n  \"sideEffects\": false,\n  \"xo\": {\n    \"prettier\": true,\n    \"ignore\": [\n      \"lib\",\n      \"doc\"\n    ],\n    \"overrides\": [\n      {\n        \"files\": \"src/base/len.js\",\n        \"rules\": {\n          \"unicorn/prevent-abbreviations\": \"off\"\n        }\n      },\n      {\n        \"files\": \"src/base/StopIteration.js\",\n        \"rules\": {\n          \"unicorn/filename-case\": [\n            \"error\",\n            {\n              \"case\": \"pascalCase\"\n            }\n          ]\n        }\n      }\n    ]\n  }\n}\n",
+    "content": "{\n  \"name\": \"@aureooms/js-itertools\",\n  \"description\": \"Iterable and iterator library for JavaScript\",\n  \"version\": \"4.1.0\",\n  \"author\": \"Aurélien Ooms <aurelien.ooms@gmail.com>\",\n  \"ava\": {\n    \"files\": [\n      \"test/src/**/*\"\n    ],\n    \"concurrency\": 8,\n    \"require\": [\n      \"regenerator-runtime/runtime\",\n      \"@babel/register\"\n    ],\n    \"timeout\": \"2m\"\n  },\n  \"babel\": {\n    \"presets\": [\n      \"@babel/preset-env\"\n    ],\n    \"env\": {\n      \"development\": {\n        \"sourceMaps\": \"inline\"\n      }\n    }\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/aureooms/js-itertools/issues\"\n  },\n  \"dependencies\": {\n    \"@aureooms/js-collections-deque\": \"^4.0.1\",\n    \"@aureooms/js-error\": \"^4.0.1\"\n  },\n  \"devDependencies\": {\n    \"@aureooms/js-compare\": \"1.4.5\",\n    \"@aureooms/js-operator\": \"1.0.2\",\n    \"@aureooms/js-predicate\": \"2.0.2\",\n    \"@babel/cli\": \"7.10.5\",\n    \"@babel/core\": \"7.11.1\",\n    \"@babel/preset-env\": \"7.11.0\",\n    \"@babel/register\": \"7.10.5\",\n    \"ava\": \"3.11.1\",\n    \"coveralls\": \"3.1.0\",\n    \"esdoc\": \"1.1.0\",\n    \"esdoc-inject-script-plugin\": \"1.0.0\",\n    \"esdoc-inject-style-plugin\": \"1.0.0\",\n    \"esdoc-standard-plugin\": \"1.0.0\",\n    \"np\": \"6.3.2\",\n    \"nyc\": \"15.1.0\",\n    \"regenerator-runtime\": \"0.13.7\",\n    \"xo\": \"0.32.1\"\n  },\n  \"files\": [\n    \"lib\"\n  ],\n  \"homepage\": \"https://aureooms.github.io/js-itertools\",\n  \"keywords\": [\n    \"chain\",\n    \"combinations\",\n    \"filter\",\n    \"iter\",\n    \"iterable\",\n    \"iterator\",\n    \"list\",\n    \"map\",\n    \"permutations\",\n    \"product\",\n    \"reduce\"\n  ],\n  \"license\": \"AGPL-3.0\",\n  \"main\": \"lib/index.js\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/aureooms/js-itertools\"\n  },\n  \"scripts\": {\n    \"build\": \"rm -rf lib && babel src -d lib\",\n    \"cover\": \"nyc --reporter=lcov npm test\",\n    \"esdoc\": \"esdoc\",\n    \"prepare\": \"npm run build\",\n    \"release\": \"np\",\n    \"test\": \"xo && ava\"\n  },\n  \"sideEffects\": false,\n  \"xo\": {\n    \"prettier\": true,\n    \"ignore\": [\n      \"lib\",\n      \"doc\"\n    ],\n    \"overrides\": [\n      {\n        \"files\": \"src/base/len.js\",\n        \"rules\": {\n          \"unicorn/prevent-abbreviations\": \"off\"\n        }\n      },\n      {\n        \"files\": \"src/base/StopIteration.js\",\n        \"rules\": {\n          \"unicorn/filename-case\": [\n            \"error\",\n            {\n              \"case\": \"pascalCase\"\n            }\n          ]\n        }\n      }\n    ]\n  }\n}\n",
     "longname": "/home/aureooms/dev/js/js-itertools/package.json",
     "name": "package.json",
     "static": true,

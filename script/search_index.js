@@ -120,6 +120,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "@aureooms/js-itertools/src/extra/diagonal.js~diagonal",
+    "function/index.html#static-function-diagonal",
+    "<span>diagonal</span> <span class=\"search-result-import-path\">@aureooms/js-itertools/src/extra/diagonal.js</span>",
+    "function"
+  ],
+  [
     "@aureooms/js-itertools/src/base/drop.js~drop",
     "function/index.html#static-function-drop",
     "<span>drop</span> <span class=\"search-result-import-path\">@aureooms/js-itertools/src/base/drop.js</span>",
@@ -819,6 +825,12 @@ window.esdocSearchIndex = [
     "src/extra/closure.js",
     "file/src/extra/closure.js.html",
     "src/extra/closure.js",
+    "file"
+  ],
+  [
+    "src/extra/diagonal.js",
+    "file/src/extra/diagonal.js.html",
+    "src/extra/diagonal.js",
     "file"
   ],
   [

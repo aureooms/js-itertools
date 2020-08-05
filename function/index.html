@@ -54,6 +54,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-first">first</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-head">head</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#extra">extra</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-closure">closure</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-diagonal">diagonal</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-nth">nth</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#map">map</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_product">_product</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_zip">_zip</a></span></span></li>
@@ -418,6 +419,36 @@ second input iterable.</p>
         
         
         <div data-ice="description"><p>Cycles through the input iterable.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          <span data-ice="generator">*</span>
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-diagonal">diagonal</a></span></span><span class="code" data-ice="signature">(A: <span>Iterable</span>, B: <span>Iterable</span>): <span>Iterator</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Computes the product of two iterables in a way that allows for one or both
+of them to be infinite (in constrast with <span><a href="function/index.html#static-function-product">product</a></span>).</p>
 </div>
       </div>
     </td>
@@ -2795,6 +2826,102 @@ list( head( count( 0 , -1 ) , 5 ) ) ;</code></pre>
       
       <pre class="prettyprint source-code"><code data-ice="exampleCode">// returns [0,1,0,1,0,1,0]
 list(head(cycle(range(2)),7)) ;</code></pre>
+    </div>
+</div>
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-diagonal">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="generator">*</span>
+    <span class="code" data-ice="name">diagonal</span><span class="code" data-ice="signature">(A: <span>Iterable</span>, B: <span>Iterable</span>): <span>Iterator</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/extra/diagonal.js.html#lineNumber26">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {diagonal} from &apos;<span><a href="file/src/extra/diagonal.js.html#lineNumber26">@aureooms/js-itertools/src/extra/diagonal.js</a></span>&apos;</code></pre></div>
+  
+  
+  <div data-ice="description"><p>Computes the product of two iterables in a way that allows for one or both
+of them to be infinite (in constrast with <span><a href="function/index.html#static-function-product">product</a></span>).
+Although the output iterator may be infinite, it is guaranteed that each
+value of the product is located at some finite position in the output
+iterator.</p>
+<p>If one of the two inputs has finite size N, it is guaranteed that memory
+usage never exceeds O(N) values. If both inputs have infinite size, then
+memory usage grows proportionately to the square root of the number of
+output pairs.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">A</td>
+      <td data-ice="type" class="code"><span>Iterable</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>The first iterable.</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">B</td>
+      <td data-ice="type" class="code"><span>Iterable</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>The second iterable.</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>Iterator</span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">// returns [ [ 0 , 0 ] , [ 0 , 1 ] , [ 1 , 0 ] , [ 1 , 1 ] ]
+list( diagonal( range( 2 ) , range( 2 ) ) ) ;</code></pre>
     </div>
 </div>
 
